@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 
 export type TestKind =
   | "reaction-time"
@@ -19,7 +19,7 @@ type Props = {
   title: string;
   description?: string;
   kind: TestKind;
-  children: (args: { onComplete: (raw: unknown) => void; isComplete: boolean }) => JSX.Element;
+  children: (args: { onComplete: (raw: unknown) => void; isComplete: boolean }) => ReactNode;
   scoreFromRaw: (raw: unknown) => number;
 };
 
