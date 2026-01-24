@@ -14,7 +14,7 @@ export default function TermsOfUse() {
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-primary">Extensive Data Rights</h2>
           <p className="text-muted-foreground leading-relaxed">
-            By using NeuroVantage you authorize us to collect, retain, analyze,
+            By using Prime State Health you authorize us to collect, retain, analyze,
             combine, and commercialize any information that you or your devices
             provide while you access our services. This includes identifiable
             health metrics, feedback, device telemetry, session recordings, and
@@ -59,7 +59,7 @@ export default function TermsOfUse() {
             Acceptance &amp; Updates
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Continued use of NeuroVantage signifies your acceptance of these
+            Continued use of Prime State Health signifies your acceptance of these
             terms and any future updates. We will post revisions here with a new
             effective date, and your ongoing use constitutes renewed consent.
             Please contact privacy@neurovantage.com with regulatory inquiries or

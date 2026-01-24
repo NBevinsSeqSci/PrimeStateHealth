@@ -1,4 +1,4 @@
-// Auto-generated mock metabolomics results for Neurovantage UI demos.
+// Auto-generated mock metabolomics results for Prime State Health UI demos.
 // Source analyte list: Comprehensive_metabolomics_CA.pdf (global metabolite panel).
 
 export type ResultFlag = "High" | "Low" | "Normal" | "Not reported";

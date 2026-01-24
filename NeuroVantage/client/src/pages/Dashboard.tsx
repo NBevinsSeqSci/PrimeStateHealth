@@ -131,7 +131,7 @@ export default function Dashboard() {
     const recommendations = (report.recommendations as any[]) || [];
     const summary = screenerScores?.summary;
     const lines: string[] = [];
-    lines.push("Neurovantage Assessment Summary");
+    lines.push("Prime State Health Assessment Summary");
     lines.push(`Report ID: ${report.id}`);
     lines.push(`Participant: ${demographics.firstName ?? ""} ${demographics.lastName ?? ""}`);
     lines.push(`Email/Login: ${demographics.email ?? "N/A"}`);
@@ -302,13 +302,13 @@ export default function Dashboard() {
         <div className="p-6 flex items-center gap-2">
           <img
             src={logoImage}
-            alt="Neurovantage"
+            alt="Prime State Health"
             width={32}
             height={32}
             decoding="async"
             className="h-8 w-8 object-contain brightness-0 invert opacity-90"
           />
-          <span className="font-display font-bold text-sidebar-foreground text-lg tracking-tight">Neurovantage</span>
+          <span className="font-display font-bold text-sidebar-foreground text-lg tracking-tight">Prime State Health</span>
         </div>
         
         <nav className="flex-1 px-4 py-4 space-y-1">

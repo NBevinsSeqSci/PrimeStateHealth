@@ -56,7 +56,7 @@ export default function CognitiveTesting() {
               Quantify Brain Fog, Fatigue, and Focus—In Minutes
             </h1>
             <p className="text-sm md:text-base text-muted-foreground">
-              NeuroVantage turns subjective complaints into objective, trackable brain-health metrics your
+              Prime State Health turns subjective complaints into objective, trackable brain-health metrics your
               clinic can use to anchor care plans and show improvement over time.
             </p>
             <p className="text-xs md:text-sm text-slate-500">
@@ -331,7 +331,7 @@ export default function CognitiveTesting() {
               </AccordionItem>
             </Accordion>
             <p className="text-xs text-muted-foreground">
-              NeuroVantage is not a diagnostic tool and does not replace formal neuropsychological testing.
+              Prime State Health is not a diagnostic tool and does not replace formal neuropsychological testing.
             </p>
           </div>
         </Card>
@@ -480,14 +480,14 @@ export default function CognitiveTesting() {
             </AccordionItem>
           </Accordion>
           <p className="text-xs text-slate-600">
-            NeuroVantage is not a clinical trial instrument and does not determine eligibility, outcomes, or diagnoses.
+            Prime State Health is not a clinical trial instrument and does not determine eligibility, outcomes, or diagnoses.
           </p>
         </Card>
 
         <Card className="p-6 md:p-8 shadow-sm border-0 bg-white space-y-4">
           <h2 className="text-2xl font-display font-bold text-primary">Who we are</h2>
           <p className="text-sm text-muted-foreground">
-            NeuroVantage is built by a small team with experience in clinical pathology, cognitive neuroscience,
+            Prime State Health is built by a small team with experience in clinical pathology, cognitive neuroscience,
             and running regulated laboratory operations. We focus on pragmatic, clinic-friendly tools that
             translate research-grade thinking into day-to-day workflows.
           </p>
@@ -505,7 +505,7 @@ export default function CognitiveTesting() {
           <div className="space-y-2">
             <h2 className="text-2xl font-display font-bold text-primary">Ready to see it in your clinic?</h2>
             <p className="text-sm text-muted-foreground">
-              Invite us into your workflow and learn how NeuroVantage can complement labs, hormone replacement,
+              Invite us into your workflow and learn how Prime State Health can complement labs, hormone replacement,
               weight-loss programs, and longevity protocols.
             </p>
           </div>

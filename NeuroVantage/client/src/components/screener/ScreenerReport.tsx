@@ -69,7 +69,7 @@ const badgeToneMap: Record<string, { className: string }> = {
 };
 
 const disclaimerParagraphs = [
-  "The Neurovantage screener is a preliminary screening tool that highlights potential patterns in mood, attention, reaction speed, memory, and related cognitive domains. It is not a diagnostic test.",
+  "The Prime State Health screener is a preliminary screening tool that highlights potential patterns in mood, attention, reaction speed, memory, and related cognitive domains. It is not a diagnostic test.",
   "Performance can be influenced by fatigue, sleep, stress, medications, and overall medical status. Scores may not reflect underlying neurological or psychiatric conditions.",
   "This report is for educational use only and is not a treatment plan or medical advice. Reviewing this report does not create a provider–patient relationship.",
   "Seek in-person care for new or worsening symptoms, and contact emergency services or a crisis resource immediately if you experience acute distress or a potential emergency.",

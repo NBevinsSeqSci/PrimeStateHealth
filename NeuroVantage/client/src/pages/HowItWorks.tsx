@@ -32,7 +32,7 @@ export default function HowItWorks() {
                 <span>Workflow Integration</span>
               </span>
               <h1 className="text-4xl md:text-6xl font-display font-bold text-primary mb-6">
-                How NeuroVantage works
+                How Prime State Health works
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 Attract patients, standardize assessment, and connect existing treatments to measurable brain outcomes.
@@ -43,12 +43,12 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      {/* Why clinics adopt NeuroVantage */}
+      {/* Why clinics adopt Prime State Health */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="mb-6">
             <h2 className="text-3xl font-display font-bold text-primary">
-              Why clinics adopt NeuroVantage
+              Why clinics adopt Prime State Health
             </h2>
             <p className="mt-2 max-w-3xl text-muted-foreground text-base leading-relaxed">
               Turn objective brain data into revenue and retention with clearer, trackable care plans.
@@ -238,13 +238,13 @@ export default function HowItWorks() {
                     </li>
                   </ul>
                   <p className="mt-6 border-t border-slate-200 pt-4 text-xs leading-5 text-slate-500">
-                    NeuroVantage doesn’t prescribe treatment. It supports clinician decision-making by tracking baseline status and change over time.
+                    Prime State Health doesn’t prescribe treatment. It supports clinician decision-making by tracking baseline status and change over time.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-primary/20 bg-white/80 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Coming soon</p>
                   <p className="text-sm text-slate-600 mt-1">
-                    Custom metabolomics panels tied directly into NeuroVantage reports.
+                    Custom metabolomics panels tied directly into Prime State Health reports.
                   </p>
                   <InlineCTALink asChild className="px-0 text-primary mt-1">
                     <Link href="/blood-testing">{CTA_LABELS.previewMetabolomics}</Link>
@@ -269,7 +269,7 @@ export default function HowItWorks() {
                   title="3. Track progress over time"
                   titleAs="h2"
                   titleClassName="text-3xl font-display font-bold text-primary"
-                  subtitle="NeuroVantage schedules follow-ups, tracks scores, and links change to labs and care plans."
+                  subtitle="Prime State Health schedules follow-ups, tracks scores, and links change to labs and care plans."
                   bullets={[
                     "See how each plan affects brain scores over time.",
                     "Track key labs alongside cognitive results.",

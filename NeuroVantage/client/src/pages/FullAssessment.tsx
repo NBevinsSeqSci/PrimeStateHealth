@@ -188,7 +188,7 @@ export default function FullAssessment() {
     };
 
     const lines: string[] = [
-      "Neurovantage Clinical Assessment Report",
+      "Prime State Health Clinical Assessment Report",
       `Generated: ${new Date().toLocaleString()}`,
       completedAt ? `Completed At: ${completedAt}` : "",
       ""
@@ -212,7 +212,7 @@ export default function FullAssessment() {
     }
 
     lines.push("Clinic Identifier:", clinicId, "");
-    lines.push("Thank you for using Neurovantage.");
+    lines.push("Thank you for using Prime State Health.");
 
     return lines;
   };

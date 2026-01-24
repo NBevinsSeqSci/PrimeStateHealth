@@ -155,7 +155,7 @@ export default function BloodTestingWaitlist() {
               <Input
                 id="clinic"
                 name="clinic"
-                placeholder="NeuroVantage Wellness Center"
+                placeholder="Prime State Health Wellness Center"
                 value={formData.clinic}
                 onChange={handleChange}
               />

@@ -83,7 +83,7 @@ export default function ClinicIntegration() {
             Clinic Integration
           </h1>
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-            Plug NeuroVantage into your intake flow in hours, then use the data to streamline
+            Plug Prime State Health into your intake flow in hours, then use the data to streamline
             visits, improve conversion, and build repeatable cognitive care.
           </p>
         </section>

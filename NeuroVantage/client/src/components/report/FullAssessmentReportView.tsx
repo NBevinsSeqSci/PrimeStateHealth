@@ -612,7 +612,7 @@ export function FullAssessmentReportView({
           ))}
         </div>
         <p className="text-xs text-slate-500">
-          These parallels indicate overlapping constructs, not identical scores. Neurovantage tasks are not direct digital copies of any single trial instrument.
+          These parallels indicate overlapping constructs, not identical scores. Prime State Health tasks are not direct digital copies of any single trial instrument.
         </p>
       </Card>
 
@@ -620,7 +620,7 @@ export function FullAssessmentReportView({
         <div>
           <h3 className="text-lg font-semibold text-slate-900">Key References Underpinning This Report</h3>
           <p className="text-sm text-slate-600">
-            The following studies informed the design and interpretation of Neurovantage’s symptom and cognitive measures.
+            The following studies informed the design and interpretation of Prime State Health’s symptom and cognitive measures.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">

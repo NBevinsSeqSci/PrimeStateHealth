@@ -1,4 +1,4 @@
-# Neurovantage Pre-Push Checklist
+# Prime State Health Pre-Push Checklist
 
 Run these commands locally before pushing to GitHub or pulling into Replit:
 

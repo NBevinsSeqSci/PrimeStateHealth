@@ -1,4 +1,4 @@
-# NeuroVantage Architecture Audit
+# Prime State Health Architecture Audit
 
 ## Executive summary
 - Frontend is a Vite + React SPA using Wouter for routing, React Query for data, and Tailwind UI components.

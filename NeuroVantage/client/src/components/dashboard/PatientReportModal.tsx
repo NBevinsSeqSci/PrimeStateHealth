@@ -52,7 +52,7 @@ export function PatientReportModal({ report, open, onOpenChange }: PatientReport
         </DialogHeader>
 
         <div className="p-4 bg-slate-50 border rounded-lg text-xs text-muted-foreground leading-relaxed">
-          <strong>IMPORTANT INFORMATION AND DISCLAIMER:</strong> This Neurovantage Cognitive Assessment Report is provided by the clinic for informational and educational purposes only. It is based on computerized cognitive tasks, health questionnaires, and self-reported history. The results reflect performance at a single point in time and may be influenced by factors such as sleep, mood, pain, medications, motivation, and technical issues. This report Does NOT provide a medical diagnosis or rule out any medical, neurological, or psychiatric condition.
+          <strong>IMPORTANT INFORMATION AND DISCLAIMER:</strong> This Prime State Health Cognitive Assessment Report is provided by the clinic for informational and educational purposes only. It is based on computerized cognitive tasks, health questionnaires, and self-reported history. The results reflect performance at a single point in time and may be influenced by factors such as sleep, mood, pain, medications, motivation, and technical issues. This report Does NOT provide a medical diagnosis or rule out any medical, neurological, or psychiatric condition.
         </div>
 
         <Tabs defaultValue="summary" className="w-full mt-4">

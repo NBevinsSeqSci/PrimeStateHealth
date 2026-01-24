@@ -319,7 +319,7 @@ export default function Screener() {
     const win = window.open("", "_blank", "noopener,noreferrer");
     if (win) {
       win.document.write(
-        `<html><head><title>NeuroVantage Screener JSON</title></head><body style="margin:0;padding:16px;background:#0f172a;color:#e2e8f0;"><pre style="white-space:pre-wrap;word-break:break-word;font-size:12px;font-family:Menlo,Consolas,monospace;">${json}</pre></body></html>`
+        `<html><head><title>Prime State Health Screener JSON</title></head><body style="margin:0;padding:16px;background:#0f172a;color:#e2e8f0;"><pre style="white-space:pre-wrap;word-break:break-word;font-size:12px;font-family:Menlo,Consolas,monospace;">${json}</pre></body></html>`
       );
       win.document.close();
     } else {

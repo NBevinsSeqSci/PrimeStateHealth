@@ -37,7 +37,7 @@ const cliaMetadata = [
   { label: "Received date/time", value: "01/23/2026 · 11:15 AM PT" },
   { label: "Report date/time", value: "01/25/2026 · 05:02 PM PT" },
   { label: "Ordering physician", value: "Thomas Jefferson, MD (NPI 9995432100)" },
-  { label: "Ordering facility", value: "NeuroVantage Concierge · NPI 1928374650" },
+  { label: "Ordering facility", value: "Prime State Health Concierge · NPI 1928374650" },
   { label: "Performing lab", value: "Synapta Lab Systems · 455 Mission St · San Francisco, CA" },
   { label: "CLIA ID", value: "05D1234567" },
   { label: "Test", value: "Targeted LC/MS Metabolomics Panel" },
@@ -1015,7 +1015,7 @@ export default function ExampleMetabolomicsReport() {
           onPrint={handlePrintReport}
         />
           <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Example metabolomics report</p>
-          <h1 className="text-4xl font-display text-white">Example NeuroVantage metabolomics report</h1>
+          <h1 className="text-4xl font-display text-white">Example Prime State Health metabolomics report</h1>
           <p className="text-base text-slate-400 max-w-3xl mx-auto">
             This sample shows how LC/MS analytes roll up into pathway-level findings, tie directly to cognitive markers,
             and translate into clinician-ready actions.
@@ -1108,7 +1108,7 @@ export default function ExampleMetabolomicsReport() {
         </Accordion>
 
         <div className="text-center space-y-4">
-          <p className="text-sm text-slate-400">Want to see your own metabolomics overlay inside NeuroVantage?</p>
+          <p className="text-sm text-slate-400">Want to see your own metabolomics overlay inside Prime State Health?</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button asChild className="px-8">
               <Link href="/blood-testing/waitlist">Join the waitlist</Link>

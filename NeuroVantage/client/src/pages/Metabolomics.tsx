@@ -47,7 +47,7 @@ export default function Metabolomics() {
             Metabolomics + cognitive biomarkers in a single workflow
           </h1>
           <p className="text-lg text-slate-300 max-w-3xl">
-            Our targeted panel pairs deep LC/MS coverage with NeuroVantage&apos;s cognitive assessment
+            Our targeted panel pairs deep LC/MS coverage with Prime State Health&apos;s cognitive assessment
             to translate metabolic signals into practical care plans.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -106,7 +106,7 @@ export default function Metabolomics() {
             <div className="absolute inset-6 rounded-[32px] bg-cyan-500/20 blur-3xl" />
             <div className="relative rounded-[32px] border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-8">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Pilot study</p>
-              <h3 className="text-2xl font-display text-white mt-3">Metabolomics x NeuroVantage Insight Layer</h3>
+              <h3 className="text-2xl font-display text-white mt-3">Metabolomics x Prime State Health Insight Layer</h3>
               <ul className="mt-6 space-y-4 text-slate-300 text-sm">
                 <li>• 40 participant cohort launching Q1 2026.</li>
                 <li>• Raw data access via secure API and clinician dashboard exports.</li>

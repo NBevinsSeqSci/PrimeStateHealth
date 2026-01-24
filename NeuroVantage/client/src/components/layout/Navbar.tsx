@@ -39,14 +39,14 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 cursor-pointer">
           <img
             src={logoImage}
-            alt="Neurovantage"
+            alt="Prime State Health"
             width={32}
             height={32}
             decoding="async"
             className="h-8 w-8 object-contain"
           />
           <span className="font-display text-xl font-bold tracking-tight text-primary">
-            Neurovantage
+            Prime State Health
           </span>
         </Link>
 

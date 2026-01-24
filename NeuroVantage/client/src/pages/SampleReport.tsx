@@ -83,7 +83,7 @@ const buildSampleReportLines = (report: FullAssessmentReportData) => {
   };
 
   const lines: string[] = [
-    "Neurovantage Clinical Assessment Report (Sample)",
+    "Prime State Health Clinical Assessment Report (Sample)",
     `Generated: ${new Date().toLocaleString()}`,
     report.completedAt ? `Completed At: ${report.completedAt}` : "",
     "",
@@ -112,11 +112,11 @@ export default function SampleReportPage() {
             Example report
           </p>
           <h1 className="text-3xl sm:text-4xl font-semibold text-slate-900">
-            Sample NeuroVantage Full Report
+            Sample Prime State Health Full Report
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl">
             This page shows a sample of the full report format that clinics see
-            at the end of a NeuroVantage cognitive test. It uses example data
+            at the end of a Prime State Health cognitive test. It uses example data
             only, not real patient results.
           </p>
           <p className="text-xs text-slate-500">

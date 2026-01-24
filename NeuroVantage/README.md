@@ -1,6 +1,6 @@
-# NeuroVantage
+# Prime State Health
 
-NeuroVantage is a full‑stack TypeScript/Vite application with an Express + Drizzle backend and a React/Tailwind client that renders clinician‑facing metabolomics reports, pathway views, and diet heuristics.
+Prime State Health is a full‑stack TypeScript/Vite application with an Express + Drizzle backend and a React/Tailwind client that renders clinician‑facing metabolomics reports, pathway views, and diet heuristics.
 
 ## Repo structure
 

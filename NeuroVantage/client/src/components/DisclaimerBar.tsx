@@ -21,7 +21,7 @@ export function DisclaimerBar() {
     <div className="w-full border-b border-amber-100 bg-amber-50">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-2 text-xs text-amber-900 sm:text-sm">
         <p className="leading-snug">
-          NeuroVantage is for screening and progress tracking. It does not diagnose conditions or replace
+          Prime State Health is for screening and progress tracking. It does not diagnose conditions or replace
           clinical evaluation.
         </p>
         <button

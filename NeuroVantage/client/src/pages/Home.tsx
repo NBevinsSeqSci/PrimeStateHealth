@@ -122,7 +122,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-xs text-slate-500 text-center mt-4">
-            NeuroVantage supports measurement and monitoring - not diagnosis.
+            Prime State Health supports measurement and monitoring - not diagnosis.
           </p>
         </div>
       </section>
@@ -245,7 +245,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary">See it in action</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Start with the free screener to see how NeuroVantage fits your workflow.
+              Start with the free screener to see how Prime State Health fits your workflow.
             </p>
             <div className="flex flex-col items-center gap-3 pt-2">
               <Link href={CTA.primary.href}>

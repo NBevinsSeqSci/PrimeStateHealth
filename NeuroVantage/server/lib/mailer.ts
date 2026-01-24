@@ -130,7 +130,7 @@ export async function sendEventNotificationEmail(args: {
   meta?: Record<string, unknown>;
 }) {
   const to = ownerRecipients();
-  const subject = `[Neurovantage] Event: ${args.eventType}`;
+  const subject = `[Prime State Health] Event: ${args.eventType}`;
 
   const metaLines = args.meta
     ? Object.entries(args.meta)
@@ -138,7 +138,7 @@ export async function sendEventNotificationEmail(args: {
         .join("\n")
     : "none";
 
-  const text = `Neurovantage event recorded.
+  const text = `Prime State Health event recorded.
 
 Type: ${args.eventType}
 Time: ${args.occurredAtISO}

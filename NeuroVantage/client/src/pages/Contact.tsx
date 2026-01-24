@@ -9,7 +9,7 @@ export default function Contact() {
         <Card className="p-8 md:p-10 shadow-sm border-0 bg-white space-y-4 text-center">
           <p className="text-sm uppercase tracking-[0.35em] text-primary">Contact</p>
           <h1 className="text-2xl md:text-3xl font-display font-bold text-slate-900">
-            Talk to the NeuroVantage team
+            Talk to the Prime State Health team
           </h1>
           <p className="text-sm text-muted-foreground">
             Email us and we will respond with scheduling options and integration details.

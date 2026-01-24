@@ -71,7 +71,7 @@ export default function BloodTesting() {
             </li>
             <li className="flex gap-2">
               <span className="text-primary font-semibold">•</span>
-              <span>Integrates lab findings into the NeuroVantage cognitive summary.</span>
+              <span>Integrates lab findings into the Prime State Health cognitive summary.</span>
             </li>
           </ul>
         </div>
@@ -114,7 +114,7 @@ export default function BloodTesting() {
             <p className="text-sm font-semibold text-primary uppercase tracking-[0.3em]">New</p>
             <h3 className="text-lg font-semibold text-slate-900 mt-2">Metabolomics pilot coming soon</h3>
             <p className="text-sm text-muted-foreground mt-1">
-              Pair deep LC/MS metabolite panels with NeuroVantage cognitive biomarkers for longitudinal tracking.
+              Pair deep LC/MS metabolite panels with Prime State Health cognitive biomarkers for longitudinal tracking.
             </p>
             <Button variant="ghost" className="px-0 text-primary mt-2 hover:bg-transparent" asChild>
               <Link href="/blood-testing/metabolomics">{CTA_LABELS.exploreMetabolomics}</Link>

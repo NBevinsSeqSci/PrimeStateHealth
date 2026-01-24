@@ -1,7 +1,7 @@
 You are an expert full-stack engineer and product designer with experience in digital cognitive assessment, Alzheimer’s disease clinical trials, and wellness-clinic workflows.
 
 YOUR TASK
-Build a complete specification and implementation plan (and, if appropriate, code) for a web-based cognitive assessment and reporting system called **Neurovantage**.
+Build a complete specification and implementation plan (and, if appropriate, code) for a web-based cognitive assessment and reporting system called **Prime State Health**.
 
 High-level goals:
 - Runs as a browser-based app (tablet- and desktop-friendly).
@@ -247,7 +247,7 @@ User session flow (single visit):
      - Orientation mini-screen score.
 
    AD-style composites:
-   - NV_EMC (Neurovantage Episodic Memory Composite):
+   - NV_EMC (Prime State Health Episodic Memory Composite):
      - Average of key episodic memory z-scores (list learning, delayed recall, optional story, recognition).
    - NV_PSA (Processing Speed / Attention):
      - Combination of symbol coding, Trails A, CPT metrics.
@@ -358,7 +358,7 @@ GLOBAL DISCLAIMER (prepend exactly):
 
 "IMPORTANT INFORMATION AND DISCLAIMER
 
-This Neurovantage Cognitive Assessment Report is provided by {{clinic_name}} for informational and educational purposes only. It is based on computerized cognitive tasks, health questionnaires, and self-reported history. The results reflect performance at a single point in time and may be influenced by factors such as sleep, mood, pain, medications, motivation, and technical issues.
+This Prime State Health Cognitive Assessment Report is provided by {{clinic_name}} for informational and educational purposes only. It is based on computerized cognitive tasks, health questionnaires, and self-reported history. The results reflect performance at a single point in time and may be influenced by factors such as sleep, mood, pain, medications, motivation, and technical issues.
 
 This report:
 • Does NOT provide a medical diagnosis or rule out any medical, neurological, or psychiatric condition, including Alzheimer’s disease or other causes of cognitive change.
@@ -373,7 +373,7 @@ Do NOT ignore or delay seeking medical advice because of something you read in t
 
 A. Patient Summary:
 - Header:
-  - Clinic name, Neurovantage branding, patient name, DOB, date, provider.
+  - Clinic name, Prime State Health branding, patient name, DOB, date, provider.
 - Overall cognitive profile:
   - Radar/spider chart of 8+ domains with 0–100 standardized scores.
   - Color bands: green (strength), yellow (typical), red (needs support).

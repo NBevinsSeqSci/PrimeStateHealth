@@ -280,7 +280,7 @@ export default function ClinicReport({ params }: ClinicReportProps) {
               <CardHeader>
                 <CardTitle className="text-lg">Metabolic Pathways</CardTitle>
                 <p className="text-sm text-muted-foreground">
-                  NeuroVantage pathway framework (A–G) summarizing metabolomics-derived engines, stress signatures, and overlays.
+                  Prime State Health pathway framework (A–G) summarizing metabolomics-derived engines, stress signatures, and overlays.
                 </p>
               </CardHeader>
               <CardContent className="space-y-4">

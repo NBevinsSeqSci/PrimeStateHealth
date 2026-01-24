@@ -11,7 +11,7 @@ export function QualificationBlock({ className }: QualificationBlockProps) {
         <div className="space-y-1">
           <h3 className="text-sm font-semibold text-slate-900">Designed for</h3>
           <p className="text-xs text-slate-500">
-            NeuroVantage is built for clinic workflows and longitudinal tracking—not diagnostic neuropsych testing.
+            Prime State Health is built for clinic workflows and longitudinal tracking—not diagnostic neuropsych testing.
           </p>
         </div>
         <ul className="space-y-2 text-sm text-slate-700">

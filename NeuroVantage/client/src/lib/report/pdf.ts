@@ -6,14 +6,14 @@ const escapePdfText = (text: string) =>
     .replace(/\r?\n/g, " ");
 
 export const createPdfBlobFromLines = (lines: string[]) => {
-  const sanitizedLines = lines.length ? lines : ["Neurovantage Report"];
+  const sanitizedLines = lines.length ? lines : ["Prime State Health Report"];
   const linesPerPage = 44;
   const pages: string[][] = [];
   for (let i = 0; i < sanitizedLines.length; i += linesPerPage) {
     pages.push(sanitizedLines.slice(i, i + linesPerPage));
   }
   if (pages.length === 0) {
-    pages.push(["Neurovantage Report"]);
+    pages.push(["Prime State Health Report"]);
   }
 
   const pdfObjects: string[] = [];

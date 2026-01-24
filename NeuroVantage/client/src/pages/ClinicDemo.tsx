@@ -16,7 +16,7 @@ export default function ClinicDemo() {
             CLINIC DEMO
           </p>
           <h1 className="text-2xl md:text-3xl font-semibold text-slate-900 text-center max-w-3xl mx-auto">
-            Experience the NeuroVantage cognitive screener as your patients do.
+            Experience the Prime State Health cognitive screener as your patients do.
           </h1>
           <p className="mt-3 text-sm md:text-base text-slate-600 text-center max-w-3xl mx-auto">
             Walk through a trimmed-down demo flow, see an example report, and understand how the full clinic version fits into your workflow.
