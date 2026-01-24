@@ -25,15 +25,15 @@ export default function TermsPage() {
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-white">1) Agreement</h2>
           <p>
-            By accessing or using PrimeState Health (the "Service"), you agree
-            to these Terms of Service ("Terms"). If you do not agree, do not use
+            By accessing or using PrimeState Health (the &quot;Service&quot;), you agree
+            to these Terms of Service (&quot;Terms&quot;). If you do not agree, do not use
             the Service.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-white">
-            2) What the Service is (and isn't)
+            2) What the Service is (and isn&apos;t)
           </h2>
           <p>
             The Service provides tools for measurement and trend tracking (for
@@ -61,7 +61,7 @@ export default function TermsPage() {
           <ul className="list-disc space-y-2 pl-5">
             <li>
               You may need an account to use parts of the Service. We may use
-              passwordless "magic links" sent to your email.
+              passwordless &quot;magic links&quot; sent to your email.
             </li>
             <li>
               You are responsible for maintaining the confidentiality of access
@@ -177,7 +177,7 @@ export default function TermsPage() {
             12) Disclaimer of warranties
           </h2>
           <p>
-            THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM
+            THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot; TO THE MAXIMUM
             EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR
             IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
             FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT
@@ -214,7 +214,7 @@ export default function TermsPage() {
             You agree to defend, indemnify, and hold harmless PrimeState Health
             and its affiliates, officers, employees, agents, and suppliers from
             any claims, liabilities, damages, losses, and expenses (including
-            reasonable attorneys' fees) arising out of or related to your use
+            reasonable attorneys&apos; fees) arising out of or related to your use
             of the Service, your violation of these Terms, or your violation of
             any rights of another.
           </p>
@@ -226,7 +226,7 @@ export default function TermsPage() {
           </h2>
           <p>
             Before filing a claim, you agree to contact us to try to resolve
-            the dispute informally. If we can't resolve it, disputes will be
+            the dispute informally. If we can&apos;t resolve it, disputes will be
             resolved in the courts located in the jurisdiction where PrimeState
             Health is organized (unless applicable law requires otherwise).
           </p>

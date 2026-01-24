@@ -47,7 +47,7 @@ export default function SignUpForm() {
       </label>
       <p className="mt-3 text-2xl font-semibold text-white">Start the free check-in.</p>
       <p className="mt-2 text-sm text-slate-300">
-        Enter your email to get a secure link. You'll be able to start right away.
+        Enter your email to get a secure link. You&apos;ll be able to start right away.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row">
         <input

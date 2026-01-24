@@ -14,7 +14,7 @@ export default function SignupPage() {
             Create your secure link to begin the free check-in.
           </p>
           <p className="text-sm text-slate-300">
-            We'll email you a secure sign-in link. No password needed.
+            We&apos;ll email you a secure sign-in link. No password needed.
           </p>
           <Link
             href="/try"

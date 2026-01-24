@@ -169,7 +169,9 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Children's privacy</h2>
+          <h2 className="text-xl font-semibold text-white md:text-2xl">
+            Children&apos;s privacy
+          </h2>
           <p>
             PrimeState Health is not intended for children under 13 (or the minimum age required in
             your jurisdiction). We do not knowingly collect information from children.

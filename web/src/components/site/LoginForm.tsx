@@ -46,7 +46,7 @@ export default function LoginForm() {
         Access your account
       </p>
       <p className="mt-2 text-sm text-slate-300">
-        We'll email you a secure link. No password required.
+        We&apos;ll email you a secure link. No password required.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row">
         <input
