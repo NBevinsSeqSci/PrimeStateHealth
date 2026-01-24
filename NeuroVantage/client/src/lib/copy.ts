@@ -1,0 +1,18 @@
+export const CTA_LABELS = {
+  freeScreener: "Start free screener",
+  startAssessment: "Start assessment",
+  beginAssessment: "Begin assessment",
+  continue: "Continue",
+  talkToUs: "Talk to us",
+  emailUs: "Email us",
+  clinicDemo: "See clinic demo",
+  launchDemoScreener: "Launch demo screener",
+  viewSampleReport: "View sample report",
+  accessFullTest: "Start full assessment",
+  notifyMe: "Notify me",
+  joinWaitlist: "Join waitlist",
+  exploreMetabolomics: "Explore metabolomics",
+  reservePilotSlot: "Reserve pilot slot",
+  backToBloodTesting: "Back to blood testing",
+  previewMetabolomics: "Preview metabolomics",
+} as const;

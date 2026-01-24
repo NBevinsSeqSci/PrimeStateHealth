@@ -1,0 +1,8035 @@
+{
+  "uids": [
+    "421996",
+    "6309158",
+    "7386330",
+    "9194521",
+    "10634967",
+    "10674802",
+    "10719244",
+    "10726605",
+    "11296689",
+    "11556941",
+    "11773860",
+    "11918279",
+    "12675874",
+    "15512798",
+    "16139832",
+    "16717171",
+    "18281923",
+    "20526369",
+    "21889116",
+    "22065088",
+    "23129134",
+    "23300845",
+    "24886908",
+    "25037503",
+    "25910198",
+    "26060999",
+    "26221519",
+    "26769378",
+    "26823439",
+    "26895884",
+    "27124720",
+    "27524289",
+    "27713359",
+    "28206827",
+    "28446889",
+    "29202363",
+    "29213956",
+    "29248242",
+    "30124583",
+    "30445289",
+    "30449684",
+    "31058257",
+    "31294795",
+    "31488951",
+    "31683880",
+    "31683910",
+    "31736978",
+    "32139353",
+    "33064660",
+    "33071282",
+    "33338598",
+    "33592770",
+    "34258650",
+    "34940595",
+    "34943431",
+    "34954532",
+    "35710135",
+    "36653422",
+    "37612403",
+    "38375486",
+    "39046504"
+  ],
+  "421996": {
+    "uid": "421996",
+    "pubdate": "1979 Apr",
+    "epubdate": "",
+    "source": "Gastroenterology",
+    "authors": [
+      {
+        "name": "Tanaka J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ozawa K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tobe T",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Tobe T",
+    "title": "Significance of blood ketone body ratio as an indicator of hepatic cellular energy status in jaundiced rabbits.",
+    "sorttitle": "significance of blood ketone body ratio as an indicator of hepatic cellular energy status in jaundiced rabbits",
+    "volume": "76",
+    "issue": "4",
+    "pages": "691-6",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0374630",
+    "issn": "0016-5085",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "421996"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0016508579000640"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "1979/04/01 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "1979/04/01 00:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "1979/04/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Gastroenterology",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1979/04/01 00:00",
+    "sortfirstauthor": "Tanaka J",
+    "vernaculartitle": ""
+  },
+  "6309158": {
+    "uid": "6309158",
+    "pubdate": "1983",
+    "epubdate": "",
+    "source": "Biomed Biochim Acta",
+    "authors": [
+      {
+        "name": "Sch\u00f6nfeld P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bohnensack R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "B\u00f6hme G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kunz W",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Kunz W",
+    "title": "Influence of the beta-hydroxybutyrate/acetoacetate ratio on the redox states of mitochondrial NAD(P) and cytochrome c systems, extramitochondrial ATP/ADP ratio and the respiration of isolated liver mitochondria in the resting state.",
+    "sorttitle": "influence of the beta hydroxybutyrate acetoacetate ratio on the redox states of mitochondrial nad p and cytochrome c systems extramitochondrial atp adp ratio and the respiration of isolated liver mitochondria in the resting state",
+    "volume": "42",
+    "issue": "1",
+    "pages": "3-13",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8304435",
+    "issn": "0232-766X",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "6309158"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "1983/01/01 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "1983/01/01 00:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "1983/01/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Biomedica biochimica acta",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1983/01/01 00:00",
+    "sortfirstauthor": "Sch\u00f6nfeld P",
+    "vernaculartitle": ""
+  },
+  "7386330": {
+    "uid": "7386330",
+    "pubdate": "1980",
+    "epubdate": "",
+    "source": "Acta Vet Scand",
+    "authors": [
+      {
+        "name": "Ty\u00f6pp\u00f6nen J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kauppinen K",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Kauppinen K",
+    "title": "The stability and automatic determination of ketone bodies in blood samples taken in field conditions.",
+    "sorttitle": "stability and automatic determination of ketone bodies in blood samples taken in field conditions",
+    "volume": "21",
+    "issue": "1",
+    "pages": "55-61",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0370400",
+    "issn": "0044-605X",
+    "essn": "1751-0147",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "7386330"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC8317731"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC8317731;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1186/BF03546900"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "1980/01/01 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "1980/01/01 00:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "1980/01/01 00:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "1980/03/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 10,
+    "fulljournalname": "Acta veterinaria Scandinavica",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1980/01/01 00:00",
+    "sortfirstauthor": "Ty\u00f6pp\u00f6nen J",
+    "vernaculartitle": ""
+  },
+  "9194521": {
+    "uid": "9194521",
+    "pubdate": "1997 May",
+    "epubdate": "",
+    "source": "FASEB J",
+    "authors": [
+      {
+        "name": "Klaassen CD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Boles JW",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Boles JW",
+    "title": "Sulfation and sulfotransferases 5: the importance of 3'-phosphoadenosine 5'-phosphosulfate (PAPS) in the regulation of sulfation.",
+    "sorttitle": "sulfation and sulfotransferases 5 the importance of 3 phosphoadenosine 5 phosphosulfate paps in the regulation of sulfation",
+    "volume": "11",
+    "issue": "6",
+    "pages": "404-18",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8804484",
+    "issn": "0892-6638",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "9194521"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1096/fasebj.11.6.9194521"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "1997/05/01 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "1997/05/01 00:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "1997/05/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1997/05/01 00:00",
+    "sortfirstauthor": "Klaassen CD",
+    "vernaculartitle": ""
+  },
+  "10634967": {
+    "uid": "10634967",
+    "pubdate": "1999 Nov-Dec",
+    "epubdate": "",
+    "source": "Diabetes Metab Res Rev",
+    "authors": [
+      {
+        "name": "Laffel L",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Laffel L",
+    "title": "Ketone bodies: a review of physiology, pathophysiology and application of monitoring to diabetes.",
+    "sorttitle": "ketone bodies a review of physiology pathophysiology and application of monitoring to diabetes",
+    "volume": "15",
+    "issue": "6",
+    "pages": "412-26",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "100883450",
+    "issn": "1520-7552",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "10634967"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1002/(sici)1520-7560(199911/12)15:6<412::aid-dmrr72>3.0.co;2-8"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1002/(SICI)1520-7560(199911/12)15:6<412::AID-DMRR72>3.0.CO;2-8"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2000/01/15 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2000/02/26 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2000/01/15 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Diabetes/metabolism research and reviews",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1999/11/01 00:00",
+    "sortfirstauthor": "Laffel L",
+    "vernaculartitle": ""
+  },
+  "10674802": {
+    "uid": "10674802",
+    "pubdate": "2000 Jan",
+    "epubdate": "",
+    "source": "Neuropsychology",
+    "authors": [
+      {
+        "name": "Salthouse TA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Toth J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Daniels K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Parks C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Pak R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wolbrette M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hocking KJ",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Hocking KJ",
+    "title": "Effects of aging on efficiency of task switching in a variant of the trail making test.",
+    "sorttitle": "effects of aging on efficiency of task switching in a variant of the trail making test",
+    "volume": "14",
+    "issue": "1",
+    "pages": "102-11",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8904467",
+    "issn": "0894-4105",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "10674802"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2000/02/16 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2000/03/25 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2000/02/16 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Neuropsychology",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2000/01/01 00:00",
+    "sortfirstauthor": "Salthouse TA",
+    "vernaculartitle": ""
+  },
+  "10719244": {
+    "uid": "10719244",
+    "pubdate": "2000 Feb 15",
+    "epubdate": "",
+    "source": "Free Radic Biol Med",
+    "authors": [
+      {
+        "name": "Jones DP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Carlson JL",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mody VC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cai J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lynn MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sternberg P",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Sternberg P",
+    "title": "Redox state of glutathione in human plasma.",
+    "sorttitle": "redox state of glutathione in human plasma",
+    "volume": "28",
+    "issue": "4",
+    "pages": "625-35",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8709159",
+    "issn": "0891-5849",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "10719244"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/s0891-5849(99)00275-0"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0891-5849(99)00275-0"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2000/03/17 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2000/04/29 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2000/03/17 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Free radical biology & medicine",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2000/02/15 00:00",
+    "sortfirstauthor": "Jones DP",
+    "vernaculartitle": ""
+  },
+  "10726605": {
+    "uid": "10726605",
+    "pubdate": "1999 Aug",
+    "epubdate": "",
+    "source": "Clin Neuropsychol",
+    "authors": [
+      {
+        "name": "Shapiro AM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Benedict RH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schretlen D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Brandt J",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Brandt J",
+    "title": "Construct and concurrent validity of the Hopkins Verbal Learning Test-revised.",
+    "sorttitle": "construct and concurrent validity of the hopkins verbal learning test revised",
+    "volume": "13",
+    "issue": "3",
+    "pages": "348-58",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8806548",
+    "issn": "1385-4046",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "10726605"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1076/clin.13.3.348.1749"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2000/03/22 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2000/05/08 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2000/03/22 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "The Clinical neuropsychologist",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "1999/08/01 00:00",
+    "sortfirstauthor": "Shapiro AM",
+    "vernaculartitle": ""
+  },
+  "11556941": {
+    "uid": "11556941",
+    "pubdate": "2001 Sep",
+    "epubdate": "",
+    "source": "J Gen Intern Med",
+    "authors": [
+      {
+        "name": "Kroenke K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Spitzer RL",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Williams JB",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Williams JB",
+    "title": "The PHQ-9: validity of a brief depression severity measure.",
+    "sorttitle": "phq 9 validity of a brief depression severity measure",
+    "volume": "16",
+    "issue": "9",
+    "pages": "606-13",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8605834",
+    "issn": "0884-8734",
+    "essn": "1525-1497",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "11556941"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC1495268"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC1495268;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1046/j.1525-1497.2001.016009606.x"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "jgi01114"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2001/09/15 10:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2001/10/26 10:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2001/09/15 10:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2002/09/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 25,
+    "fulljournalname": "Journal of general internal medicine",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2001/09/01 00:00",
+    "sortfirstauthor": "Kroenke K",
+    "vernaculartitle": ""
+  },
+  "11773860": {
+    "uid": "11773860",
+    "pubdate": "2002 Jan",
+    "epubdate": "",
+    "source": "Pharmacogenetics",
+    "authors": [
+      {
+        "name": "Xu ZH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Freimuth RR",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Eckloff B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wieben E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Weinshilboum RM",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Weinshilboum RM",
+    "title": "Human 3'-phosphoadenosine 5'-phosphosulfate synthetase 2 (PAPSS2) pharmacogenetics: gene resequencing, genetic polymorphisms and functional characterization of variant allozymes.",
+    "sorttitle": "human 3 phosphoadenosine 5 phosphosulfate synthetase 2 papss2 pharmacogenetics gene resequencing genetic polymorphisms and functional characterization of variant allozymes",
+    "volume": "12",
+    "issue": "1",
+    "pages": "11-21",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9211735",
+    "issn": "0960-314X",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "11773860"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1097/00008571-200201000-00003"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2002/01/05 10:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2002/03/26 10:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2002/01/05 10:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Pharmacogenetics",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2002/01/01 00:00",
+    "sortfirstauthor": "Xu ZH",
+    "vernaculartitle": ""
+  },
+  "11918279": {
+    "uid": "11918279",
+    "pubdate": "2001 Dec",
+    "epubdate": "",
+    "source": "Clin Exp Med",
+    "authors": [
+      {
+        "name": "Laun RA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rapsch B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Abel W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schr\u00f6der O",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "R\u00f6her HD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ekkernkamp A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schulte KM",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Schulte KM",
+    "title": "The determination of ketone bodies: preanalytical, analytical and physiological considerations.",
+    "sorttitle": "determination of ketone bodies preanalytical analytical and physiological considerations",
+    "volume": "1",
+    "issue": "4",
+    "pages": "201-9",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "100973405",
+    "issn": "1591-8890",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "11918279"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1007/s102380100004"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2002/03/29 10:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2002/06/06 10:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2002/03/29 10:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Clinical and experimental medicine",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2001/12/01 00:00",
+    "sortfirstauthor": "Laun RA",
+    "vernaculartitle": ""
+  },
+  "12675874": {
+    "uid": "12675874",
+    "pubdate": "2003 May",
+    "epubdate": "",
+    "source": "Kidney Int",
+    "authors": [
+      {
+        "name": "Vanholder R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "De Smet R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Glorieux G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Argil\u00e9s A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Baurmeister U",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Brunet P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Clark W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cohen G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "De Deyn PP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Deppisch R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Descamps-Latscha B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Henle T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "J\u00f6rres A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lemke HD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Massy ZA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Passlick-Deetjen J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rodriguez M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stegmayr B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stenvinkel P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tetta C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wanner C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zidek W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "European Uremic Toxin Work Group (EUTox)",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Zidek W",
+    "title": "Review on uremic toxins: classification, concentration, and interindividual variability.",
+    "sorttitle": "review on uremic toxins classification concentration and interindividual variability",
+    "volume": "63",
+    "issue": "5",
+    "pages": "1934-43",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0323470",
+    "issn": "0085-2538",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "12675874"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1046/j.1523-1755.2003.00924.x"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0085-2538(15)49088-X"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2003/04/05 05:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2003/12/18 05:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2003/04/05 05:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "Kidney Int. 2020 Nov;98(5):1354. doi: 10.1016/j.kint.2020.10.001.",
+        "reftype": "Erratum in",
+        "pmid": 33126986,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Kidney international",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2003/05/01 00:00",
+    "sortfirstauthor": "Vanholder R",
+    "vernaculartitle": ""
+  },
+  "15512798": {
+    "uid": "15512798",
+    "pubdate": "2004 Oct",
+    "epubdate": "",
+    "source": "Free Radic Res",
+    "authors": [
+      {
+        "name": "Giustarini D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Dalle-Donne I",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Colombo R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Milzani A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rossi R",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Rossi R",
+    "title": "Interference of plasmatic reduced glutathione and hemolysis on glutathione disulfide levels in human blood.",
+    "sorttitle": "interference of plasmatic reduced glutathione and hemolysis on glutathione disulfide levels in human blood",
+    "volume": "38",
+    "issue": "10",
+    "pages": "1101-6",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9423872",
+    "issn": "1071-5762",
+    "essn": "1029-2470",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "15512798"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1080/10715760400008854"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "UVNN06YMT2W97WMT"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2004/10/30 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2005/03/18 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2004/10/30 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Free radical research",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2004/10/01 00:00",
+    "sortfirstauthor": "Giustarini D",
+    "vernaculartitle": ""
+  },
+  "16139832": {
+    "uid": "16139832",
+    "pubdate": "2005 Nov",
+    "epubdate": "2005 Sep 1",
+    "source": "Clin Biochem",
+    "authors": [
+      {
+        "name": "Tavazzi B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lazzarino G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Leone P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Amorini AM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bellia F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Janson CG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Di Pietro V",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ceccarelli L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Donzelli S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Francis JS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Giardina B",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Giardina B",
+    "title": "Simultaneous high performance liquid chromatographic separation of purines, pyrimidines, N-acetylated amino acids, and dicarboxylic acids for the chemical diagnosis of inborn errors of metabolism.",
+    "sorttitle": "simultaneous high performance liquid chromatographic separation of purines pyrimidines n acetylated amino acids and dicarboxylic acids for the chemical diagnosis of inborn errors of metabolism",
+    "volume": "38",
+    "issue": "11",
+    "pages": "997-1008",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0133660",
+    "issn": "0009-9120",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "16139832"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.clinbiochem.2005.08.002"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0009-9120(05)00228-6"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2005/05/19 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2005/07/11 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2005/08/04 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2005/09/06 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2006/02/07 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2005/09/06 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Clinical biochemistry",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2005/11/01 00:00",
+    "sortfirstauthor": "Tavazzi B",
+    "vernaculartitle": ""
+  },
+  "16717171": {
+    "uid": "16717171",
+    "pubdate": "2006 May 22",
+    "epubdate": "",
+    "source": "Arch Intern Med",
+    "authors": [
+      {
+        "name": "Spitzer RL",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kroenke K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Williams JB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "L\u00f6we B",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "L\u00f6we B",
+    "title": "A brief measure for assessing generalized anxiety disorder: the GAD-7.",
+    "sorttitle": "brief measure for assessing generalized anxiety disorder the gad 7",
+    "volume": "166",
+    "issue": "10",
+    "pages": "1092-7",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0372440",
+    "issn": "0003-9926",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Multicenter Study"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "16717171"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1001/archinte.166.10.1092"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "166/10/1092"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2006/05/24 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2006/06/16 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2006/05/24 09:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "Evid Based Med. 2006 Dec;11(6):184. doi: 10.1136/ebm.11.6.184.",
+        "reftype": "Comment in",
+        "pmid": 17213178,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Archives of internal medicine",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2006/05/22 00:00",
+    "sortfirstauthor": "Spitzer RL",
+    "vernaculartitle": ""
+  },
+  "18281923": {
+    "uid": "18281923",
+    "pubdate": "2008 Feb",
+    "epubdate": "",
+    "source": "Genet Med",
+    "authors": [
+      {
+        "name": "Rinaldo P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cowan TM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Matern D",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Matern D",
+    "title": "Acylcarnitine profile analysis.",
+    "sorttitle": "acylcarnitine profile analysis",
+    "volume": "10",
+    "issue": "2",
+    "pages": "151-6",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9815831",
+    "issn": "1098-3600",
+    "essn": "1530-0366",
+    "pubtype": [
+      "Guideline",
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "18281923"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1097/GIM.0b013e3181614289"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1098-3600(21)02901-4"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2008/02/19 09:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2008/03/28 09:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2008/02/19 09:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Genetics in medicine : official journal of the American College of Medical Genetics",
+    "elocationid": "doi: 10.1097/GIM.0b013e3181614289",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2008/02/01 00:00",
+    "sortfirstauthor": "Rinaldo P",
+    "vernaculartitle": ""
+  },
+  "20526369": {
+    "uid": "20526369",
+    "pubdate": "2010 May 28",
+    "epubdate": "2010 May 28",
+    "source": "PLoS One",
+    "authors": [
+      {
+        "name": "Gall WE",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Beebe K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lawton KA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Adam KP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mitchell MW",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nakhle PJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ryals JA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Milburn MV",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nannipieri M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Camastra S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Natali A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ferrannini E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "RISC Study Group",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Ferrannini E",
+    "title": "alpha-hydroxybutyrate is an early biomarker of insulin resistance and glucose intolerance in a nondiabetic population.",
+    "sorttitle": "alpha hydroxybutyrate is an early biomarker of insulin resistance and glucose intolerance in a nondiabetic population",
+    "volume": "5",
+    "issue": "5",
+    "pages": "e10883",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101285081",
+    "issn": "",
+    "essn": "1932-6203",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "20526369"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC2878333"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC2878333;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1371/journal.pone.0010883"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2010/02/25 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2010/04/14 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2010/06/08 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2010/06/09 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2010/09/08 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2010/05/28 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 41,
+    "fulljournalname": "PloS one",
+    "elocationid": "doi: 10.1371/journal.pone.0010883",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2010/05/28 00:00",
+    "sortfirstauthor": "Gall WE",
+    "vernaculartitle": ""
+  },
+  "22065088": {
+    "uid": "22065088",
+    "pubdate": "2012 Feb",
+    "epubdate": "2011 Nov 8",
+    "source": "Diabetologia",
+    "authors": [
+      {
+        "name": "Shah SH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Crosslin DR",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Haynes CS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nelson S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Turer CB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stevens RD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Muehlbauer MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wenner BR",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bain JR",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Laferr\u00e8re B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gorroochurn P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Teixeira J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Brantley PJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stevens VJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hollis JF",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Appel LJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lien LF",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Batch B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Newgard CB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Svetkey LP",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Svetkey LP",
+    "title": "Branched-chain amino acid levels are associated with improvement in insulin resistance with weight loss.",
+    "sorttitle": "branched chain amino acid levels are associated with improvement in insulin resistance with weight loss",
+    "volume": "55",
+    "issue": "2",
+    "pages": "321-30",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0006777",
+    "issn": "0012-186X",
+    "essn": "1432-0428",
+    "pubtype": [
+      "Journal Article",
+      "Multicenter Study",
+      "Randomized Controlled Trial"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "22065088"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS466006"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC3667157"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC3667157;manuscript-id: NIHMS466006;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1007/s00125-011-2356-5"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2011/08/18 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2011/09/28 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2011/11/09 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2011/11/09 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2012/06/20 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2013/05/29 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 21,
+    "fulljournalname": "Diabetologia",
+    "elocationid": "doi: 10.1007/s00125-011-2356-5",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2012/02/01 00:00",
+    "sortfirstauthor": "Shah SH",
+    "vernaculartitle": ""
+  },
+  "23129134": {
+    "uid": "23129134",
+    "pubdate": "2013 Mar",
+    "epubdate": "2012 Nov 5",
+    "source": "Diabetes Care",
+    "authors": [
+      {
+        "name": "W\u00fcrtz P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Soininen P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kangas AJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "R\u00f6nnemaa T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lehtim\u00e4ki T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "K\u00e4h\u00f6nen M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Viikari JS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Raitakari OT",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ala-Korpela M",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Ala-Korpela M",
+    "title": "Branched-chain and aromatic amino acids are predictors of insulin resistance in young adults.",
+    "sorttitle": "branched chain and aromatic amino acids are predictors of insulin resistance in young adults",
+    "volume": "36",
+    "issue": "3",
+    "pages": "648-55",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "7805975",
+    "issn": "0149-5992",
+    "essn": "1935-5548",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "23129134"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC3579331"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC3579331;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.2337/dc12-0895"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "dc12-0895"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2012/11/07 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2012/11/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2013/09/05 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2014/03/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 35,
+    "fulljournalname": "Diabetes care",
+    "elocationid": "doi: 10.2337/dc12-0895",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2013/03/01 00:00",
+    "sortfirstauthor": "W\u00fcrtz P",
+    "vernaculartitle": ""
+  },
+  "23300845": {
+    "uid": "23300845",
+    "pubdate": "2012",
+    "epubdate": "2012 Dec 31",
+    "source": "PLoS One",
+    "authors": [
+      {
+        "name": "Fuchs JE",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Huber RG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "von Grafenstein S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wallnoefer HG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Spitzer GM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fuchs D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Liedl KR",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Liedl KR",
+    "title": "Dynamic regulation of phenylalanine hydroxylase by simulated redox manipulation.",
+    "sorttitle": "dynamic regulation of phenylalanine hydroxylase by simulated redox manipulation",
+    "volume": "7",
+    "issue": "12",
+    "pages": "e53005",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101285081",
+    "issn": "",
+    "essn": "1932-6203",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "23300845"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC3534100"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC3534100;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1371/journal.pone.0053005"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "PONE-D-12-32595"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2012/10/22 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2012/11/26 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2013/01/10 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2013/01/10 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2013/06/26 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2012/12/31 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 73,
+    "fulljournalname": "PloS one",
+    "elocationid": "doi: 10.1371/journal.pone.0053005",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2012/01/01 00:00",
+    "sortfirstauthor": "Fuchs JE",
+    "vernaculartitle": ""
+  },
+  "25037503": {
+    "uid": "25037503",
+    "pubdate": "2014 Aug",
+    "epubdate": "2014 Jul 15",
+    "source": "Trends Biochem Sci",
+    "authors": [
+      {
+        "name": "Patra KC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hay N",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Hay N",
+    "title": "The pentose phosphate pathway and cancer.",
+    "sorttitle": "pentose phosphate pathway and cancer",
+    "volume": "39",
+    "issue": "8",
+    "pages": "347-54",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "7610674",
+    "issn": "0968-0004",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "25037503"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS614191"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4329227"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4329227;manuscript-id: NIHMS614191;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.tibs.2014.06.005"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0968-0004(14)00106-6"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2014/03/25 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2014/06/13 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2014/06/17 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2014/07/20 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2014/07/20 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2015/04/07 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2015/08/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 76,
+    "fulljournalname": "Trends in biochemical sciences",
+    "elocationid": "doi: 10.1016/j.tibs.2014.06.005",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2014/08/01 00:00",
+    "sortfirstauthor": "Patra KC",
+    "vernaculartitle": ""
+  },
+  "25910198": {
+    "uid": "25910198",
+    "pubdate": "2015",
+    "epubdate": "2015 Apr 24",
+    "source": "Appl Neuropsychol Adult",
+    "authors": [
+      {
+        "name": "Egeland J",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Egeland J",
+    "title": "Measuring Working Memory With Digit Span and the Letter-Number Sequencing Subtests From the WAIS-IV: Too Low Manipulation Load and Risk for Underestimating Modality Effects.",
+    "sorttitle": "measuring working memory with digit span and the letter number sequencing subtests from the wais iv too low manipulation load and risk for underestimating modality effects",
+    "volume": "22",
+    "issue": "6",
+    "pages": "445-51",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101584082",
+    "issn": "2327-9095",
+    "essn": "2327-9109",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "25910198"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1080/23279095.2014.992069"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2015/04/25 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2015/04/25 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2016/07/02 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Applied neuropsychology. Adult",
+    "elocationid": "doi: 10.1080/23279095.2014.992069",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2015/01/01 00:00",
+    "sortfirstauthor": "Egeland J",
+    "vernaculartitle": ""
+  },
+  "26221519": {
+    "uid": "26221519",
+    "pubdate": "2015 Jul",
+    "epubdate": "2015 Apr 21",
+    "source": "J Diabetes Investig",
+    "authors": [
+      {
+        "name": "Yamada C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kondo M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kishimoto N",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Shibata T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nagai Y",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Imanishi T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Oroguchi T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ishii N",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nishizaki Y",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Nishizaki Y",
+    "title": "Association between insulin resistance and plasma amino acid profile in non-diabetic Japanese subjects.",
+    "sorttitle": "association between insulin resistance and plasma amino acid profile in non diabetic japanese subjects",
+    "volume": "6",
+    "issue": "4",
+    "pages": "408-15",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101520702",
+    "issn": "2040-1116",
+    "essn": "2040-1124",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "26221519"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4511300"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4511300;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1111/jdi.12323"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2014/08/27 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2014/11/13 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2014/12/05 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2015/07/30 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2015/07/30 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2015/07/30 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2015/07/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 29,
+    "fulljournalname": "Journal of diabetes investigation",
+    "elocationid": "doi: 10.1111/jdi.12323",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2015/07/01 00:00",
+    "sortfirstauthor": "Yamada C",
+    "vernaculartitle": ""
+  },
+  "26769378": {
+    "uid": "26769378",
+    "pubdate": "2016 Feb",
+    "epubdate": "",
+    "source": "Heart",
+    "authors": [
+      {
+        "name": "Jasiewicz M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Moniuszko M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Pawlak D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Knapp M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rusak M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kazimierczyk R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Musial WJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Dabrowska M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kaminski KA",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Kaminski KA",
+    "title": "Activity of the kynurenine pathway and its interplay with immunity in patients with pulmonary arterial hypertension.",
+    "sorttitle": "activity of the kynurenine pathway and its interplay with immunity in patients with pulmonary arterial hypertension",
+    "volume": "102",
+    "issue": "3",
+    "pages": "230-7",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9602087",
+    "issn": "1355-6037",
+    "essn": "1468-201X",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "26769378"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1136/heartjnl-2015-308581"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "heartjnl-2015-308581"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2016/01/16 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2016/01/16 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2016/05/19 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Heart (British Cardiac Society)",
+    "elocationid": "doi: 10.1136/heartjnl-2015-308581",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2016/02/01 00:00",
+    "sortfirstauthor": "Jasiewicz M",
+    "vernaculartitle": ""
+  },
+  "26823439": {
+    "uid": "26823439",
+    "pubdate": "2016 Feb 15",
+    "epubdate": "2016 Jan 27",
+    "source": "Am J Epidemiol",
+    "authors": [
+      {
+        "name": "Zuo H",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ueland PM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ulvik A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Eussen SJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Vollset SE",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nyg\u00e5rd O",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Midttun \u00d8",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Theofylaktopoulou D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Meyer K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tell GS",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Tell GS",
+    "title": "Plasma Biomarkers of Inflammation, the Kynurenine Pathway, and Risks of All-Cause, Cancer, and Cardiovascular Disease Mortality: The Hordaland Health Study.",
+    "sorttitle": "plasma biomarkers of inflammation the kynurenine pathway and risks of all cause cancer and cardiovascular disease mortality the hordaland health study",
+    "volume": "183",
+    "issue": "4",
+    "pages": "249-58",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "7910653",
+    "issn": "0002-9262",
+    "essn": "1476-6256",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "26823439"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4753283"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4753283;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1093/aje/kwv242"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "kwv242"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2015/05/01 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2015/09/04 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2016/01/30 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2016/01/30 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2016/06/28 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2016/01/27 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 46,
+    "fulljournalname": "American journal of epidemiology",
+    "elocationid": "doi: 10.1093/aje/kwv242",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2016/02/15 00:00",
+    "sortfirstauthor": "Zuo H",
+    "vernaculartitle": ""
+  },
+  "26895884": {
+    "uid": "26895884",
+    "pubdate": "2016 Apr",
+    "epubdate": "2016 Feb 19",
+    "source": "Diabetes Care",
+    "authors": [
+      {
+        "name": "Lee CC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Watkins SM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lorenzo C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wagenknecht LE",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Il'yasova D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Chen YD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Haffner SM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hanley AJ",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Hanley AJ",
+    "title": "Branched-Chain Amino Acids and Insulin Metabolism: The Insulin Resistance Atherosclerosis Study (IRAS).",
+    "sorttitle": "branched chain amino acids and insulin metabolism the insulin resistance atherosclerosis study iras",
+    "volume": "39",
+    "issue": "4",
+    "pages": "582-8",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "7805975",
+    "issn": "0149-5992",
+    "essn": "1935-5548",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "26895884"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4806771"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4806771;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.2337/dc15-2284"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "dc15-2284"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2015/10/19 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2016/01/30 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2016/02/21 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2016/02/21 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2017/10/24 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2017/04/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 30,
+    "fulljournalname": "Diabetes care",
+    "elocationid": "doi: 10.2337/dc15-2284",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2016/04/01 00:00",
+    "sortfirstauthor": "Lee CC",
+    "vernaculartitle": ""
+  },
+  "27124720": {
+    "uid": "27124720",
+    "pubdate": "2016",
+    "epubdate": "2016 Apr 28",
+    "source": "PLoS One",
+    "authors": [
+      {
+        "name": "Strasser B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Geiger D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schauer M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gatterer H",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Burtscher M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fuchs D",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Fuchs D",
+    "title": "Effects of Exhaustive Aerobic Exercise on Tryptophan-Kynurenine Metabolism in Trained Athletes.",
+    "sorttitle": "effects of exhaustive aerobic exercise on tryptophan kynurenine metabolism in trained athletes",
+    "volume": "11",
+    "issue": "4",
+    "pages": "e0153617",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101285081",
+    "issn": "",
+    "essn": "1932-6203",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "27124720"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4849644"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4849644;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1371/journal.pone.0153617"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "PONE-D-16-05981"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2016/02/11 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2016/03/31 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2016/04/29 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2016/04/29 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2017/02/22 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2016/04/28 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 38,
+    "fulljournalname": "PloS one",
+    "elocationid": "doi: 10.1371/journal.pone.0153617",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2016/04/28 00:00",
+    "sortfirstauthor": "Strasser B",
+    "vernaculartitle": ""
+  },
+  "27524289": {
+    "uid": "27524289",
+    "pubdate": "2016 Sep",
+    "epubdate": "2016 Aug 15",
+    "source": "Bioanalysis",
+    "authors": [
+      {
+        "name": "Fuertig R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ceci A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Camus SM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bezard E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Luippold AH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hengerer B",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Hengerer B",
+    "title": "LC-MS/MS-based quantification of kynurenine metabolites, tryptophan, monoamines and neopterin in plasma, cerebrospinal fluid and brain.",
+    "sorttitle": "lc ms ms based quantification of kynurenine metabolites tryptophan monoamines and neopterin in plasma cerebrospinal fluid and brain",
+    "volume": "8",
+    "issue": "18",
+    "pages": "1903-17",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101512484",
+    "issn": "1757-6180",
+    "essn": "1757-6199",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "27524289"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.4155/bio-2016-0111"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2016/08/16 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2016/08/16 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2017/01/14 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Bioanalysis",
+    "elocationid": "doi: 10.4155/bio-2016-0111",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2016/09/01 00:00",
+    "sortfirstauthor": "Fuertig R",
+    "vernaculartitle": ""
+  },
+  "28446889": {
+    "uid": "28446889",
+    "pubdate": "2017",
+    "epubdate": "2017 Apr 12",
+    "source": "Front Psychol",
+    "authors": [
+      {
+        "name": "Scarpina F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tagini S",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Tagini S",
+    "title": "The Stroop Color and Word Test.",
+    "sorttitle": "stroop color and word test",
+    "volume": "8",
+    "issue": "",
+    "pages": "557",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101550902",
+    "issn": "1664-1078",
+    "essn": "1664-1078",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "28446889"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC5388755"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC5388755;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3389/fpsyg.2017.00557"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2016/11/10 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2017/03/27 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2017/04/28 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2017/04/28 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2017/04/28 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2017/04/12 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 65,
+    "fulljournalname": "Frontiers in psychology",
+    "elocationid": "doi: 10.3389/fpsyg.2017.00557",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2017/04/12 00:00",
+    "sortfirstauthor": "Scarpina F",
+    "vernaculartitle": ""
+  },
+  "29202363": {
+    "uid": "29202363",
+    "pubdate": "2018 Jan 1",
+    "epubdate": "2017 Dec 2",
+    "source": "J Chromatogr B Analyt Technol Biomed Life Sci",
+    "authors": [
+      {
+        "name": "Guo C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Xie C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ding P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Qin G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mo W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cao X",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zheng S",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Zheng S",
+    "title": "Quantification of glycocholic acid in human serum by stable isotope dilution ultra performance liquid chromatography electrospray ionization tandem mass spectrometry.",
+    "sorttitle": "quantification of glycocholic acid in human serum by stable isotope dilution ultra performance liquid chromatography electrospray ionization tandem mass spectrometry",
+    "volume": "1072",
+    "issue": "",
+    "pages": "315-319",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101139554",
+    "issn": "1570-0232",
+    "essn": "1873-376X",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "29202363"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.jchromb.2017.11.037"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1570-0232(17)31242-4"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2017/07/18 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2017/11/23 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2017/11/27 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2017/12/05 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2018/02/22 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2017/12/05 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+    "elocationid": "doi: 10.1016/j.jchromb.2017.11.037",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2018/01/01 00:00",
+    "sortfirstauthor": "Guo C",
+    "vernaculartitle": ""
+  },
+  "29248242": {
+    "uid": "29248242",
+    "pubdate": "2018 Nov",
+    "epubdate": "2017 Dec 13",
+    "source": "J Vasc Surg",
+    "authors": [
+      {
+        "name": "Cason CA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Dolan KT",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sharma G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tao M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kulkarni R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Helenowski IB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Doane BM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Avram MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "McDermott MM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Chang EB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ozaki CK",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ho KJ",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Ho KJ",
+    "title": "Plasma microbiome-modulated indole- and phenyl-derived metabolites associate with advanced atherosclerosis and postoperative outcomes.",
+    "sorttitle": "plasma microbiome modulated indole and phenyl derived metabolites associate with advanced atherosclerosis and postoperative outcomes",
+    "volume": "68",
+    "issue": "5",
+    "pages": "1552-1562.e7",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8407742",
+    "issn": "0741-5214",
+    "essn": "1097-6809",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "29248242"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS928080"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC5999545"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC5999545;manuscript-id: NIHMS928080;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.jvs.2017.09.029"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0741-5214(17)32378-9"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2017/06/09 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2017/09/17 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2017/12/19 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2019/03/15 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2017/12/18 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/11/01 00:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "J Vasc Surg. 2018 Nov;68(5):1563. doi: 10.1016/j.jvs.2017.10.049.",
+        "reftype": "Comment in",
+        "pmid": 30360844,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 51,
+    "fulljournalname": "Journal of vascular surgery",
+    "elocationid": "doi: 10.1016/j.jvs.2017.09.029",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2018/11/01 00:00",
+    "sortfirstauthor": "Cason CA",
+    "vernaculartitle": ""
+  },
+  "30445289": {
+    "uid": "30445289",
+    "pubdate": "2019 Jan 1",
+    "epubdate": "2018 Nov 10",
+    "source": "J Chromatogr B Analyt Technol Biomed Life Sci",
+    "authors": [
+      {
+        "name": "Claeson AS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gouveia-Figueira S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stenlund H",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Johansson AI",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Johansson AI",
+    "title": "A standardized protocol for comparable analysis of GSH/GSSG by UHPLC-ESI-MSMS for human plasma.",
+    "sorttitle": "standardized protocol for comparable analysis of gsh gssg by uhplc esi msms for human plasma",
+    "volume": "1104",
+    "issue": "",
+    "pages": "67-72",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101139554",
+    "issn": "1570-0232",
+    "essn": "1873-376X",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "30445289"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.jchromb.2018.11.007"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1570-0232(18)31199-1"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2018/08/02 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2018/10/15 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2018/11/06 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2018/11/18 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2019/01/30 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2018/11/17 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+    "elocationid": "doi: 10.1016/j.jchromb.2018.11.007",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/01/01 00:00",
+    "sortfirstauthor": "Claeson AS",
+    "vernaculartitle": ""
+  },
+  "30449684": {
+    "uid": "30449684",
+    "pubdate": "2019 Feb 5",
+    "epubdate": "2018 Nov 15",
+    "source": "Cell Metab",
+    "authors": [
+      {
+        "name": "Neinast MD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Jang C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hui S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Murashige DS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Chu Q",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Morscher RJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Li X",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zhan L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "White E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Anthony TG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rabinowitz JD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Arany Z",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Arany Z",
+    "title": "Quantitative Analysis of the Whole-Body Metabolic Fate of Branched-Chain Amino Acids.",
+    "sorttitle": "quantitative analysis of the whole body metabolic fate of branched chain amino acids",
+    "volume": "29",
+    "issue": "2",
+    "pages": "417-429.e4",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101233170",
+    "issn": "1550-4131",
+    "essn": "1932-7420",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "30449684"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS1512376"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6365191"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6365191;manuscript-id: NIHMS1512376;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.cmet.2018.10.013"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1550-4131(18)30645-4"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2017/11/08 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2018/05/25 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2018/10/22 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2018/11/20 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2020/04/09 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2018/11/20 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2020/02/05 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 71,
+    "fulljournalname": "Cell metabolism",
+    "elocationid": "doi: 10.1016/j.cmet.2018.10.013",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/02/05 00:00",
+    "sortfirstauthor": "Neinast MD",
+    "vernaculartitle": ""
+  },
+  "31058257": {
+    "uid": "31058257",
+    "pubdate": "2019 Mar",
+    "epubdate": "2019 Mar 11",
+    "source": "Nat Metab",
+    "authors": [
+      {
+        "name": "Chen L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zhang Z",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hoshino A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zheng HD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Morley M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Arany Z",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rabinowitz JD",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Rabinowitz JD",
+    "title": "NADPH production by the oxidative pentose-phosphate pathway supports folate metabolism.",
+    "sorttitle": "nadph production by the oxidative pentose phosphate pathway supports folate metabolism",
+    "volume": "1",
+    "issue": "",
+    "pages": "404-415",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101736592",
+    "issn": "",
+    "essn": "2522-5812",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31058257"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS1024553"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6489125"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6489125;manuscript-id: NIHMS1024553;"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2019/05/07 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/05/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2019/05/07 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/09/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 41,
+    "fulljournalname": "Nature metabolism",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/03/01 00:00",
+    "sortfirstauthor": "Chen L",
+    "vernaculartitle": ""
+  },
+  "31294795": {
+    "uid": "31294795",
+    "pubdate": "2019 Dec 1",
+    "epubdate": "",
+    "source": "J Clin Endocrinol Metab",
+    "authors": [
+      {
+        "name": "Vissing CR",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Dun\u00f8 M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wibrand F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Christensen M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Vissing J",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Vissing J",
+    "title": "Hydroxylated Long-Chain Acylcarnitines are Biomarkers of Mitochondrial Myopathy.",
+    "sorttitle": "hydroxylated long chain acylcarnitines are biomarkers of mitochondrial myopathy",
+    "volume": "104",
+    "issue": "12",
+    "pages": "5968-5976",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0375362",
+    "issn": "0021-972X",
+    "essn": "1945-7197",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31294795"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1210/jc.2019-00721"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "5530223"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2019/03/26 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2019/07/05 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/07/12 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2020/05/29 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2019/07/12 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "The Journal of clinical endocrinology and metabolism",
+    "elocationid": "doi: 10.1210/jc.2019-00721",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/12/01 00:00",
+    "sortfirstauthor": "Vissing CR",
+    "vernaculartitle": ""
+  },
+  "31488951": {
+    "uid": "31488951",
+    "pubdate": "2019",
+    "epubdate": "2019 Aug 21",
+    "source": "Int J Tryptophan Res",
+    "authors": [
+      {
+        "name": "Badawy AA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Guillemin G",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Guillemin G",
+    "title": "The Plasma [Kynurenine]/[Tryptophan] Ratio and Indoleamine 2,3-Dioxygenase: Time for Appraisal.",
+    "sorttitle": "plasma kynurenine tryptophan ratio and indoleamine 2 3 dioxygenase time for appraisal",
+    "volume": "12",
+    "issue": "",
+    "pages": "1178646919868978",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101513378",
+    "issn": "1178-6469",
+    "essn": "1178-6469",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31488951"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6710706"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6710706;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1177/1178646919868978"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1177_1178646919868978"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2019/07/12 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2019/07/19 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2019/09/07 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/09/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2019/09/07 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/08/21 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 78,
+    "fulljournalname": "International journal of tryptophan research : IJTR",
+    "elocationid": "doi: 10.1177/1178646919868978",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/08/21 00:00",
+    "sortfirstauthor": "Badawy AA",
+    "vernaculartitle": ""
+  },
+  "31683880": {
+    "uid": "31683880",
+    "pubdate": "2019 Nov 1",
+    "epubdate": "2019 Nov 1",
+    "source": "Toxins (Basel)",
+    "authors": [
+      {
+        "name": "Pelletier CC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Croyal M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ene L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Aguesse A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Billon-Crossouard S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Krempf M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lemoine S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Guebre-Egziabher F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Juillard L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Soulage CO",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Soulage CO",
+    "title": "Elevation of Trimethylamine-N-Oxide in Chronic Kidney Disease: Contribution of Decreased Glomerular Filtration Rate.",
+    "sorttitle": "elevation of trimethylamine n oxide in chronic kidney disease contribution of decreased glomerular filtration rate",
+    "volume": "11",
+    "issue": "11",
+    "pages": "",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101530765",
+    "issn": "",
+    "essn": "2072-6651",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31683880"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6891811"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6891811;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3390/toxins11110635"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "toxins11110635"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2019/09/27 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2019/10/21 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2019/10/30 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2019/11/06 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/11/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2020/10/22 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/11/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 32,
+    "fulljournalname": "Toxins",
+    "elocationid": "doi: 10.3390/toxins11110635",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/11/01 00:00",
+    "sortfirstauthor": "Pelletier CC",
+    "vernaculartitle": ""
+  },
+  "31683910": {
+    "uid": "31683910",
+    "pubdate": "2019 Nov 1",
+    "epubdate": "2019 Nov 1",
+    "source": "Metabolites",
+    "authors": [
+      {
+        "name": "Anesi A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rubert J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Oluwagbemigun K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Orozco-Ruiz X",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "N\u00f6thlings U",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Breteler MMB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mattivi F",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Mattivi F",
+    "title": "Metabolic Profiling of Human Plasma and Urine, Targeting Tryptophan, Tyrosine and Branched Chain Amino Acid Pathways.",
+    "sorttitle": "metabolic profiling of human plasma and urine targeting tryptophan tyrosine and branched chain amino acid pathways",
+    "volume": "9",
+    "issue": "11",
+    "pages": "",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101578790",
+    "issn": "2218-1989",
+    "essn": "2218-1989",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31683910"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6918267"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6918267;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3390/metabo9110261"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "metabo9110261"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2019/10/02 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2019/10/21 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2019/10/28 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2019/11/06 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/11/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2019/11/07 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/11/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 67,
+    "fulljournalname": "Metabolites",
+    "elocationid": "doi: 10.3390/metabo9110261",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/11/01 00:00",
+    "sortfirstauthor": "Anesi A",
+    "vernaculartitle": ""
+  },
+  "31736978": {
+    "uid": "31736978",
+    "pubdate": "2019",
+    "epubdate": "2019 Oct 30",
+    "source": "Front Immunol",
+    "authors": [
+      {
+        "name": "Sorgdrager FJH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Naud\u00e9 PJW",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kema IP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nollen EA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Deyn PP",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Deyn PP",
+    "title": "Tryptophan Metabolism in Inflammaging: From Biomarker to Therapeutic Target.",
+    "sorttitle": "tryptophan metabolism in inflammaging from biomarker to therapeutic target",
+    "volume": "10",
+    "issue": "",
+    "pages": "2565",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101560960",
+    "issn": "",
+    "essn": "1664-3224",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "31736978"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6833926"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6833926;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3389/fimmu.2019.02565"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2019/08/15 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2019/10/16 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2019/11/19 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2019/11/19 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2020/10/30 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2019/01/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 88,
+    "fulljournalname": "Frontiers in immunology",
+    "elocationid": "doi: 10.3389/fimmu.2019.02565",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2019/10/30 00:00",
+    "sortfirstauthor": "Sorgdrager FJH",
+    "vernaculartitle": ""
+  },
+  "32139353": {
+    "uid": "32139353",
+    "pubdate": "2020",
+    "epubdate": "",
+    "source": "Exerc Immunol Rev",
+    "authors": [
+      {
+        "name": "Joisten N",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kummerhoff F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Koliamitra C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schenk A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Walzik D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hardt L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Knoop A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Thevis M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kiesl D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Metcalfe AJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bloch W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zimmer P",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Zimmer P",
+    "title": "Exercise and the Kynurenine pathway: Current state of knowledge and results from a randomized cross-over study comparing acute effects of endurance and resistance training.",
+    "sorttitle": "exercise and the kynurenine pathway current state of knowledge and results from a randomized cross over study comparing acute effects of endurance and resistance training",
+    "volume": "26",
+    "issue": "",
+    "pages": "24-42",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9505535",
+    "issn": "1077-5552",
+    "essn": "",
+    "pubtype": [
+      "Journal Article",
+      "Randomized Controlled Trial"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "32139353"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2020/03/07 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2020/03/07 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2020/03/26 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Exercise immunology review",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2020/01/01 00:00",
+    "sortfirstauthor": "Joisten N",
+    "vernaculartitle": ""
+  },
+  "33064660": {
+    "uid": "33064660",
+    "pubdate": "2020 Nov",
+    "epubdate": "",
+    "source": "J Mol Endocrinol",
+    "authors": [
+      {
+        "name": "Simmen FA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Alhallak I",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Simmen RCM",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Simmen RCM",
+    "title": "Malic enzyme 1 (ME1) in the biology of cancer: it is not just intermediary metabolism.",
+    "sorttitle": "malic enzyme 1 me1 in the biology of cancer it is not just intermediary metabolism",
+    "volume": "65",
+    "issue": "4",
+    "pages": "R77-R90",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8902617",
+    "issn": "0952-5041",
+    "essn": "1479-6813",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "33064660"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS1628694"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC7577320"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC7577320;manuscript-id: NIHMS1628694;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1530/JME-20-0176"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "JME-20-0176"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2020/08/13 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2020/09/11 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2020/10/16 17:10"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2020/10/17 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/10/16 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2021/11/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 80,
+    "fulljournalname": "Journal of molecular endocrinology",
+    "elocationid": "doi: 10.1530/JME-20-0176",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2020/11/01 00:00",
+    "sortfirstauthor": "Simmen FA",
+    "vernaculartitle": ""
+  },
+  "33071282": {
+    "uid": "33071282",
+    "pubdate": "2021 Feb",
+    "epubdate": "2020 Oct 19",
+    "source": "Genet Med",
+    "authors": [
+      {
+        "name": "Miller MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cusmano-Ozog K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Oglesbee D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Young S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "ACMG Laboratory Quality Assurance Committee",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Young S",
+    "title": "Laboratory analysis of acylcarnitines, 2020 update: a technical standard of the American College of Medical Genetics and Genomics (ACMG).",
+    "sorttitle": "laboratory analysis of acylcarnitines 2020 update a technical standard of the american college of medical genetics and genomics acmg",
+    "volume": "23",
+    "issue": "2",
+    "pages": "249-258",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9815831",
+    "issn": "1098-3600",
+    "essn": "1530-0366",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "33071282"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1038/s41436-020-00990-1"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1098-3600(21)02550-8"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2020/09/21 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2020/09/22 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2020/09/21 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2020/10/20 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/06/04 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2020/10/19 05:52"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Genetics in medicine : official journal of the American College of Medical Genetics",
+    "elocationid": "doi: 10.1038/s41436-020-00990-1",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/02/01 00:00",
+    "sortfirstauthor": "Miller MJ",
+    "vernaculartitle": ""
+  },
+  "33338598": {
+    "uid": "33338598",
+    "pubdate": "2021 Mar 1",
+    "epubdate": "2020 Dec 16",
+    "source": "Biochim Biophys Acta Mol Basis Dis",
+    "authors": [
+      {
+        "name": "Lionetto L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ulivieri M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Capi M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "De Bernardini D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fazio F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Petrucca A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Pomes LM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "De Luca O",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gentile G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Casolla B",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Curto M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Salerno G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schillizzi S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Torre MS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Santino I",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rocco M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Marchetti P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Aceti A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ricci A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bonfini R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nicoletti F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Simmaco M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Borro M",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Borro M",
+    "title": "Increased kynurenine-to-tryptophan ratio in the serum of patients infected with SARS-CoV2: An observational cohort study.",
+    "sorttitle": "increased kynurenine to tryptophan ratio in the serum of patients infected with sars cov2 an observational cohort study",
+    "volume": "1867",
+    "issue": "3",
+    "pages": "166042",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101731730",
+    "issn": "0925-4439",
+    "essn": "1879-260X",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "33338598"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC7834629"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC7834629;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.bbadis.2020.166042"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0925-4439(20)30390-2"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2020/08/18 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2020/12/01 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2020/12/06 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2020/12/19 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/07/01 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2020/12/18 20:10"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2020/12/16 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 34,
+    "fulljournalname": "Biochimica et biophysica acta. Molecular basis of disease",
+    "elocationid": "doi: 10.1016/j.bbadis.2020.166042",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/03/01 00:00",
+    "sortfirstauthor": "Lionetto L",
+    "vernaculartitle": ""
+  },
+  "33592770": {
+    "uid": "33592770",
+    "pubdate": "2021 Apr 1",
+    "epubdate": "2020 Dec 25",
+    "source": "Talanta",
+    "authors": [
+      {
+        "name": "Puchalska P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nelson AB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stagg DB",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Crawford PA",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Crawford PA",
+    "title": "Determination of ketone bodies in biological samples via rapid UPLC-MS/MS.",
+    "sorttitle": "determination of ketone bodies in biological samples via rapid uplc ms ms",
+    "volume": "225",
+    "issue": "",
+    "pages": "122048",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "2984816R",
+    "issn": "0039-9140",
+    "essn": "1873-3573",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "33592770"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS1660021"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC8783292"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC8783292;manuscript-id: NIHMS1660021;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.talanta.2020.122048"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0039-9140(20)31339-4"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2020/11/05 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2020/12/21 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2020/12/22 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2021/02/17 01:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2021/02/18 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/05/15 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2022/04/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 57,
+    "fulljournalname": "Talanta",
+    "elocationid": "doi: 10.1016/j.talanta.2020.122048",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/04/01 00:00",
+    "sortfirstauthor": "Puchalska P",
+    "vernaculartitle": ""
+  },
+  "34258650": {
+    "uid": "34258650",
+    "pubdate": "2021 Sep",
+    "epubdate": "2021 Jul 13",
+    "source": "Anal Bioanal Chem",
+    "authors": [
+      {
+        "name": "Hefni ME",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Bergstr\u00f6m M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Lennqvist T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fagerstr\u00f6m C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Witth\u00f6ft CM",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Witth\u00f6ft CM",
+    "title": "Simultaneous quantification of trimethylamine N-oxide, trimethylamine, choline, betaine, creatinine, and propionyl-, acetyl-, and L-carnitine in clinical and food samples using HILIC-LC-MS.",
+    "sorttitle": "simultaneous quantification of trimethylamine n oxide trimethylamine choline betaine creatinine and propionyl acetyl and l carnitine in clinical and food samples using hilic lc ms",
+    "volume": "413",
+    "issue": "21",
+    "pages": "5349-5360",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101134327",
+    "issn": "1618-2642",
+    "essn": "1618-2650",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "34258650"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC8405501"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC8405501;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1007/s00216-021-03509-y"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1007/s00216-021-03509-y"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2021/03/15 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2021/06/28 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2021/06/15 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2021/07/15 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/10/26 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2021/07/14 07:15"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2021/07/13 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 33,
+    "fulljournalname": "Analytical and bioanalytical chemistry",
+    "elocationid": "doi: 10.1007/s00216-021-03509-y",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/09/01 00:00",
+    "sortfirstauthor": "Hefni ME",
+    "vernaculartitle": ""
+  },
+  "34940595": {
+    "uid": "34940595",
+    "pubdate": "2021 Dec 3",
+    "epubdate": "2021 Dec 3",
+    "source": "Metabolites",
+    "authors": [
+      {
+        "name": "Sousa AP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cunha DM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Franco C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Teixeira C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gojon F",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Baylina P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fernandes R",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Fernandes R",
+    "title": "Which Role Plays 2-Hydroxybutyric Acid on Insulin Resistance?",
+    "sorttitle": "which role plays 2 hydroxybutyric acid on insulin resistance",
+    "volume": "11",
+    "issue": "12",
+    "pages": "",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101578790",
+    "issn": "2218-1989",
+    "essn": "2218-1989",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "34940595"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC8703345"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC8703345;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3390/metabo11120835"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "metabo11120835"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2021/10/01 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2021/11/18 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2021/11/24 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2021/12/23 12:44"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2021/12/24 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/12/24 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2021/12/03 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 61,
+    "fulljournalname": "Metabolites",
+    "elocationid": "doi: 10.3390/metabo11120835",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/12/03 00:00",
+    "sortfirstauthor": "Sousa AP",
+    "vernaculartitle": ""
+  },
+  "34943431": {
+    "uid": "34943431",
+    "pubdate": "2021 Nov 25",
+    "epubdate": "2021 Nov 25",
+    "source": "Diagnostics (Basel)",
+    "authors": [
+      {
+        "name": "Ueyanagi Y",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Setoyama D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kawakami D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mushimoto Y",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Matsumoto S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hotta T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kang D",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Kang D",
+    "title": "Fully Automated Quantitative Measurement of Serum Organic Acids via LC-MS/MS for the Diagnosis of Organic Acidemias: Establishment of an Automation System and a Proof-of-Concept Validation.",
+    "sorttitle": "fully automated quantitative measurement of serum organic acids via lc ms ms for the diagnosis of organic acidemias establishment of an automation system and a proof of concept validation",
+    "volume": "11",
+    "issue": "12",
+    "pages": "",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101658402",
+    "issn": "2075-4418",
+    "essn": "2075-4418",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "34943431"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC8700112"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC8700112;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3390/diagnostics11122195"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "diagnostics11122195"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2021/11/17 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2021/11/18 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2021/11/23 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2021/12/24 01:02"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2021/12/25 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2021/12/25 06:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2021/11/25 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 39,
+    "fulljournalname": "Diagnostics (Basel, Switzerland)",
+    "elocationid": "doi: 10.3390/diagnostics11122195",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/11/25 00:00",
+    "sortfirstauthor": "Ueyanagi Y",
+    "vernaculartitle": ""
+  },
+  "34954532": {
+    "uid": "34954532",
+    "pubdate": "2022 Jan 25",
+    "epubdate": "2021 Dec 16",
+    "source": "J Chromatogr A",
+    "authors": [
+      {
+        "name": "Luna C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Griffin C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Miller MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Miller MJ",
+    "title": "A clinically validated method to separate and quantify underivatized acylcarnitines and carnitine metabolic intermediates using mixed-mode chromatography with tandem mass spectrometry.",
+    "sorttitle": "clinically validated method to separate and quantify underivatized acylcarnitines and carnitine metabolic intermediates using mixed mode chromatography with tandem mass spectrometry",
+    "volume": "1663",
+    "issue": "",
+    "pages": "462749",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9318488",
+    "issn": "0021-9673",
+    "essn": "1873-3778",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "34954532"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.chroma.2021.462749"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0021-9673(21)00871-2"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2021/10/27 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2021/12/10 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2021/12/12 00:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2021/12/27 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2022/01/19 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2021/12/26 20:50"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Journal of chromatography. A",
+    "elocationid": "doi: 10.1016/j.chroma.2021.462749",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2022/01/25 00:00",
+    "sortfirstauthor": "Luna C",
+    "vernaculartitle": ""
+  },
+  "35710135": {
+    "uid": "35710135",
+    "pubdate": "2022 Jul",
+    "epubdate": "",
+    "source": "Pharmacol Rev",
+    "authors": [
+      {
+        "name": "Dambrova M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Makrecka-Kuka M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kuka J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Vilskersts R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Nordberg D",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Attwood MM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Smesny S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sen ZD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Guo AC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Oler E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Tian S",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zheng J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wishart DS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Liepinsh E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Schi\u00f6th HB",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Schi\u00f6th HB",
+    "title": "Acylcarnitines: Nomenclature, Biomarkers, Therapeutic Potential, Drug Targets, and Clinical Trials.",
+    "sorttitle": "acylcarnitines nomenclature biomarkers therapeutic potential drug targets and clinical trials",
+    "volume": "74",
+    "issue": "3",
+    "pages": "506-551",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "0421737",
+    "issn": "0031-6997",
+    "essn": "1521-0081",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "35710135"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1124/pharmrev.121.000408"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S0031-6997(24)00724-5"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2022/06/16 20:42"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2022/06/17 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2022/06/22 06:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Pharmacological reviews",
+    "elocationid": "doi: 10.1124/pharmrev.121.000408",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2022/07/01 00:00",
+    "sortfirstauthor": "Dambrova M",
+    "vernaculartitle": ""
+  },
+  "36653422": {
+    "uid": "36653422",
+    "pubdate": "2023 Jan 18",
+    "epubdate": "2023 Jan 18",
+    "source": "Sci Rep",
+    "authors": [
+      {
+        "name": "Midttun \u00d8",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ulvik A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Meyer K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zahed H",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Giles GG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Manjer J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sandsveden M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Langhammer A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "S\u00f8rgjerd EP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Behndig AF",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Johansson M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Freedman ND",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Huang WY",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Chen C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Prentice R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Stevens VL",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wang Y",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Le Marchand L",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Weinstein SJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cai Q",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Arslan AA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Chen Y",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Shu XO",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zheng W",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Yuan JM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Koh WP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Visvanathan K",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sesso HD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Zhang X",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Gaziano JM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fanidi A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Robbins HA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Brennan P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Johansson M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ueland PM",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Ueland PM",
+    "title": "A cross-sectional study of inflammatory markers as determinants of circulating kynurenines in the Lung Cancer Cohort Consortium.",
+    "sorttitle": "cross sectional study of inflammatory markers as determinants of circulating kynurenines in the lung cancer cohort consortium",
+    "volume": "13",
+    "issue": "1",
+    "pages": "1011",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101563288",
+    "issn": "",
+    "essn": "2045-2322",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "36653422"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC9849351"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC9849351;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1038/s41598-023-28135-9"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1038/s41598-023-28135-9"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2022/05/10 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2023/01/13 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2023/01/18 23:17"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2023/01/19 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2023/01/21 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2023/01/18 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 64,
+    "fulljournalname": "Scientific reports",
+    "elocationid": "doi: 10.1038/s41598-023-28135-9",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2023/01/18 00:00",
+    "sortfirstauthor": "Midttun \u00d8",
+    "vernaculartitle": ""
+  },
+  "37612403": {
+    "uid": "37612403",
+    "pubdate": "2023 Aug",
+    "epubdate": "2023 Aug 23",
+    "source": "Nat Metab",
+    "authors": [
+      {
+        "name": "TeSlaa T",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ralser M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Fan J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rabinowitz JD",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Rabinowitz JD",
+    "title": "The pentose phosphate pathway in health and disease.",
+    "sorttitle": "pentose phosphate pathway in health and disease",
+    "volume": "5",
+    "issue": "8",
+    "pages": "1275-1289",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101736592",
+    "issn": "",
+    "essn": "2522-5812",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "37612403"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS2003188"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC11251397"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC11251397;manuscript-id: NIHMS2003188;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1038/s42255-023-00863-2"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1038/s42255-023-00863-2"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2022/08/03 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2023/07/12 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2023/08/25 06:42"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2023/08/24 00:42"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2023/08/23 23:25"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2024/07/16 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 192,
+    "fulljournalname": "Nature metabolism",
+    "elocationid": "doi: 10.1038/s42255-023-00863-2",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2023/08/01 00:00",
+    "sortfirstauthor": "TeSlaa T",
+    "vernaculartitle": ""
+  },
+  "38375486": {
+    "uid": "38375486",
+    "pubdate": "2024 Jan",
+    "epubdate": "2024 Jan 23",
+    "source": "J Mass Spectrom Adv Clin Lab",
+    "authors": [
+      {
+        "name": "Kemperman RHJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ganetzky RD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Master SR",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Master SR",
+    "title": "Development and validation of a multiplexed LC-MS/MS ketone body assay for clinical diagnostics.",
+    "sorttitle": "development and validation of a multiplexed lc ms ms ketone body assay for clinical diagnostics",
+    "volume": "31",
+    "issue": "",
+    "pages": "49-58",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101776811",
+    "issn": "2667-1468",
+    "essn": "2667-145X",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "38375486"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC10874984"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC10874984;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.jmsacl.2024.01.004"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S2667-145X(24)00004-X"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2023/08/21 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2023/12/27 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2024/01/22 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2024/02/20 11:51"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2024/02/20 11:50"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2024/02/20 03:46"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2024/01/23 00:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "J Mass Spectrom Adv Clin Lab. 2024 Jul 17;33:21. doi: 10.1016/j.jmsacl.2024.07.001.",
+        "reftype": "Erratum in",
+        "pmid": 39130163,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 33,
+    "fulljournalname": "Journal of mass spectrometry and advances in the clinical lab",
+    "elocationid": "doi: 10.1016/j.jmsacl.2024.01.004",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2024/01/23 00:00",
+    "sortfirstauthor": "Kemperman RHJ",
+    "vernaculartitle": ""
+  },
+  "39046504": {
+    "uid": "39046504",
+    "pubdate": "2024 Sep",
+    "epubdate": "2024 Jul 24",
+    "source": "Anal Bioanal Chem",
+    "authors": [
+      {
+        "name": "Zhang P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wang H",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Liang M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wang Z",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Liu C",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Han Y",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Han Y",
+    "title": "A candidate reference measurement procedure for quantification of glycocholic acid in human serum based on isotope dilution liquid chromatography-tandem mass spectrometry.",
+    "sorttitle": "candidate reference measurement procedure for quantification of glycocholic acid in human serum based on isotope dilution liquid chromatography tandem mass spectrometry",
+    "volume": "416",
+    "issue": "23",
+    "pages": "5121-5131",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101134327",
+    "issn": "1618-2642",
+    "essn": "1618-2650",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "39046504"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC11377629"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC11377629;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1007/s00216-024-05449-9"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "10.1007/s00216-024-05449-9"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2024/04/06 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2024/07/04 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2024/06/08 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2024/09/05 12:44"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2024/07/24 12:45"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2024/07/24 11:14"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2024/07/24 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 24,
+    "fulljournalname": "Analytical and bioanalytical chemistry",
+    "elocationid": "doi: 10.1007/s00216-024-05449-9",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2024/09/01 00:00",
+    "sortfirstauthor": "Zhang P",
+    "vernaculartitle": ""
+  },
+  "28206827": {
+    "uid": "28206827",
+    "pubdate": "2017 Apr",
+    "epubdate": "2017 Feb 16",
+    "source": "Mult Scler",
+    "authors": [
+      {
+        "name": "Benedict RH",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "DeLuca J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Phillips G",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "LaRocca N",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Hudson LD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rudick R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Multiple Sclerosis Outcome Assessments Consortium",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Rudick R",
+    "title": "Validity of the Symbol Digit Modalities Test as a cognition performance outcome measure for multiple sclerosis.",
+    "sorttitle": "validity of the symbol digit modalities test as a cognition performance outcome measure for multiple sclerosis",
+    "volume": "23",
+    "issue": "5",
+    "pages": "721-733",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9509185",
+    "issn": "1352-4585",
+    "essn": "1477-0970",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "256",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "28206827"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC5405816"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC5405816;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1177/1352458517690821"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2017/02/17 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2018/03/02 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2017/02/17 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2017/04/26 00:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "Mult Scler. 2017 Apr;23(5):626-627. doi: 10.1177/1352458517690825.",
+        "reftype": "Comment in",
+        "pmid": 28206813,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 121,
+    "fulljournalname": "Multiple sclerosis (Houndmills, Basingstoke, England)",
+    "elocationid": "doi: 10.1177/1352458517690821",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2017/04/01 00:00",
+    "sortfirstauthor": "Benedict RH",
+    "vernaculartitle": ""
+  },
+  "26060999": {
+    "uid": "26060999",
+    "pubdate": "2015",
+    "epubdate": "2015 Jun 10",
+    "source": "PLoS One",
+    "authors": [
+      {
+        "name": "Woods DL",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Wyma JM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Herron TJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Yund EW",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Yund EW",
+    "title": "The Effects of Aging, Malingering, and Traumatic Brain Injury on Computerized Trail-Making Test Performance.",
+    "sorttitle": "effects of aging malingering and traumatic brain injury on computerized trail making test performance",
+    "volume": "10",
+    "issue": "6",
+    "pages": "e0124345",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101285081",
+    "issn": "",
+    "essn": "1932-6203",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "258",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "26060999"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4465490"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4465490;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1371/journal.pone.0124345"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "PONE-D-14-43425"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2014/10/03 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2015/02/27 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2015/06/11 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2015/06/11 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2016/03/16 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2015/06/10 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 67,
+    "fulljournalname": "PloS one",
+    "elocationid": "doi: 10.1371/journal.pone.0124345",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2015/06/10 00:00",
+    "sortfirstauthor": "Woods DL",
+    "vernaculartitle": ""
+  },
+  "11296689": {
+    "uid": "11296689",
+    "pubdate": "2000",
+    "epubdate": "",
+    "source": "Appl Neuropsychol",
+    "authors": [
+      {
+        "name": "Kessels RP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "van Zandvoort MJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Postma A",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Kappelle LJ",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "de Haan EH",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "de Haan EH",
+    "title": "The Corsi Block-Tapping Task: standardization and normative data.",
+    "sorttitle": "corsi block tapping task standardization and normative data",
+    "volume": "7",
+    "issue": "4",
+    "pages": "252-8",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "9507620",
+    "issn": "0908-4282",
+    "essn": "",
+    "pubtype": [
+      "Clinical Trial",
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "11296689"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1207/S15324826AN0704_8"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2001/04/12 10:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2001/07/20 10:01"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2001/04/12 10:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Applied neuropsychology",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2000/01/01 00:00",
+    "sortfirstauthor": "Kessels RP",
+    "vernaculartitle": ""
+  },
+  "24886908": {
+    "uid": "24886908",
+    "pubdate": "2014 Aug",
+    "epubdate": "",
+    "source": "JAMA Neurol",
+    "authors": [
+      {
+        "name": "Donohue MC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Sperling RA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Salmon DP",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Rentz DM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Raman R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Thomas RG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Weiner M",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Aisen PS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Australian Imaging, Biomarkers, and Lifestyle Flagship Study of Ageing",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      },
+      {
+        "name": "Alzheimer\u2019s Disease Neuroimaging Initiative",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      },
+      {
+        "name": "Alzheimer\u2019s Disease Cooperative Study",
+        "authtype": "CollectiveName",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Aisen PS",
+    "title": "The preclinical Alzheimer cognitive composite: measuring amyloid-related decline.",
+    "sorttitle": "preclinical alzheimer cognitive composite measuring amyloid related decline",
+    "volume": "71",
+    "issue": "8",
+    "pages": "961-70",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101589536",
+    "issn": "2168-6149",
+    "essn": "2168-6157",
+    "pubtype": [
+      "Journal Article",
+      "Meta-Analysis"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "24886908"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS688836"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4439182"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4439182;manuscript-id: NIHMS688836;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1001/jamaneurol.2014.803"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "1875831"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2014/06/03 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2014/06/03 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2014/12/30 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2015/05/20 00:00"
+      }
+    ],
+    "references": [
+      {
+        "refsource": "JAMA Neurol. 2014 Aug;71(8):947-9. doi: 10.1001/jamaneurol.2014.1120.",
+        "reftype": "Comment in",
+        "pmid": 24886838,
+        "note": ""
+      }
+    ],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 51,
+    "fulljournalname": "JAMA neurology",
+    "elocationid": "doi: 10.1001/jamaneurol.2014.803",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2014/08/01 00:00",
+    "sortfirstauthor": "Donohue MC",
+    "vernaculartitle": ""
+  },
+  "27713359": {
+    "uid": "27713359",
+    "pubdate": "2010 Jul 26",
+    "epubdate": "2010 Jul 26",
+    "source": "Pharmaceuticals (Basel)",
+    "authors": [
+      {
+        "name": "David R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mulin E",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Mallea P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Robert PH",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Robert PH",
+    "title": "Measurement of Neuropsychiatric Symptoms in Clinical Trials Targeting Alzheimer's Disease and Related Disorders.",
+    "sorttitle": "measurement of neuropsychiatric symptoms in clinical trials targeting alzheimer s disease and related disorders",
+    "volume": "3",
+    "issue": "8",
+    "pages": "2387-2397",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101238453",
+    "issn": "1424-8247",
+    "essn": "1424-8247",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "3",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "27713359"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC4033930"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC4033930;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.3390/ph3082387"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "ph3082387"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2010/06/02 00:00"
+      },
+      {
+        "pubstatus": "revised",
+        "date": "2010/06/21 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2010/07/20 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2016/10/08 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2010/07/26 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2010/07/26 00:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2010/08/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 56,
+    "fulljournalname": "Pharmaceuticals (Basel, Switzerland)",
+    "elocationid": "",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2010/07/26 00:00",
+    "sortfirstauthor": "David R",
+    "vernaculartitle": ""
+  },
+  "21889116": {
+    "uid": "21889116",
+    "pubdate": "2011 Sep",
+    "epubdate": "",
+    "source": "Alzheimers Dement",
+    "authors": [
+      {
+        "name": "Lyketsos CG",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Carrillo MC",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Ryan JM",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Khachaturian AS",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Trzepacz P",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Amatniek J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Cedarbaum J",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Brashear R",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Miller DS",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Miller DS",
+    "title": "Neuropsychiatric symptoms in Alzheimer's disease.",
+    "sorttitle": "neuropsychiatric symptoms in alzheimer s disease",
+    "volume": "7",
+    "issue": "5",
+    "pages": "532-9",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101231978",
+    "issn": "1552-5260",
+    "essn": "1552-5279",
+    "pubtype": [
+      "Editorial"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "21889116"
+      },
+      {
+        "idtype": "mid",
+        "idtypen": 8,
+        "value": "NIHMS358445"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC3299979"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC3299979;manuscript-id: NIHMS358445;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1016/j.jalz.2011.05.2410"
+      },
+      {
+        "idtype": "pii",
+        "idtypen": 4,
+        "value": "S1552-5260(11)02575-1"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "received",
+        "date": "2011/05/15 00:00"
+      },
+      {
+        "pubstatus": "accepted",
+        "date": "2011/05/16 00:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2011/09/06 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2011/09/06 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2012/06/07 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2012/03/13 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 92,
+    "fulljournalname": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+    "elocationid": "doi: 10.1016/j.jalz.2011.05.2410",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2011/09/01 00:00",
+    "sortfirstauthor": "Lyketsos CG",
+    "vernaculartitle": ""
+  },
+  "29213956": {
+    "uid": "29213956",
+    "pubdate": "2015 Apr-Jun",
+    "epubdate": "",
+    "source": "Dement Neuropsychol",
+    "authors": [
+      {
+        "name": "Faria CA",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Alves HVD",
+        "authtype": "Author",
+        "clusterid": ""
+      },
+      {
+        "name": "Charchat-Fichman H",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Charchat-Fichman H",
+    "title": "The most frequently used tests for assessing executive functions in aging.",
+    "sorttitle": "most frequently used tests for assessing executive functions in aging",
+    "volume": "9",
+    "issue": "2",
+    "pages": "149-155",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "101506587",
+    "issn": "1980-5764",
+    "essn": "",
+    "pubtype": [
+      "Journal Article"
+    ],
+    "recordstatus": "PubMed",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "29213956"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC5619353"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC5619353;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1590/1980-57642015DN92000009"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "entrez",
+        "date": "2017/12/08 06:00"
+      },
+      {
+        "pubstatus": "pubmed",
+        "date": "2015/04/01 00:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2015/04/01 00:01"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2015/04/01 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 54,
+    "fulljournalname": "Dementia & neuropsychologia",
+    "elocationid": "doi: 10.1590/1980-57642015DN92000009",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2015/04/01 00:00",
+    "sortfirstauthor": "Faria CA",
+    "vernaculartitle": ""
+  },
+  "30124583": {
+    "uid": "30124583",
+    "pubdate": "2018 Oct",
+    "epubdate": "",
+    "source": "J Clin Psychopharmacol",
+    "authors": [
+      {
+        "name": "Jaeger J",
+        "authtype": "Author",
+        "clusterid": ""
+      }
+    ],
+    "lastauthor": "Jaeger J",
+    "title": "Digit Symbol Substitution Test: The Case for Sensitivity Over Specificity in Neuropsychological Testing.",
+    "sorttitle": "digit symbol substitution test the case for sensitivity over specificity in neuropsychological testing",
+    "volume": "38",
+    "issue": "5",
+    "pages": "513-519",
+    "lang": [
+      "eng"
+    ],
+    "nlmuniqueid": "8109496",
+    "issn": "0271-0749",
+    "essn": "1533-712X",
+    "pubtype": [
+      "Journal Article",
+      "Review"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+      {
+        "idtype": "pubmed",
+        "idtypen": 1,
+        "value": "30124583"
+      },
+      {
+        "idtype": "pmc",
+        "idtypen": 8,
+        "value": "PMC6291255"
+      },
+      {
+        "idtype": "pmcid",
+        "idtypen": 5,
+        "value": "pmc-id: PMC6291255;"
+      },
+      {
+        "idtype": "doi",
+        "idtypen": 3,
+        "value": "10.1097/JCP.0000000000000941"
+      }
+    ],
+    "history": [
+      {
+        "pubstatus": "pubmed",
+        "date": "2018/08/21 06:00"
+      },
+      {
+        "pubstatus": "medline",
+        "date": "2018/12/12 06:00"
+      },
+      {
+        "pubstatus": "entrez",
+        "date": "2018/08/21 06:00"
+      },
+      {
+        "pubstatus": "pmc-release",
+        "date": "2018/12/12 00:00"
+      }
+    ],
+    "references": [],
+    "attributes": [
+      "Has Abstract"
+    ],
+    "pmcrefcount": 53,
+    "fulljournalname": "Journal of clinical psychopharmacology",
+    "elocationid": "doi: 10.1097/JCP.0000000000000941",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2018/10/01 00:00",
+    "sortfirstauthor": "Jaeger J",
+    "vernaculartitle": ""
+  }
+}

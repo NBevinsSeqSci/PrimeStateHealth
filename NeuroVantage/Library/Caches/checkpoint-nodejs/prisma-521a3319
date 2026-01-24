@@ -1,0 +1,53 @@
+{
+  "last_reminder": 1767633846821,
+  "cached_at": 1767632891654,
+  "version": "6.19.1",
+  "cli_path": "/Users/nickbevins/Documents/Synapta/Neurovantage/VS_10Dec2025/NeuroVantage/node_modules/.bin/prisma",
+  "output": {
+    "product": "prisma",
+    "previous_version": "6.19.1",
+    "checkpoint_version": 4,
+    "local_timestamp_without_timezone": "2026-01-05T09:08:11Z",
+    "current_version": "7.2.0",
+    "current_release_date": 1765983962,
+    "client_event_id": "5bccb1d4-89b5-4e05-a050-ba2b81339fa9",
+    "current_download_url": "https://github.com/prisma/prisma",
+    "package": "prisma",
+    "release_tag": "latest",
+    "install_command": "npm install --save-dev prisma",
+    "schema_providers": [
+      "postgresql"
+    ],
+    "schema_preview_features": [],
+    "schema_generators_providers": [
+      "prisma-client-js"
+    ],
+    "current_changelog_url": "https://github.com/prisma/prisma",
+    "outdated": true,
+    "project_website": "https://prisma.io",
+    "alerts": []
+  },
+  "product": "prisma",
+  "cli_install_type": "local",
+  "local_timestamp": "2026-01-05T13:01:24-08:00",
+  "project_hash": "e3df3895",
+  "cli_path_hash": "521a3319",
+  "endpoint": "https://checkpoint.prisma.io",
+  "arch": "arm64",
+  "os": "darwin",
+  "node_version": "v24.12.0",
+  "command": "generate --schema [redacted]",
+  "schema_providers": [
+    "postgresql"
+  ],
+  "schema_preview_features": [],
+  "schema_generators_providers": [
+    "prisma-client-js"
+  ],
+  "cache_file": "/Users/nickbevins/Documents/Synapta/Neurovantage/VS_10Dec2025/NeuroVantage/Library/Caches/checkpoint-nodejs/prisma-521a3319",
+  "cache_duration": 43200000,
+  "remind_duration": 172800000,
+  "timeout": 5000,
+  "unref": true,
+  "child_path": "/Users/nickbevins/Documents/Synapta/Neurovantage/VS_10Dec2025/NeuroVantage/node_modules/prisma/build/child"
+}

@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AppEventType {
+  SCREENER_COMPLETED
+  FULL_TEST_COMPLETED
+  REPORT_DOWNLOADED
+  METABOLOMICS_PILOT_SIGNUP_ATTEMPTED
+  METABOLOMICS_EXAMPLE_REPORT_DOWNLOADED
+}
+
+model AppEvent {
+  id             String       @id @default(uuid())
+  type           AppEventType
+  createdAt      DateTime     @default(now())
+
+  clinicPublicId String?
+  submissionId   String?
+  reportId       String?
+
+  userEmail      String?
+  userName       String?
+
+  ip             String?
+  userAgent      String?
+  referer        String?
+  path           String?
+
+  metaJson       Json
+
+  @@index([type, createdAt])
+  @@index([clinicPublicId, createdAt])
+}

@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Clinical Clean Palette */
+  /* Primary: Deep Medical Navy */
+  --color-primary: hsl(215 28% 17%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  /* Secondary: Soft Slate */
+  --color-secondary: hsl(210 20% 96%);
+  --color-secondary-foreground: hsl(215 28% 17%);
+
+  /* Accent: Vitality Teal */
+  --color-accent: hsl(172 66% 40%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  /* Muted */
+  --color-muted: hsl(210 20% 96%);
+  --color-muted-foreground: hsl(215 16% 47%);
+
+  /* Backgrounds */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(215 28% 17%);
+  
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(215 28% 17%);
+  
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(215 28% 17%);
+
+  /* Borders */
+  --color-border: hsl(214 32% 91%);
+  --color-input: hsl(214 32% 91%);
+  --color-ring: hsl(172 66% 40%);
+
+  /* Status */
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  /* Chart Colors */
+  --color-chart-1: hsl(172 66% 40%); /* Teal */
+  --color-chart-2: hsl(215 28% 37%); /* Light Navy */
+  --color-chart-3: hsl(280 30% 60%); /* Soft Purple */
+  --color-chart-4: hsl(35 80% 60%);  /* Soft Orange */
+  --color-chart-5: hsl(190 60% 50%);  /* Sky Blue */
+
+  --color-sidebar: hsl(215 28% 15%);
+  --color-sidebar-foreground: hsl(210 20% 96%);
+  --color-sidebar-primary: hsl(172 66% 40%);
+  --color-sidebar-primary-foreground: hsl(0 0% 100%);
+  --color-sidebar-accent: hsl(215 28% 20%);
+  --color-sidebar-accent-foreground: hsl(210 20% 96%);
+  --color-sidebar-border: hsl(215 28% 20%);
+  --color-sidebar-ring: hsl(172 66% 40%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 100% 0%, hsla(172, 66%, 40%, 0.03) 0%, transparent 25%),
+      radial-gradient(circle at 0% 100%, hsla(215, 28%, 17%, 0.03) 0%, transparent 25%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-primary;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}

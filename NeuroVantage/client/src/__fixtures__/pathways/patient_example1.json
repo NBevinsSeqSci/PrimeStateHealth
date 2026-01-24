@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "name": "glutathione(reduced)",
+      "value": 3.6,
+      "unit": "uM",
+      "zScore": -1.6,
+      "refRange": {
+        "low": 4,
+        "high": 6
+      }
+    },
+    {
+      "name": "glutathione(oxidized)",
+      "value": 0.3,
+      "unit": "uM",
+      "zScore": 1.4,
+      "refRange": {
+        "low": 0.15,
+        "high": 0.25
+      }
+    },
+    {
+      "name": "cysteinylglycine",
+      "value": 0.54,
+      "unit": "uM",
+      "zScore": -0.9,
+      "refRange": {
+        "low": 0.4,
+        "high": 0.8
+      }
+    },
+    {
+      "name": "kynurenine",
+      "value": 4.8,
+      "unit": "uM",
+      "zScore": 0.4,
+      "refRange": {
+        "low": 2,
+        "high": 6
+      }
+    },
+    {
+      "name": "tryptophan",
+      "value": 62.0,
+      "unit": "uM",
+      "zScore": 0.1,
+      "refRange": {
+        "low": 50,
+        "high": 80
+      }
+    },
+    {
+      "name": "citrulline",
+      "value": 25,
+      "unit": "uM",
+      "zScore": 0.2,
+      "refRange": {
+        "low": 20,
+        "high": 30
+      }
+    },
+    {
+      "name": "ornithine",
+      "value": 15,
+      "unit": "uM",
+      "zScore": -0.1,
+      "refRange": {
+        "low": 10,
+        "high": 20
+      }
+    },
+    {
+      "name": "arginine",
+      "value": 40,
+      "unit": "uM",
+      "zScore": 0.0,
+      "refRange": {
+        "low": 30,
+        "high": 50
+      }
+    }
+  ]
+}

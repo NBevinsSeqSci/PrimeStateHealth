@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect x="0" y="0" width="980" height="520" fill="#ffffff" />
+
+  <style>
+    .title { font: 600 18px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+    .label { font: 600 13px 'Helvetica Neue', Arial, sans-serif; fill: #1f2937; }
+    .field { font: 12px 'Courier New', monospace; fill: #334155; }
+    .box { fill: #f8fafc; stroke: #cbd5f5; stroke-width: 1.2; rx: 16; ry: 16; }
+    .link { stroke: #64748b; stroke-width: 1.5; fill: none; }
+    .note { font: 12px 'Helvetica Neue', Arial, sans-serif; fill: #64748b; }
+  </style>
+
+  <text x="40" y="48" class="title">Metabolomics Data Structure</text>
+
+  <!-- Metabolomics Results (array) -->
+  <rect x="40" y="80" width="320" height="120" class="box" />
+  <text x="60" y="110" class="label">MetabolomicsResults</text>
+  <text x="60" y="132" class="note">Array of MetaboliteResult</text>
+  <text x="60" y="160" class="field">results: MetaboliteResult[]</text>
+
+  <!-- MetaboliteResult -->
+  <rect x="420" y="80" width="520" height="220" class="box" />
+  <text x="440" y="110" class="label">MetaboliteResult</text>
+  <text x="440" y="140" class="field">name: string</text>
+  <text x="440" y="160" class="field">value?: number | string</text>
+  <text x="440" y="180" class="field">unit?: string</text>
+  <text x="440" y="200" class="field">zScore?: number</text>
+  <text x="440" y="220" class="field">refRange?: RefRange</text>
+
+  <!-- RefRange -->
+  <rect x="420" y="330" width="260" height="140" class="box" />
+  <text x="440" y="360" class="label">RefRange</text>
+  <text x="440" y="390" class="field">low?: number</text>
+  <text x="440" y="410" class="field">high?: number</text>
+  <text x="440" y="430" class="field">text?: string</text>
+
+  <!-- Links -->
+  <path d="M360 140 L420 140" class="link" />
+  <path d="M540 232 L540 330" class="link" />
+
+  <!-- Notes -->
+  <text x="40" y="480" class="note">Source: types defined in NeuroVantage/client/src/types/pathways.ts</text>
+</svg>

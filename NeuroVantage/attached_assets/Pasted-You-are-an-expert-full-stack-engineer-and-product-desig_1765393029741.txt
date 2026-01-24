@@ -1,0 +1,435 @@
+You are an expert full-stack engineer and product designer with experience in digital cognitive assessment, Alzheimer’s disease clinical trials, and wellness-clinic workflows.
+
+YOUR TASK
+Build a complete specification and implementation plan (and, if appropriate, code) for a web-based cognitive assessment and reporting system called **Neurovantage**.
+
+High-level goals:
+- Runs as a browser-based app (tablet- and desktop-friendly).
+- Administer a battery of **computerized cognitive tests** plus **front-loaded medical history and screeners**.
+- Align cognitive tasks and composite scores with **Alzheimer’s disease clinical trial-style domains** (e.g., PACC-like composites, episodic memory, processing speed, executive function).
+- Generate **two report views** per session: a patient-friendly summary and a clinician-facing detailed report.
+- Include a **rules-based recommendation engine** that outputs **wellness-clinic-aligned** suggestions (lifestyle, sleep, nutrition, hormones, etc.), with conservative, liability-aware language.
+- Prepend a global disclaimer block to every report.
+
+Assume a modern web stack such as:
+- Frontend: React / Next.js with TypeScript
+- Backend: Node / Next API routes or similar
+- Database: PostgreSQL (or an equivalent relational DB)
+You can choose sensible architecture details as needed.
+
+==================================================
+1. USER FLOW
+==================================================
+
+User session flow (single visit):
+
+1. Account & Demographics
+   - Collect basic info (or link to an existing patient ID, if integrated later).
+   - Required demographics:
+     - Age
+     - Sex
+     - Education (years or highest degree)
+     - Primary language
+     - Handedness
+
+2. Medical History & Risk Factors (wellness- and AD-relevant)
+   Provide a clean form (checkboxes, drop-downs, short free text) capturing:
+
+   Cardiometabolic:
+   - History of: hypertension, high cholesterol, diabetes/prediabetes, stroke/TIA, heart disease.
+   - Height & weight (for BMI) or BMI band.
+   - Physical activity level: sedentary / light / moderate / vigorous.
+
+   Neurologic / Psychiatric:
+   - Past or current diagnoses: mild cognitive impairment, Alzheimer’s disease, other dementia, Parkinson’s disease, traumatic brain injury with loss of consciousness, epilepsy.
+   - Psychiatric: depression, anxiety, bipolar disorder, PTSD, ADHD.
+   - Family history of Alzheimer’s or other dementia in first-degree relatives (Y/N, age at onset if known).
+
+   Hormonal / Sleep / Substance:
+   - History of: low testosterone, thyroid disease, menopause-related hormone issues.
+   - Sleep: loud snoring, witnessed apneas, unrefreshing sleep, excessive daytime sleepiness.
+   - Alcohol use (approx drinks/week), cannabis use, sedative use, opioid use.
+
+   Medications affecting cognition (checkbox list):
+   - Benzodiazepines / Z-drugs
+   - Anticholinergics
+   - Opioids
+   - Stimulants or wake-promoting agents
+   - SSRIs / SNRIs
+   - Hormone therapy / TRT
+   - Antihypertensives / statins
+   Use simple flags like “current / past / never”.
+
+3. Screeners (before cognitive tests)
+   Implement and score:
+
+   - PHQ-9 (depression)
+     - Standard 9 items, 0–3 scale.
+     - Store item-level and total score.
+     - Flag `depression_positive` if PHQ-9 >= 10.
+
+   - GAD-7 (anxiety)
+     - Standard 7 items, 0–3 scale.
+     - Store item-level and total score.
+     - Flag `anxiety_positive` if GAD-7 >= 10.
+
+   - Sleep Apnea Risk (STOP-BANG-style)
+     - Questions: loud snoring, daytime sleepiness, observed apneas, high blood pressure, BMI > 35, age > 50, large neck, male sex.
+     - Compute a simple “low / intermediate / high” risk score.
+     - Flag `sleep_apnea_risk_high` when above a threshold.
+
+   - Subjective Cognitive Decline (SCD)
+     - Y/N: “Have you noticed memory or thinking problems over the last 1–2 years?”
+     - Y/N: “Are your memory problems getting worse?”
+     - Y/N: “Are you more worried about your memory than others your age?”
+     - Impact rating (0–4): interference with work, finances, medications, driving, complex tasks.
+     - Flags: `subjective_decline_present`, `functional_impact_present`.
+
+   - Daily Function / Instrumental ADLs (brief FAQ/CDR-SB-like)
+     - Rate difficulty (0=none, 1=mild, 2=moderate, 3=severe) for:
+       - Managing finances
+       - Managing medications
+       - Shopping & meal preparation
+       - Driving or navigation
+       - Using phone/computer
+       - Managing appointments/schedules
+     - Aggregate into a simple Function Score: normal / mild difficulty / clear impairment.
+
+4. Cognitive Battery (Alzheimer’s-trial aligned)
+   Implement the following tasks with clean, ergonomic UI. Use randomization where appropriate and ensure they’re tablet-friendly.
+
+   4.1 Orientation Mini-Screen (Global anchor)
+       - Analog: orientation items from MMSE/ADAS-type tests.
+       - Ask:
+         - Today’s date (day, month, year).
+         - Day of the week.
+         - Season.
+         - Where are you (clinic/home; city).
+       - Score 0–6 or 0–8 total.
+       - Domain: Global / Orientation.
+
+   4.2 Digital Symbol Coding (Processing Speed; PACC-like)
+       - Analog: Digit Symbol Substitution.
+       - UI: top key mapping numbers 1–9 to unique symbols.
+       - Below: rows each with a target symbol and a numeric input (or 1–9 buttons).
+       - Time limit: 90 seconds.
+       - Scoring:
+         - Raw: # of correct responses.
+         - Errors: wrong entries.
+         - Derive speed and accuracy indices.
+       - Domain: Processing Speed.
+
+   4.3 Verbal List Learning + Delayed Recall (Primary episodic memory)
+       - Analog: ADAS Word List, PACC episodic memory, FCSRT.
+       - Stimuli: 15 clinic-owned words (common concrete nouns; low semantic overlap).
+       - Learning trials:
+         - Show words sequentially (1s each with 0.5s gap).
+         - Immediate free recall after each trial: user types as many words as they remember (order not important).
+         - Repeat 3 learning trials with same list.
+       - Delayed free recall:
+         - After 10–15 minutes (after other tasks), prompt user to type all words they remember from the list.
+       - Optional recognition trial (for closer ADAS feel):
+         - 30 words (15 targets + 15 foils), user taps words they recognize as from the list.
+       - Scores:
+         - Correct recalls per trial (1, 2, 3).
+         - Learning slope.
+         - Delayed recall count.
+         - Retention % = delayed / best immediate × 100.
+         - Recognition: hits & false alarms.
+       - Domain: Episodic Verbal Memory.
+
+   4.4 (Optional but desirable) Story Recall
+       - Analog: Logical Memory / story recall from many AD trials.
+       - Present a short paragraph (clinic-owned text, ~50–70 words) as audio + text.
+       - Immediate recall: user types everything they remember.
+       - Delayed recall: at the end of session.
+       - Scoring: count pre-defined idea units recalled.
+       - Domain: Episodic Verbal Memory.
+
+   4.5 Visual Pattern Memory (Episodic Visual)
+       - Analog: visual reproduction / figure recall.
+       - Grid: 4×4 or 5×5.
+       - Show pattern of filled squares for 3–5 seconds, then clear.
+       - User taps cells to recreate the pattern.
+       - Difficulty ramps: start with 3 filled squares, increase up to 7+; stop after 2 failures at a level.
+       - Scoring:
+         - Max pattern complexity level achieved.
+         - Average % correct cells.
+       - Domain: Visual Memory.
+
+   4.6 Continuous Performance Task (Attention / Vigilance)
+       - Single-letter stream (A–Z, large in center).
+       - Target: letter “X”.
+       - Stimulus on: 300 ms; ISI: 700 ms; ~200–300 trials.
+       - User taps/clicks when “X” appears; no response otherwise.
+       - Scoring:
+         - Hits, misses, false alarms.
+         - Mean RT for hits, RT variability.
+         - Can compute early vs late performance for vigilance.
+       - Domain: Attention / Vigilance.
+
+   4.7 Digit Span (Working Memory)
+       - Forward and backward sequences.
+       - Forward:
+         - Start with 3 digits; show one at a time (e.g., 800 ms per digit).
+         - After sequence, user types digits in same order.
+         - Increase length by 1 when correct; stop after 2 failed sequences at same length.
+       - Backward:
+         - Same except user types digits in reverse order.
+       - Scoring:
+         - Forward span: highest length with at least one correct.
+         - Backward span: same.
+       - Domain: Working Memory.
+
+   4.8 Stroop-like Color-Word Task (Executive / Inhibition)
+       - Words: RED, BLUE, GREEN, YELLOW.
+       - Ink colors: red, blue, green, yellow.
+       - Two types of trials:
+         - Congruent: word text matches ink color.
+         - Incongruent: word text and ink color differ.
+       - UI: word displayed centrally; four color buttons at bottom (colored squares).
+       - ~40 congruent + 40 incongruent trials in random order.
+       - Instruction: “Ignore the word; tap the ink color.”
+       - Scoring:
+         - Accuracy & mean RT for congruent and incongruent trials.
+         - Stroop effect: RT_incongruent – RT_congruent.
+       - Domain: Executive Function / Inhibition.
+
+   4.9 Set-Shifting Trails (Cognitive Flexibility)
+       - Analog: Trail Making Test A & B.
+       - Condition A:
+         - 20 circles labeled 1–20, random positions.
+         - User taps/drag-connects 1→2→…→20 as fast as possible.
+       - Condition B:
+         - 10 numbers (1–10) + 10 letters (A–J), random positions.
+         - User connects 1→A→2→B→…→10→J.
+       - Errors cause feedback (e.g., red flash) and small time penalty.
+       - Scoring:
+         - Completion time for A and B.
+         - Errors.
+         - Flexibility cost: (time_B – time_A) adjusted for errors.
+       - Domains: Cognitive Flexibility, Processing Speed.
+
+   4.10 Verbal Fluency (Language / Executive retrieval; PACC-like)
+       - Two 60-second tasks:
+         - Letter fluency: e.g., words starting with “F”.
+         - Category fluency: e.g., animals.
+       - User types words into a text box; app de-duplicates.
+       - Scoring:
+         - # unique valid words per condition.
+         - Optionally track production over time (per 10 seconds).
+       - Domain: Language / Verbal Fluency.
+
+5. Scoring, Norms, and Composites
+   - Implement normative scoring using age (and if desired sex and education). Assume we have access to normative means and SDs for each task per age band (e.g., 18–29, 30–39, 40–49, 50–59, 60–69).
+   - For each test:
+     - Compute z-score: z = (user_raw – ref_mean) / ref_sd.
+     - Optionally convert to a standardized 0–100 scale for display.
+
+   Domain scores:
+   - Episodic Verbal Memory:
+     - Combine z-scores from list learning trial 3, delayed recall, (optional story delayed recall), and recognition.
+   - Visual Memory:
+     - Pattern complexity and accuracy.
+   - Processing Speed:
+     - Symbol coding performance, Trails A time (reverse-scored).
+   - Attention / Vigilance:
+     - CPT accuracy and RT metrics.
+   - Working Memory:
+     - Digit span forward and backward.
+   - Executive / Inhibition:
+     - Stroop incongruent accuracy & Stroop effect.
+   - Cognitive Flexibility:
+     - Trails B & switching cost.
+   - Language / Fluency:
+     - Letter + category fluency.
+   - Orientation:
+     - Orientation mini-screen score.
+
+   AD-style composites:
+   - NV_EMC (Neurovantage Episodic Memory Composite):
+     - Average of key episodic memory z-scores (list learning, delayed recall, optional story, recognition).
+   - NV_PSA (Processing Speed / Attention):
+     - Combination of symbol coding, Trails A, CPT metrics.
+   - NV_EXEC (Executive):
+     - Combination of Trails B cost, Stroop, letter fluency.
+   - NV_GLOBAL (Global composite):
+     - Example weighting:
+       NV_GLOBAL = 0.4*NV_EMC + 0.25*NV_PSA + 0.25*NV_EXEC + 0.10*z_orientation.
+
+   Performance bands (per domain and composite):
+   - High Strength: z >= +1.0
+   - Typical / Average: -1.0 < z < +1.0
+   - Mild Weakness: -1.5 <= z <= -1.0
+   - Significant Weakness: z < -1.5
+
+   Store per session:
+   - user_id, session_id, date_time
+   - demographics
+   - all raw scores
+   - task-level z-scores
+   - domain scores
+   - composite scores
+   - performance bands
+   - screeners and history flags
+   - auto-generated text fields for report.
+
+==================================================
+2. RECOMMENDATION ENGINE (WELLNESS-CLINIC ALIGNED)
+==================================================
+
+Implement a rules-based engine that maps:
+- Cognitive profile (domain/composite bands and patterns)
+- Screeners (depression, anxiety, sleep apnea risk)
+- History (vascular/metabolic risk, hormone-related issues, SCD, function level)
+
+to a set of **recommendation blocks**.
+
+Each recommendation block should have:
+- id
+- category (e.g., lifestyle_exercise, sleep, mood, hormones, metabolic_vascular, supplements, cognitive_training, referral)
+- title_patient
+- patient_text (patient-facing; conservative, non-prescriptive)
+- clinician_note (guidance for provider; not shown to patient)
+
+Examples of recommendation blocks (you can codify these exactly):
+
+(1) Lifestyle / Exercise – Brain Health
+- Encourages discussing a graded aerobic exercise plan.
+- Frames exercise as supportive for brain and cardiovascular health.
+- Avoids promising cure or reversal of disease.
+
+(2) Nutrition / Weight Management – Metabolic & Brain Health
+- Encourages nutrition/weight-management consult to optimize metabolic and brain health.
+- Especially relevant with hypertension, diabetes, obesity, dyslipidemia.
+
+(3) Sleep Optimization & Apnea Evaluation
+- For high sleep apnea risk and/or attention/executive weaknesses.
+- Suggests discussing sleep-focused plan and possibly referral to sleep specialist.
+- Does NOT diagnose apnea or mandate a specific test.
+
+(4) Mood / Stress / Mindset Support
+- For elevated PHQ-9/GAD-7 or global cognitive inefficiencies consistent with mood/stress.
+- Encourages considering counseling, coaching, or mental health referral.
+- Explicitly avoids diagnosing specific disorders or prescribing medications.
+
+(5) Hormone Evaluation (TRT/thyroid/menopause)
+- For fatigue, low libido, or hormonal risk with mild cognitive inefficiencies.
+- Suggests labs and discussing potential hormone strategies where medically appropriate.
+- Does NOT claim hormone therapy will cure neurodegeneration; frames as addressing potentially reversible contributors.
+
+(6) Vascular Risk Management – Heart-Brain Health
+- For multiple cardiovascular risk factors and relevant cognitive pattern.
+- Encourages coordinating with PCP/cardiology for BP, lipids, glucose control.
+- Emphasizes vascular health supporting long-term brain health.
+
+(7) Nutraceutical Review
+- Encourages safe review of brain-health supplements with provider.
+- Acknowledges that evidence is variable and some products may interact with meds.
+
+(8) Cognitive Training / Brain Exercises
+- When one or more domains show mild to moderate weakness.
+- Suggests targeted brain exercises and apps to practice skills and build compensatory strategies.
+- Avoids promising cure; focuses on support.
+
+(9) Specialist Referral Consideration
+- When patterns are concerning (e.g., significant episodic memory weakness in an older adult, clear functional impairment).
+- Mentions possible referral to neurologist, neuropsychologist, sleep specialist, or psychiatrist “depending on main concerns”.
+- Explicitly avoids telling the patient they have a specific disease.
+
+Example rule:
+- If age >= 55, NV_EMC shows Significant Weakness, subjective_decline_present = true:
+  - Recommend: specialist_referral_consideration, sleep_optimization_apnea_screen (if apnea risk high), mood_stress_support (if depression/anxiety elevated), lifestyle_exercise_brain_health.
+
+Implement rules in a way that multiple recommendations can trigger; deduplicate and allow clinicians to toggle/override before finalizing a report.
+
+==================================================
+3. REPORT GENERATION
+==================================================
+
+Generate **two linked reports** per session:
+
+A. Patient Summary (simple)
+B. Clinician Detail (full)
+
+Both must prepend the same GLOBAL DISCLAIMER block.
+
+GLOBAL DISCLAIMER (prepend exactly):
+
+"IMPORTANT INFORMATION AND DISCLAIMER
+
+This Neurovantage Cognitive Assessment Report is provided by {{clinic_name}} for informational and educational purposes only. It is based on computerized cognitive tasks, health questionnaires, and self-reported history. The results reflect performance at a single point in time and may be influenced by factors such as sleep, mood, pain, medications, motivation, and technical issues.
+
+This report:
+• Does NOT provide a medical diagnosis or rule out any medical, neurological, or psychiatric condition, including Alzheimer’s disease or other causes of cognitive change.
+• Does NOT replace a thorough evaluation by a qualified healthcare professional.
+• Does NOT constitute medical, psychiatric, or psychological advice, and does not direct or mandate any specific treatment, medication, or supplement.
+
+All clinical decisions, diagnoses, prescriptions, and treatment plans are the sole responsibility of your licensed provider and other members of your healthcare team. Any recommendations in this report (such as lifestyle changes, nutrition, supplements, hormone evaluation, cognitive training, or referrals) are presented as topics to consider and discuss with your provider, not as instructions to start, stop, or change any treatment on your own.
+
+Do NOT ignore or delay seeking medical advice because of something you read in this report. If you have urgent concerns about your health, new or rapidly worsening symptoms, thoughts of self-harm, or changes in your ability to care for yourself or others, contact your healthcare provider immediately or seek emergency care."
+
+(You can parameterize {{clinic_name}} in the implementation.)
+
+A. Patient Summary:
+- Header:
+  - Clinic name, Neurovantage branding, patient name, DOB, date, provider.
+- Overall cognitive profile:
+  - Radar/spider chart of 8+ domains with 0–100 standardized scores.
+  - Color bands: green (strength), yellow (typical), red (needs support).
+- Plain-language summary paragraph:
+  - Describe pattern: mostly typical, mix of strengths/weaknesses, or multiple areas below expected.
+  - Name 2–3 strongest domains and 2–3 areas “needing support”.
+- Domain-by-domain table:
+  - Columns: Domain, Score (0–100), Category (Strength / Typical / Needs Support), 1-sentence plain-language explanation.
+- Key Next Steps:
+  - Top 3–5 recommendations from rules engine, grouped and labeled clearly as “Topics to discuss with your provider at {{clinic_name}}”.
+  - Use conservative wording: “may support”, “may help”, “consider discussing…”.
+- Reiterate that this is not a diagnosis and that further evaluation may be helpful if symptoms are concerning.
+
+B. Clinician Detail:
+- Include all patient summary content plus:
+  - Tables of raw scores, normative means/SDs, z-scores, domain scores, composite scores.
+  - Charts where helpful:
+    - Learning curve for list learning (Trials 1–3 + delayed).
+    - Stroop congruent vs incongruent RT and accuracy.
+    - CPT hits/false alarms/RT.
+  - Pattern interpretation:
+    - Identify if pattern is:
+      - Amnestic (episodic memory-focused),
+      - Executive/processing,
+      - Global diffuse,
+      - Or within normal limits.
+    - Use cautious, suggestive language: “pattern may be consistent with… but could also be explained by sleep, mood, medications, or medical factors.”
+  - Recommendation list with clinician_note fields:
+    - Show which rules triggered which recommendations.
+    - Allow provider to check/uncheck each rec before finalizing.
+    - Intended to align with typical wellness-clinic offerings (exercise programs, nutrition/weight, sleep optimization, hormone evaluation, cognitive training, referrals).
+
+==================================================
+4. DELIVERABLES
+==================================================
+
+Based on everything above, produce:
+
+1) A concise architecture overview (frontend, backend, DB).
+2) A normalized database schema (tables for users, sessions, tasks, scores, screeners, recommendations, etc.).
+3) API route definitions for:
+   - Creating a new session.
+   - Saving demographics, history, and screener results.
+   - Saving raw cognitive test data and computing scores.
+   - Generating domain/composite scores.
+   - Running the recommendation rules engine.
+   - Generating patient and clinician report payloads.
+4) Example React/Next.js component structures for:
+   - History & screener forms.
+   - Each cognitive test UI.
+   - Report pages (patient + clinician).
+5) Pseudocode or actual code (TypeScript preferred) for:
+   - Scoring each task.
+   - Computing z-scores and composites.
+   - Running the recommendation rules.
+   - Assembling the final report objects (with disclaimer and text blocks).
+6) Any additional suggestions to make this robust, maintainable, and suitable for a wellness/TRT/functional medicine/med-spa setting focused on early cognitive changes and Alzheimer’s-related risk.
+
+Do not ask follow-up questions; instead make reasonable assumptions where needed and fully specify and implement the system according to the above.

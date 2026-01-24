@@ -1,0 +1,214 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[db] DATABASE_URL not set. Falling back to in-memory storage for development.
+[mailer] Missing env vars (SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS); using JSON transport for development.
+9:51:47 AM [express] serving on 0.0.0.0:5001
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+9:54:38 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:56:35 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:59:24 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+10:02:17 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:02:51 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:35:41 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:46:06 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+8:14:38 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+8:30:03 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/components/report/FullAssessmentReportView.tsx
+8:30:19 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/components/report/FullAssessmentReportView.tsx
+8:30:32 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+8:30:48 AM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerReport.tsx
+8:31:14 AM [vite] (client) hmr update /src/index.css, /src/pages/FullAssessment.tsx, /src/components/report/FullAssessmentReportView.tsx
+8:31:27 AM [vite] (client) hmr update /src/index.css, /src/pages/FullAssessment.tsx, /src/components/report/FullAssessmentReportView.tsx
+8:31:39 AM [vite] (client) hmr update /src/index.css, /src/components/report/FullAssessmentReportView.tsx
+8:31:56 AM [vite] (client) hmr update /src/pages/BloodTestingWaitlist.tsx, /src/index.css
+8:32:04 AM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+8:32:14 AM [vite] (client) hmr update /src/pages/ClinicReport.tsx, /src/index.css
+8:32:32 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+8:32:42 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+8:33:06 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+8:33:13 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+8:33:35 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx
+8:33:43 AM [vite] (client) hmr update /src/pages/ClinicReport.tsx, /src/index.css
+8:33:57 AM [vite] (client) hmr update /src/pages/SampleReport.tsx, /src/index.css
+8:34:08 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicLogin.tsx, /src/pages/FullAssessment.tsx, /src/pages/ClinicReport.tsx
+9:09:06 AM [vite] (client) page reload src/lib/diagnosticsStore.ts
+9:09:12 AM [vite] (client) hmr update /src/components/DiagnosticsOverlay.tsx, /src/index.css
+9:09:20 AM [vite] (client) hmr update /src/index.css, /src/components/metabolomics/PathwayFrame.tsx
+9:09:34 AM [vite] (client) hmr update /src/index.css, /src/components/pathways/PublicationsLinks.tsx
+9:09:44 AM [vite] (client) hmr update /src/index.css, /src/components/report/analytes/AnalyteRowDetails.tsx
+9:09:51 AM [vite] (client) hmr update /src/index.css
+9:10:01 AM [vite] (client) hmr update /src/index.css
+9:10:09 AM [vite] (client) hmr update /src/pages/ClinicLogin.tsx, /src/index.css
+9:10:15 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicLogin.tsx, /src/pages/FullAssessment.tsx, /src/pages/ClinicReport.tsx
+9:10:45 AM [vite] (client) hmr update /src/pages/ClinicReport.tsx, /src/index.css
+9:11:02 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:11:34 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:11:52 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:12:00 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:12:11 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:12:19 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:12:26 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:12:42 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:13:54 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:14:02 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:14:16 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:14:38 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:14:46 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:14:57 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:15:08 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:15:19 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:15:44 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:16:00 AM [vite] (client) hmr update /src/index.css, /src/pages/ExampleMetabolomicsReport.tsx, /src/components/report/pathways/PathwayExplorer.tsx
+9:17:20 AM [vite] (client) hmr update /src/index.css, /src/pages/ExampleMetabolomicsReport.tsx
+9:22:45 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:23:19 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:23:32 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:23:42 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:24:04 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:24:19 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicLogin.tsx, /src/pages/FullAssessment.tsx, /src/pages/ClinicReport.tsx
+9:24:29 AM [vite] (client) hmr update /src/index.css, /src/components/pathways/PublicationsLinks.tsx
+9:24:39 AM [vite] (client) hmr update /src/index.css, /src/components/report/analytes/AnalyteSection.tsx
+9:24:50 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:29:04 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:29:23 AM [vite] (client) hmr update /src/index.css, /src/components/marketing/Section.tsx
+9:30:19 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+9:30:38 AM [vite] (client) hmr update /src/pages/ClinicIntegration.tsx, /src/index.css
+9:30:55 AM [vite] (client) hmr update /src/pages/ClinicIntegration.tsx, /src/index.css
+9:31:40 AM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+9:32:36 AM [vite] (client) hmr update /src/pages/ForPatients.tsx, /src/index.css
+9:32:49 AM [vite] (client) hmr update /src/index.css
+9:32:55 AM [vite] (client) hmr update /src/pages/ClinicDemo.tsx, /src/index.css
+9:33:02 AM [vite] (client) hmr update /src/index.css
+9:33:03 AM [vite] (client) hmr update /src/pages/Contact.tsx, /src/index.css
+9:33:13 AM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerIntro.tsx
+9:33:38 AM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerDetailsForm.tsx
+9:34:09 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:34:25 AM [vite] (client) hmr update /src/pages/BloodTesting.tsx, /src/index.css
+9:34:39 AM [vite] (client) hmr update /src/pages/Metabolomics.tsx, /src/index.css
+9:34:47 AM [vite] (client) hmr update /src/pages/BloodTestingWaitlist.tsx, /src/index.css
+9:34:56 AM [vite] (client) hmr update /src/components/layout/Navbar.tsx, /src/index.css
+9:35:09 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:35:15 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+9:35:34 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:35:45 AM [vite] (client) hmr update /src/pages/ClinicIntegration.tsx, /src/index.css
+9:36:04 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+9:36:34 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:36:41 AM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerDetailsForm.tsx
+9:37:16 AM [vite] (client) hmr update /src/index.css, /src/components/marketing/Section.tsx
+9:37:27 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+9:37:36 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+9:38:44 AM [vite] (client) hmr update /src/index.css, /src/components/marketing/Section.tsx
+9:48:23 AM [vite] (client) hmr update /src/components/ErrorBoundary.tsx, /src/index.css
+9:48:31 AM [vite] (client) hmr update /src/index.css, /src/components/cognitive/MemoryTest.tsx
+9:48:36 AM [vite] (client) hmr update /src/index.css, /src/components/cognitive/ReactionTest.tsx
+9:48:56 AM [vite] (client) hmr update /src/index.css, /src/components/cognitive/StroopTest.tsx
+9:49:02 AM [vite] (client) hmr update /src/index.css, /src/components/cognitive/SymbolCodingTest.tsx
+9:49:13 AM [vite] (client) hmr update /src/index.css, /src/components/cognitive/VerbalListTest.tsx
+9:49:31 AM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+9:49:37 AM [vite] (client) hmr update /src/index.css, /src/components/dashboard/PatientReportModal.tsx
+9:49:43 AM [vite] (client) hmr update /src/index.css, /src/components/pathways/PublicationsLinks.tsx
+9:49:51 AM [vite] (client) hmr update /src/index.css, /src/components/report/FullAssessmentReportView.tsx
+9:49:57 AM [vite] (client) hmr update /src/index.css, /src/components/report/analytes/AnalyteTable.tsx
+9:50:07 AM [vite] (client) hmr update /src/index.css, /src/components/report/pathways/PathwayExplorer.tsx
+9:50:14 AM [vite] (client) hmr update /src/index.css
+9:50:23 AM [vite] (client) hmr update /src/pages/ExampleMetabolomicsReport.tsx, /src/index.css
+9:50:35 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:50:53 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:50:59 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+9:52:37 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+9:52:54 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+9:52:59 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+9:53:10 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:53:18 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:53:36 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+9:54:00 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+9:54:12 AM [vite] (client) hmr update /src/pages/SampleReport.tsx, /src/index.css
+9:56:01 AM [vite] (client) hmr update /src/index.css, /src/components/dashboard/PatientReportModal.tsx
+9:56:05 AM [vite] (client) hmr update /src/index.css, /src/components/pathways/PublicationsLinks.tsx
+9:56:14 AM [vite] (client) hmr update /src/index.css
+9:56:21 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+10:10:48 AM [vite] (client) hmr update /src/components/ErrorBoundary.tsx, /src/index.css
+10:11:00 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/BloodTestingWaitlist.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicReport.tsx, /src/pages/ExampleMetabolomicsReport.tsx, /src/pages/FullAssessment.tsx
+10:11:10 AM [vite] (client) hmr update /src/index.css, /src/components/TrackedLink.tsx
+10:11:16 AM [vite] (client) hmr update /src/index.css
+10:11:36 AM [vite] (client) hmr update /src/pages/Screener.tsx, /src/index.css
+10:11:49 AM [vite] (client) hmr update /src/components/layout/Navbar.tsx, /src/index.css
+10:12:01 AM [vite] (client) hmr update /src/components/layout/Navbar.tsx, /src/index.css
+10:12:59 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+10:13:25 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:13:47 AM [vite] (client) hmr update /src/index.css, /src/components/MarketingSection.tsx
+10:13:54 AM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+10:14:02 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:14:16 AM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+10:14:39 AM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+10:15:06 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+10:15:43 AM [vite] (client) hmr update /src/pages/BloodTestingWaitlist.tsx, /src/index.css
+10:15:56 AM [vite] (client) hmr update /src/pages/BloodTestingWaitlist.tsx, /src/index.css
+10:16:04 AM [vite] (client) hmr update /src/components/layout/Navbar.tsx, /src/index.css
+10:16:19 AM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+10:16:41 AM [vite] (client) hmr update /src/pages/ForPatients.tsx, /src/index.css
+10:18:02 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/BloodTestingWaitlist.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicReport.tsx, /src/pages/ExampleMetabolomicsReport.tsx, /src/pages/FullAssessment.tsx, /src/components/TrackedLink.tsx
+10:19:13 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:19:24 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+10:19:59 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+10:20:59 AM [vite] (client) hmr update /src/pages/FullAssessment.tsx, /src/index.css
+10:21:54 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+4:50:29 PM [vite] (client) hmr update /src/pages/ClinicReport.tsx, /src/index.css
+4:50:36 PM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+4:59:58 PM [express] POST /api/events/track 200 in 7ms :: {"ok":true,"eventId":"b728d276-cf53-488d-bebf-26dfa238fa92"}
+5:07:21 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:07:32 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:08:24 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:08:35 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:08:43 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:09:37 PM [vite] (client) hmr update /src/pages/CognitiveTesting.tsx, /src/index.css
+5:09:55 PM [vite] (client) hmr update /src/index.css, /src/components/report/FullAssessmentReportView.tsx
+5:10:38 PM [vite] (client) hmr update /src/index.css, /src/components/report/FullAssessmentReportView.tsx
+5:10:50 PM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/components/report/FullAssessmentReportView.tsx
+5:11:20 PM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/components/report/FullAssessmentReportView.tsx
+5:11:29 PM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/components/report/FullAssessmentReportView.tsx
+5:12:12 PM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerReport.tsx
+5:12:21 PM [vite] (client) hmr update /src/index.css, /src/components/screener/ScreenerReport.tsx
+5:12:42 PM [vite] (client) hmr update /src/index.css, /src/pages/ExampleMetabolomicsReport.tsx, /src/components/report/pathways/PathwayExplorer.tsx, /src/components/report/analytes/AnalyteSection.tsx, /src/components/report/analytes/AnalyteTable.tsx, /src/components/report/analytes/AnalyteRowDetails.tsx
+5:13:07 PM [vite] (client) hmr update /src/index.css, /src/components/pathways/PublicationsLinks.tsx
+5:13:30 PM [vite] (client) hmr update /src/index.css, /src/components/report/FullAssessmentReportView.tsx
+8:56:43 AM [vite] (client) hmr update /src/index.css, /src/components/MarketingSection.tsx
+9:13:16 AM [vite] (client) hmr update /src/pages/HowItWorks.tsx, /src/index.css
+9:20:34 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicLogin.tsx, /src/pages/FullAssessment.tsx, /src/pages/ClinicReport.tsx
+9:20:37 AM [vite] (client) hmr update /src/index.css, /src/pages/Screener.tsx, /src/pages/Dashboard.tsx, /src/pages/ClinicLogin.tsx, /src/pages/FullAssessment.tsx, /src/pages/ClinicReport.tsx
+9:20:52 AM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/index.css
+9:20:52 AM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:20:52 AM [vite] (client) page reload src/context/AuthContext.tsx
+9:20:53 AM [express] GET /api/clinician/me 200 in 6ms
+9:20:58 AM [vite] (client) hmr update /src/components/auth/RequireAuth.tsx, /src/index.css
+9:21:06 AM [vite] (client) hmr update /src/pages/ClinicLogin.tsx, /src/index.css
+9:21:15 AM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+9:22:13 AM [vite] (client) hmr update /src/pages/ClinicReport.tsx, /src/index.css
+9:22:38 AM [vite] (client) hmr update /src/components/layout/Navbar.tsx, /src/index.css
+9:23:39 AM [vite] (client) hmr update /src/pages/ClinicLogin.tsx, /src/index.css
+9:30:41 AM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/index.css
+9:30:41 AM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:30:41 AM [vite] (client) page reload src/context/AuthContext.tsx
+9:30:42 AM [express] GET /api/clinician/me 200 in 3ms
+9:30:46 AM [vite] (client) hmr update /src/pages/ClinicLogin.tsx, /src/index.css
+9:30:51 AM [vite] (client) hmr update /src/pages/ClinicLogin.tsx, /src/index.css
+9:30:57 AM [vite] (client) hmr update /src/pages/Dashboard.tsx, /src/index.css
+10:02:48 AM [express] GET /api/clinician/me 200 in 6ms
+10:25:25 AM [express] GET /api/clinician/me 200 in 4ms
+11:05:59 AM [express] GET /api/clinician/me 200 in 2ms
+11:11:53 AM [express] GET /api/clinician/me 200 in 2ms
+11:13:31 AM [express] GET /api/clinician/me 200 in 2ms
+4:12:02 PM [express] GET /api/clinician/me 200 in 2ms
+7:32:45 AM [express] GET /api/clinician/me 200 in 7ms
+7:58:56 AM [express] GET /api/clinician/me 200 in 3ms
+8:15:19 AM [express] GET /api/clinician/me 200 in 3ms
+3:17:54 PM [express] GET /api/clinician/me 200 in 1ms
+10:26:12 AM [express] GET /api/clinician/me 200 in 3ms
+10:36:52 AM [express] GET /api/clinician/me 200 in 2ms
+1:42:51 PM [express] GET /api/clinician/me 200 in 2ms
+3:23:34 PM [express] GET /api/clinician/me 200 in 8ms
+3:34:48 PM [express] GET /api/clinician/me 200 in 4ms
+3:40:49 PM [express] GET /api/clinician/me 200 in 2ms
+3:51:20 PM [express] GET /api/clinician/me 200 in 21ms
+3:59:16 PM [express] GET /api/clinician/me 200 in 3ms

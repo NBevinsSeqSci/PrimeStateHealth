@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "name": "citric",
+      "value": 1.2,
+      "unit": "uM",
+      "zScore": 0.1,
+      "refRange": {
+        "low": 1,
+        "high": 3
+      }
+    }
+  ]
+}
