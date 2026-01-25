@@ -92,15 +92,15 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
     return (
       <div className="mx-auto w-full max-w-md space-y-6 text-center">
         <div className="space-y-4">
-          <h3 className="text-2xl font-semibold text-white">
+          <h3 className="text-2xl font-semibold text-ink-900">
             Visual Memory Test
           </h3>
-          <p className="text-sm text-slate-300">
+          <p className="text-sm text-ink-500">
             This test evaluates your short-term visual memory.
           </p>
-          <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
-            <p className="font-semibold text-slate-100">Instructions:</p>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-300">
+          <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4 text-left text-sm text-ink-600">
+            <p className="font-semibold text-ink-700">Instructions:</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-600">
               <li>A sequence of tiles will flash.</li>
               <li>Memorize the pattern.</li>
               <li>
@@ -111,7 +111,7 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
           </div>
           <button
             onClick={startTest}
-            className="w-full rounded-2xl bg-emerald-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+            className="w-full rounded-2xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-500"
             type="button"
           >
             Start Memory Test
@@ -124,15 +124,15 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
   return (
     <div className="mx-auto w-full max-w-md space-y-6 text-center">
       <div className="space-y-2">
-        <h3 className="text-xl font-semibold text-white">Visual Memory Test</h3>
-        <p className="text-sm text-slate-300">
+        <h3 className="text-xl font-semibold text-ink-900">Visual Memory Test</h3>
+        <p className="text-sm text-ink-500">
           Memorize the pattern and repeat it.
           <br />
           Level {level}
         </p>
       </div>
 
-      <div className="grid aspect-square grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-slate-950/60 p-4">
+      <div className="grid aspect-square grid-cols-3 gap-3 rounded-2xl border border-ink-200 bg-ink-50 p-4">
         {Array.from({ length: 9 }).map((_, i) => (
           <button
             key={i}
@@ -140,10 +140,10 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
             disabled={gameState !== "input"}
             className={`
               rounded-xl border transition-all duration-200
-              ${playbackIdx === i ? "bg-emerald-400 scale-95 shadow-lg shadow-emerald-500/20" : "bg-slate-900/60 border-white/10 hover:border-emerald-300/40"}
+              ${playbackIdx === i ? "bg-brand-500 scale-95 shadow-lg shadow-brand-500/30" : "bg-white border-ink-200 hover:border-brand-300"}
               ${gameState === "input" ? "cursor-pointer active:scale-95" : "cursor-default"}
-              ${gameState === "success" ? "bg-emerald-400/20 border-emerald-300" : ""}
-              ${gameState === "fail" ? "bg-rose-500/10 border-rose-400" : ""}
+              ${gameState === "success" ? "bg-brand-100 border-brand-300" : ""}
+              ${gameState === "fail" ? "bg-rose-50 border-rose-300" : ""}
             `}
             type="button"
           />
@@ -151,25 +151,25 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
       </div>
 
       {finalResult ? (
-        <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+        <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4 text-left text-sm text-ink-600">
+          <p className="text-xs uppercase tracking-[0.3em] text-ink-500">
             Results
           </p>
           <div className="mt-3 grid gap-2">
             <div>
               Highest level:{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-ink-900">
                 {finalResult.highestLevel}
               </span>
             </div>
             <div>
               Completed levels:{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-ink-900">
                 {finalResult.completedLevels}
               </span>
             </div>
           </div>
-          <p className="mt-3 text-xs text-slate-400">
+          <p className="mt-3 text-xs text-ink-500">
             Your score appears below.
           </p>
         </div>
@@ -177,18 +177,18 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
 
       <div className="h-6 text-sm font-medium">
         {gameState === "playing" && (
-          <span className="animate-pulse text-emerald-200">
+          <span className="animate-pulse text-brand-600">
             Watch carefully...
           </span>
         )}
         {gameState === "input" && (
-          <span className="text-slate-300">Your turn</span>
+          <span className="text-ink-500">Your turn</span>
         )}
         {gameState === "success" && (
-          <span className="text-emerald-300">Correct! Next level...</span>
+          <span className="text-brand-600">Correct! Next level...</span>
         )}
         {gameState === "fail" && (
-          <span className="text-rose-300">Incorrect sequence</span>
+          <span className="text-rose-600">Incorrect sequence</span>
         )}
       </div>
     </div>

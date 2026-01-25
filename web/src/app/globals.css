@@ -1,27 +1,321 @@
 @import "tailwindcss";
 
+/* ============================================================
+   PrimeState Health — Classic Healthcare Palette
+   ============================================================ */
+
 :root {
-  --background: #05090f;
-  --foreground: #f8fafc;
-  --surface: #0f172a;
-  --surface-muted: #111827;
-  --accent: #34d399;
-  --accent-strong: #10b981;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-muted: #f1f5f9;
+  --accent: #4fa9ff;
+  --accent-strong: #2f8de6;
   --warm: #f59e0b;
+  --ps-primary: #0D47A1;
+  --ps-secondary: #1976D2;
+  --ps-bg-soft: #E3F2FD;
+  --ps-white: #FFFFFF;
+  --ps-gray: #B0BEC5;
+  --ps-text-main: #0f172a;
+  --ps-text-muted: #64748b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-primary: var(--ps-primary);
+  --color-secondary: var(--ps-secondary);
+  --color-muted: var(--ps-text-muted);
+  --color-gray: var(--ps-gray);
+  --color-brand-50: #f5fbff;
+  --color-brand-100: #e8f4ff;
+  --color-brand-200: #cfe9ff;
+  --color-brand-300: #a9d8ff;
+  --color-brand-400: #7fc4ff;
+  --color-brand-500: #4fa9ff;
+  --color-brand-600: #2f8de6;
+  --color-brand-700: #2470b8;
+  --color-ink-900: #0f172a;
+  --color-ink-700: #334155;
+  --color-ink-600: #475569;
+  --color-ink-500: #64748b;
+  --color-ink-200: #e2e8f0;
+  --color-ink-300: #cbd5e1;
+  --color-ink-100: #f1f5f9;
+  --color-ink-50: #f8fafc;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background:
-    radial-gradient(circle at top left, rgba(16, 185, 129, 0.2), transparent 45%),
-    radial-gradient(circle at 20% 10%, rgba(245, 158, 11, 0.18), transparent 55%),
-    var(--background);
-  color: var(--foreground);
+  background: var(--ps-white);
+  color: var(--ps-text-main);
   font-family: var(--font-geist-sans);
+}
+
+section.bg-soft,
+.bg-soft {
+  background-color: var(--ps-bg-soft);
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+nav {
+  background-color: var(--ps-white);
+  border-bottom: 1px solid var(--ps-gray);
+}
+
+nav a {
+  color: var(--ps-primary);
+}
+
+nav a:hover {
+  color: var(--ps-secondary);
+}
+
+.btn-primary,
+button.primary {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+  border: none;
+}
+
+.btn-primary:hover,
+button.primary:hover {
+  background-color: var(--ps-secondary);
+}
+
+.btn-secondary,
+button.secondary {
+  background-color: transparent;
+  color: var(--ps-primary);
+  border: 2px solid var(--ps-primary);
+}
+
+.btn-secondary:hover,
+button.secondary:hover {
+  background-color: var(--ps-bg-soft);
+}
+
+.card {
+  background: var(--ps-white);
+  border: 1px solid var(--ps-gray);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.08);
+}
+
+footer {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+}
+
+footer a {
+  color: #bbdefb;
+}
+
+footer a:hover {
+  color: var(--ps-white);
+}
+
+/* ============================================================
+   GLOBAL PROPAGATION — Typography & Layout
+   ============================================================ */
+
+html {
+  background: var(--ps-white);
+}
+
+body {
+  background: var(--ps-white);
+  color: var(--ps-text-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ps-primary);
+}
+
+p,
+li,
+span {
+  color: var(--ps-text-main);
+}
+
+small,
+.muted {
+  color: var(--ps-text-muted);
+}
+
+a {
+  color: var(--ps-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ps-primary);
+}
+
+/* ============================================================
+   SECTION BACKGROUNDS
+   ============================================================ */
+
+section {
+  background-color: var(--ps-white);
+}
+
+section.alt,
+.section-soft {
+  background-color: var(--ps-bg-soft);
+}
+
+.bg-primary {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+}
+
+.bg-secondary {
+  background-color: var(--ps-secondary);
+  color: var(--ps-white);
+}
+
+/* ============================================================
+   FORMS / INPUTS
+   ============================================================ */
+
+input,
+textarea,
+select {
+  border: 1px solid var(--ps-gray);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: var(--ps-white);
+  color: var(--ps-text-main);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--ps-secondary);
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+}
+
+label {
+  color: var(--ps-primary);
+  font-weight: 500;
+}
+
+/* ============================================================
+   BUTTON NORMALIZATION (ALL BUTTONS)
+   ============================================================ */
+
+button,
+.btn,
+[role="button"] {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+  border-radius: 12px;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  transition: all 0.15s ease;
+}
+
+button:hover,
+.btn:hover,
+[role="button"]:hover {
+  background-color: var(--ps-secondary);
+}
+
+button.outline,
+.btn-outline {
+  background: transparent;
+  color: var(--ps-primary);
+  border: 2px solid var(--ps-primary);
+}
+
+button.outline:hover,
+.btn-outline:hover {
+  background: var(--ps-bg-soft);
+}
+
+/* ============================================================
+   CARDS / PANELS / DASHBOARDS
+   ============================================================ */
+
+.card,
+.panel,
+.box,
+.surface {
+  background: var(--ps-white);
+  border: 1px solid var(--ps-gray);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.06);
+}
+
+.shadow-card {
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.08);
+}
+
+.card-header,
+.panel-header {
+  border-bottom: 1px solid var(--ps-gray);
+  color: var(--ps-primary);
+}
+
+/* ============================================================
+   HERO + CTA BLOCKS
+   ============================================================ */
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--ps-bg-soft) 0%,
+    var(--ps-white) 100%
+  );
+}
+
+.cta {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+}
+
+.cta a,
+.cta button {
+  background-color: var(--ps-white);
+  color: var(--ps-primary);
+}
+
+.cta a:hover,
+.cta button:hover {
+  background-color: var(--ps-bg-soft);
+}
+
+/* ============================================================
+   FOOTER PROPAGATION
+   ============================================================ */
+
+footer {
+  background-color: var(--ps-primary);
+  color: var(--ps-white);
+}
+
+footer h4 {
+  color: var(--ps-white);
+}
+
+footer p {
+  color: #dbeafe;
 }

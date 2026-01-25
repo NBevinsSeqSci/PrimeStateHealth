@@ -40,20 +40,18 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
     roundRef.current = round;
   }, [round]);
 
-  useEffect(() => {
-    if (gameState !== "playing") {
-      if (pulseTimeoutRef.current !== null) {
-        window.clearTimeout(pulseTimeoutRef.current);
-        pulseTimeoutRef.current = null;
-      }
-      if (selectionTimeoutRef.current !== null) {
-        window.clearTimeout(selectionTimeoutRef.current);
-        selectionTimeoutRef.current = null;
-      }
-      setSelectedChoice(null);
-      setJustSelectedPulse(null);
+  const resetSelections = useCallback(() => {
+    if (pulseTimeoutRef.current !== null) {
+      window.clearTimeout(pulseTimeoutRef.current);
+      pulseTimeoutRef.current = null;
     }
-  }, [gameState]);
+    if (selectionTimeoutRef.current !== null) {
+      window.clearTimeout(selectionTimeoutRef.current);
+      selectionTimeoutRef.current = null;
+    }
+    setSelectedChoice(null);
+    setJustSelectedPulse(null);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -68,9 +66,10 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
   const endGame = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
+    resetSelections();
     setGameState("finished");
     onComplete(scoreRef.current);
-  }, [onComplete]);
+  }, [onComplete, resetSelections]);
 
   const nextRound = useCallback(() => {
     if (roundRef.current >= TOTAL_ROUNDS) {
@@ -94,7 +93,6 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
   useEffect(() => {
     if (gameState === "playing") {
-      nextRound();
       timerRef.current = setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 1) {
@@ -108,7 +106,13 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [gameState, nextRound, endGame]);
+  }, [gameState, endGame]);
+
+  const startGame = () => {
+    resetSelections();
+    setGameState("playing");
+    nextRound();
+  };
 
   const handleAnswer = (colorValue: string) => {
     setSelectedChoice(colorValue);
@@ -141,10 +145,10 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
       {gameState === "intro" && (
         <div className="space-y-6">
           <div className="space-y-2">
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-ink-900">
               Executive Function Challenge
             </h3>
-            <p className="text-sm text-slate-300">
+            <p className="text-sm text-ink-600">
               Select the <strong>COLOR of the ink</strong>, not the word itself.
               <br />
               Example: If you see{" "}
@@ -153,8 +157,8 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
             </p>
           </div>
           <button
-            onClick={() => setGameState("playing")}
-            className="w-full rounded-2xl bg-emerald-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+            onClick={startGame}
+            className="w-full rounded-2xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-500"
             type="button"
           >
             Start Challenge
@@ -164,14 +168,14 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
       {gameState === "playing" && (
         <div className="space-y-8">
-          <div className="flex justify-between text-sm font-medium text-slate-300">
+          <div className="flex justify-between text-sm font-medium text-ink-500">
             <span>
               Round {Math.min(Math.max(round, 1), TOTAL_ROUNDS)} / {TOTAL_ROUNDS}
             </span>
             <span>Time: {timeLeft}s</span>
           </div>
 
-          <div className="flex h-40 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/60 shadow-inner">
+          <div className="flex h-40 items-center justify-center rounded-2xl border border-ink-200 bg-ink-50 shadow-inner">
             <div
               key={round}
               className="text-5xl font-black tracking-wider transition-transform duration-150"
@@ -192,10 +196,10 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
                   aria-pressed={isSelected}
                   className={[
                     "relative h-14 rounded-2xl border-2 text-base font-semibold transition",
-                    "focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950",
+                    "focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
                     isSelected
-                      ? "bg-slate-900/80 shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
-                      : "bg-slate-950/40 hover:bg-slate-900/70",
+                      ? "bg-ink-100 shadow-[0_0_0_1px_rgba(15,23,42,0.08)]"
+                      : "bg-white hover:bg-ink-50",
                     isPulsing ? "animate-[pulse_0.18s_ease-out_1]" : "",
                   ].join(" ")}
                   style={{ borderColor: color.value, color: color.value }}
@@ -204,7 +208,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
                   {color.name}
 
                   {isSelected && (
-                    <span className="pointer-events-none absolute right-2 top-2 inline-flex items-center gap-1 rounded-full bg-slate-950/80 px-2 py-0.5 text-[10px] font-semibold text-slate-100 ring-1 ring-white/20">
+                    <span className="pointer-events-none absolute right-2 top-2 inline-flex items-center gap-1 rounded-full bg-ink-900/90 px-2 py-0.5 text-[10px] font-semibold text-white ring-1 ring-ink-300">
                       <CheckIcon className="h-3.5 w-3.5" />
                       Selected
                     </span>
@@ -214,7 +218,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
             })}
           </div>
 
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-ink-500">
             Your selection flashes briefly when recorded.
           </p>
         </div>
@@ -222,9 +226,9 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
       {gameState === "finished" && (
         <div className="space-y-4">
-          <h3 className="text-2xl font-semibold text-white">Challenge Complete!</h3>
-          <p className="text-4xl font-black text-emerald-300">{score}</p>
-          <p className="text-sm text-slate-300">Raw score. Your score appears below.</p>
+          <h3 className="text-2xl font-semibold text-ink-900">Challenge Complete!</h3>
+          <p className="text-4xl font-black text-brand-600">{score}</p>
+          <p className="text-sm text-ink-500">Raw score. Your score appears below.</p>
         </div>
       )}
     </div>

@@ -60,7 +60,7 @@ export default function TurnstileWidget({ onVerify }: TurnstileWidgetProps) {
       />
       <div
         ref={containerRef}
-        className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-4"
+        className="mt-6 overflow-hidden rounded-2xl border border-ink-200 bg-white p-4"
       />
     </>
   );

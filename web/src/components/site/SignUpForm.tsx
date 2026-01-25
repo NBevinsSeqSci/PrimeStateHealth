@@ -40,13 +40,15 @@ export default function SignUpForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-3xl border border-white/10 bg-slate-900/80 p-8"
+      className="rounded-3xl border border-ink-200 bg-white/90 p-8 shadow-sm"
     >
-      <label className="text-xs uppercase tracking-[0.3em] text-emerald-200">
+      <label className="text-xs uppercase tracking-[0.3em] text-brand-600">
         Email sign-up
       </label>
-      <p className="mt-3 text-2xl font-semibold text-white">Start the free check-in.</p>
-      <p className="mt-2 text-sm text-slate-300">
+      <p className="mt-3 text-2xl font-semibold text-ink-900">
+        Start the free check-in.
+      </p>
+      <p className="mt-2 text-sm text-ink-500">
         Enter your email to get a secure link. You&apos;ll be able to start right away.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row">
@@ -56,22 +58,22 @@ export default function SignUpForm() {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="you@email.com"
-          className="flex-1 rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+          className="flex-1 rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
         />
         <button
           type="submit"
-          className="rounded-2xl bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+          className="rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-500"
         >
           {status === "sending" ? "Sending..." : "Send link"}
         </button>
       </div>
       {status === "sent" && (
-        <p className="mt-4 text-sm text-emerald-200">
+        <p className="mt-4 text-sm text-brand-600">
           Check your inbox for the sign-in link.
         </p>
       )}
       {status === "error" && (
-        <p className="mt-4 text-sm text-rose-200">
+        <p className="mt-4 text-sm text-rose-600">
           Something went wrong. Try again in a moment.
         </p>
       )}

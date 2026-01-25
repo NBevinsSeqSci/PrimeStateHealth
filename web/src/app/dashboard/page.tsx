@@ -10,14 +10,14 @@ const dashboardLinks = [
 export default function DashboardPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-16">
-      <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-200">
+      <div className="rounded-3xl border border-ink-200 bg-white/90 p-8 shadow-sm">
+        <p className="text-xs uppercase tracking-[0.3em] text-brand-600">
           Dashboard
         </p>
-        <h1 className="mt-3 text-3xl font-semibold text-white">
+        <h1 className="mt-3 text-3xl font-semibold text-ink-900">
           Your dashboard
         </h1>
-        <p className="mt-3 text-sm text-slate-300">
+        <p className="mt-3 text-sm text-ink-500">
           Track your snapshot, trends, and next steps in one place.
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -25,13 +25,13 @@ export default function DashboardPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm font-semibold text-slate-100 transition hover:border-emerald-300/60"
+              className="rounded-2xl border border-ink-200 bg-ink-50 px-4 py-3 text-sm font-semibold text-ink-700 transition hover:border-brand-300"
             >
               {link.label}
             </Link>
           ))}
         </div>
-        <p className="mt-6 text-xs text-slate-400">
+        <p className="mt-6 text-xs text-ink-500">
           Sign in is required to view your dashboard.
         </p>
       </div>

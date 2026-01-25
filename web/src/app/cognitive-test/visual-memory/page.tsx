@@ -1,5 +1,6 @@
 "use client";
 
+import SignupEnticement from "@/components/SignupEnticement";
 import TestScaffold from "@/components/tests/TestScaffold";
 import VisualMemoryTest from "@/components/tests/VisualMemoryTest";
 
@@ -35,6 +36,12 @@ export default function VisualMemoryPage() {
         const percent = Number(data?.percent ?? data?.score100);
         return Number.isFinite(percent) ? percent : 0;
       }}
+      resultCallout={
+        <SignupEnticement
+          title="See your memory trend"
+          subtitle="Create a free account to save results, compare today vs your baseline, and track progress over time."
+        />
+      }
     >
       {({ onComplete }) => <VisualMemoryTest onComplete={onComplete} />}
     </TestScaffold>

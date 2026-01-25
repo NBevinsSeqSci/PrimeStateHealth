@@ -105,18 +105,18 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
     return (
       <div className="mx-auto w-full max-w-md space-y-6 text-center">
         <div className="space-y-4">
-          <h3 className="text-2xl font-semibold text-white">
+          <h3 className="text-2xl font-semibold text-ink-900">
             Reaction Time Test
           </h3>
-          <p className="text-sm text-slate-300">
+          <p className="text-sm text-ink-500">
             This test measures your processing speed.
           </p>
-          <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
-            <p className="font-semibold text-slate-100">Instructions:</p>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-300">
+          <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4 text-left text-sm text-ink-600">
+            <p className="font-semibold text-ink-700">Instructions:</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-600">
               <li>
                 Wait for the box to turn{" "}
-                <span className="font-semibold text-emerald-300">GREEN</span>.
+                <span className="font-semibold text-brand-600">BLUE</span>.
               </li>
               <li>Click anywhere inside the box as fast as you can.</li>
               <li>If you click too early, you will have to retry.</li>
@@ -125,7 +125,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
           </div>
           <button
             onClick={startTest}
-            className="w-full rounded-2xl bg-emerald-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+            className="w-full rounded-2xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-500"
             type="button"
           >
             Start Test
@@ -138,9 +138,9 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
   return (
     <div className="mx-auto w-full max-w-md space-y-6 text-center">
       <div className="space-y-2">
-        <h3 className="text-xl font-semibold text-white">Reaction Time Test</h3>
-        <p className="text-sm text-slate-300">
-          Click anywhere inside the box as soon as it turns green.
+        <h3 className="text-xl font-semibold text-ink-900">Reaction Time Test</h3>
+        <p className="text-sm text-ink-500">
+          Click anywhere inside the box as soon as it turns blue.
           <br />
           {state === "finished"
             ? "Completed"
@@ -149,17 +149,17 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
       </div>
 
       {state === "finished" && finalResult ? (
-        <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+        <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4 text-left text-sm text-ink-600">
+          <p className="text-xs uppercase tracking-[0.3em] text-ink-500">
             Results
           </p>
           <div className="mt-3 grid gap-2">
             <div>
-              Average: <span className="font-semibold text-white">{finalResult.rawScore}ms</span>
+              Average: <span className="font-semibold text-ink-900">{finalResult.rawScore}ms</span>
             </div>
             <div>
               Fastest:{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-ink-900">
                 {finalResult.fastest == null
                   ? "-"
                   : `${finalResult.fastest}ms`}
@@ -167,7 +167,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
             </div>
             <div>
               Slowest:{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-ink-900">
                 {finalResult.slowest == null
                   ? "-"
                   : `${finalResult.slowest}ms`}
@@ -175,10 +175,10 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
             </div>
             <div>
               Early clicks:{" "}
-              <span className="font-semibold text-white">{finalResult.earlyClicks}</span>
+              <span className="font-semibold text-ink-900">{finalResult.earlyClicks}</span>
             </div>
           </div>
-          <p className="mt-3 text-xs text-slate-400">
+          <p className="mt-3 text-xs text-ink-500">
             Your score appears below.
           </p>
         </div>
@@ -186,11 +186,11 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
         <div
           onClick={handleClick}
           className={`
-            aspect-square cursor-pointer select-none rounded-2xl border border-white/10 shadow-lg transition-all duration-200
-            ${state === "waiting" ? "bg-slate-900/70 text-slate-400 hover:bg-slate-800/80" : ""}
-            ${state === "ready" ? "bg-emerald-400 text-slate-950 scale-105 shadow-emerald-500/20" : ""}
-            ${state === "clicked" ? "bg-emerald-300 text-slate-950" : ""}
-            ${state === "early" ? "bg-rose-500/10 border-2 border-rose-400 text-rose-200" : ""}
+            aspect-square cursor-pointer select-none rounded-2xl border border-ink-200 shadow-lg transition-all duration-200
+            ${state === "waiting" ? "bg-ink-100 text-ink-500 hover:bg-ink-200" : ""}
+            ${state === "ready" ? "bg-brand-500 text-white scale-105 shadow-brand-500/30" : ""}
+            ${state === "clicked" ? "bg-brand-400 text-white" : ""}
+            ${state === "early" ? "bg-rose-50 border-2 border-rose-300 text-rose-600" : ""}
           `}
         >
           <div className="text-2xl font-semibold">
@@ -205,7 +205,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
       {state === "early" && (
         <button
           onClick={reset}
-          className="rounded-2xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/40"
+          className="rounded-2xl border border-ink-300 px-4 py-2 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:text-brand-600"
           type="button"
         >
           Try Again

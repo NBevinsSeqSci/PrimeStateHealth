@@ -14,43 +14,43 @@ export default function SignupEnticement({
   return (
     <div
       className={[
-        "mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm",
+        "mt-6 rounded-2xl border border-ink-200 bg-white p-4 shadow-sm",
         "sm:p-5",
-        variant === "compact" ? "bg-slate-50" : "",
+        variant === "compact" ? "bg-ink-50" : "",
       ].join(" ")}
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm font-semibold text-slate-900">{title}</p>
-          <p className="mt-1 text-sm text-slate-600">{subtitle}</p>
+          <p className="text-sm font-semibold text-ink-900">{title}</p>
+          <p className="mt-1 text-sm text-ink-600">{subtitle}</p>
         </div>
         <div className="flex gap-2">
           <Link
             href="/signup"
-            className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow hover:bg-slate-800"
+            className="inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand-500"
           >
             Create free account
           </Link>
           <Link
             href="/login"
-            className="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-inset ring-slate-200 hover:bg-slate-100"
+            className="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium text-ink-900 ring-1 ring-inset ring-ink-200 hover:bg-ink-100"
           >
             Log in
           </Link>
         </div>
       </div>
 
-      <div className="mt-4 grid gap-2 text-xs text-slate-600 sm:grid-cols-3">
-        <div className="rounded-xl bg-slate-50 p-3 ring-1 ring-inset ring-slate-200">
-          <p className="font-semibold text-slate-900">Trendline</p>
+      <div className="mt-4 grid gap-2 text-xs text-ink-600 sm:grid-cols-3">
+        <div className="rounded-xl bg-ink-50 p-3 ring-1 ring-inset ring-ink-200">
+          <p className="font-semibold text-ink-900">Trendline</p>
           <p className="mt-1">See month-to-month change at a glance.</p>
         </div>
-        <div className="rounded-xl bg-slate-50 p-3 ring-1 ring-inset ring-slate-200">
-          <p className="font-semibold text-slate-900">Comparisons</p>
+        <div className="rounded-xl bg-ink-50 p-3 ring-1 ring-inset ring-ink-200">
+          <p className="font-semibold text-ink-900">Comparisons</p>
           <p className="mt-1">Compare today vs your baseline and recent average.</p>
         </div>
-        <div className="rounded-xl bg-slate-50 p-3 ring-1 ring-inset ring-slate-200">
-          <p className="font-semibold text-slate-900">All tests</p>
+        <div className="rounded-xl bg-ink-50 p-3 ring-1 ring-inset ring-ink-200">
+          <p className="font-semibold text-ink-900">All tests</p>
           <p className="mt-1">Keep executive, memory, and reaction scores together.</p>
         </div>
       </div>

@@ -7,22 +7,22 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="mx-auto w-full max-w-4xl px-6 pb-24 pt-16 text-slate-200">
+    <main className="mx-auto w-full max-w-4xl px-6 pb-24 pt-16 text-ink-700">
       <header className="mb-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-ink-900 md:text-4xl">
           Privacy Policy
         </h1>
-        <p className="mt-3 text-base text-slate-300 md:text-lg">
+        <p className="mt-3 text-base text-ink-600 md:text-lg">
           We aim for privacy-first defaults and collect only what we need to provide the service.
         </p>
-        <p className="mt-2 text-sm text-slate-400">
-          Effective date: <span className="font-medium text-slate-200">January 24, 2026</span>
+        <p className="mt-2 text-sm text-ink-500">
+          Effective date: <span className="font-medium text-ink-700">January 24, 2026</span>
         </p>
       </header>
 
       <section className="space-y-10">
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Quick summary</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Quick summary</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>We collect your email to create a secure sign-in link and deliver your results.</li>
             <li>We store your check-in results so you can view trends over time.</li>
@@ -33,33 +33,33 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">What we collect</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">What we collect</h2>
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-white">Information you provide</h3>
+            <h3 className="text-lg font-semibold text-ink-900">Information you provide</h3>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <span className="font-semibold text-white">Account info:</span> email address (used
+                <span className="font-semibold text-ink-900">Account info:</span> email address (used
                 for secure magic-link login).
               </li>
               <li>
-                <span className="font-semibold text-white">Support messages:</span> any information
+                <span className="font-semibold text-ink-900">Support messages:</span> any information
                 you include when you contact us.
               </li>
             </ul>
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-white">
+            <h3 className="text-lg font-semibold text-ink-900">
               Information generated when you use the service
             </h3>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <span className="font-semibold text-white">Check-in results:</span> task performance
+                <span className="font-semibold text-ink-900">Check-in results:</span> task performance
                 metrics (for example, scores and timing) used to show your snapshot and trends over
                 time.
               </li>
               <li>
-                <span className="font-semibold text-white">Device and usage data:</span> browser
+                <span className="font-semibold text-ink-900">Device and usage data:</span> browser
                 type, pages visited, and approximate usage patterns (to keep the service reliable
                 and improve it).
               </li>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-white">Cookies and similar technologies</h3>
+            <h3 className="text-lg font-semibold text-ink-900">Cookies and similar technologies</h3>
             <p>
               We use cookies or similar technologies for sign-in, security, and analytics. You can
               control cookies in your browser settings. Some cookies are required for the site to
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">How we use information</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">How we use information</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>Provide the service (sign-in links, check-ins, results, and trend tracking).</li>
             <li>Maintain safety and security (fraud prevention, abuse detection, and debugging).</li>
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">
             How we share information
           </h2>
           <p>
@@ -99,16 +99,16 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <span className="font-semibold text-white">Service providers:</span> vendors that help
+              <span className="font-semibold text-ink-900">Service providers:</span> vendors that help
               us operate the site (hosting, databases, email delivery, analytics). They are
               permitted to use data only to provide services to us.
             </li>
             <li>
-              <span className="font-semibold text-white">Legal and safety:</span> if required by law
+              <span className="font-semibold text-ink-900">Legal and safety:</span> if required by law
               or to protect rights, safety, and security.
             </li>
             <li>
-              <span className="font-semibold text-white">Business changes:</span> if we are involved
+              <span className="font-semibold text-ink-900">Business changes:</span> if we are involved
               in a merger, acquisition, or asset sale, we may transfer information as part of that
               transaction.
             </li>
@@ -116,25 +116,25 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">
             Your choices and rights
           </h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <span className="font-semibold text-white">Access / export:</span> request a copy of
+              <span className="font-semibold text-ink-900">Access / export:</span> request a copy of
               your information.
             </li>
             <li>
-              <span className="font-semibold text-white">Correction:</span> ask us to correct
+              <span className="font-semibold text-ink-900">Correction:</span> ask us to correct
               inaccurate information.
             </li>
             <li>
-              <span className="font-semibold text-white">Deletion:</span> request deletion of your
+              <span className="font-semibold text-ink-900">Deletion:</span> request deletion of your
               account and associated data (subject to legal requirements and limited security
               logs).
             </li>
             <li>
-              <span className="font-semibold text-white">Analytics controls:</span> you may be able
+              <span className="font-semibold text-ink-900">Analytics controls:</span> you may be able
               to opt out of certain analytics via browser settings or in-product controls where
               available.
             </li>
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Data retention</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Data retention</h2>
           <p>
             We keep your information for as long as needed to provide the service and maintain
             records for legitimate business purposes (like security and compliance). You can
@@ -151,7 +151,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Security</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Security</h2>
           <p>
             We use reasonable administrative, technical, and physical safeguards designed to
             protect your information. No method of transmission or storage is 100% secure, but we
@@ -160,7 +160,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Health note</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Health note</h2>
           <p>
             PrimeState Health is designed for measurement and trend tracking and is not a medical
             diagnosis or treatment service. If you have concerns about symptoms, please talk with a
@@ -169,7 +169,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">
             Children&apos;s privacy
           </h2>
           <p>
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">International users</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">International users</h2>
           <p>
             If you access the service from outside the United States, your information may be
             processed in the U.S. or other locations where our service providers operate.
@@ -187,7 +187,7 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Changes to this policy</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Changes to this policy</h2>
           <p>
             We may update this policy from time to time. If we make material changes, we will post
             the updated policy here and update the effective date above.
@@ -195,11 +195,11 @@ export default function PrivacyPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white md:text-2xl">Contact</h2>
+          <h2 className="text-xl font-semibold text-ink-900 md:text-2xl">Contact</h2>
           <p>
             Questions or requests? Contact us at{" "}
             <a
-              className="font-semibold text-emerald-300 underline decoration-emerald-400/60 underline-offset-4 hover:text-emerald-200"
+              className="font-semibold text-brand-600 underline decoration-brand-300 underline-offset-4 hover:text-brand-500"
               href="mailto:support@primestatehealth.com"
             >
               support@primestatehealth.com

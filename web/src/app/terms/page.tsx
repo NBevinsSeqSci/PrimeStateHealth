@@ -9,21 +9,21 @@ export default function TermsPage() {
   return (
     <main className="mx-auto w-full max-w-4xl px-6 pb-24 pt-16">
       <header className="mb-10">
-        <h1 className="text-3xl font-semibold text-white md:text-4xl">
+        <h1 className="text-3xl font-semibold text-ink-900 md:text-4xl">
           Terms of Service
         </h1>
-        <p className="mt-3 text-sm text-slate-300 md:text-base">
+        <p className="mt-3 text-sm text-ink-600 md:text-base">
           These terms explain how PrimeState Health works and what you can
           expect when using the service.
         </p>
-        <p className="mt-2 text-xs text-slate-400">
+        <p className="mt-2 text-xs text-ink-500">
           Effective date: <span className="font-medium">{EFFECTIVE_DATE}</span>
         </p>
       </header>
 
-      <section className="space-y-8 text-sm text-slate-300 md:text-base">
+      <section className="space-y-8 text-sm text-ink-600 md:text-base">
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">1) Agreement</h2>
+          <h2 className="text-xl font-semibold text-ink-900">1) Agreement</h2>
           <p>
             By accessing or using PrimeState Health (the &quot;Service&quot;), you agree
             to these Terms of Service (&quot;Terms&quot;). If you do not agree, do not use
@@ -32,7 +32,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             2) What the Service is (and isn&apos;t)
           </h2>
           <p>
@@ -46,7 +46,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">3) Eligibility</h2>
+          <h2 className="text-xl font-semibold text-ink-900">3) Eligibility</h2>
           <p>
             You must be at least 18 years old (or the age of majority where you
             live) to use the Service. By using the Service, you represent you
@@ -55,7 +55,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             4) Accounts and secure sign-in links
           </h2>
           <ul className="list-disc space-y-2 pl-5">
@@ -75,7 +75,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             5) Acceptable use
           </h2>
           <p>You agree not to:</p>
@@ -101,7 +101,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             6) Your content and inputs
           </h2>
           <p>
@@ -114,7 +114,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             7) Results and suggestions
           </h2>
           <p>
@@ -127,7 +127,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             8) Intellectual property
           </h2>
           <p>
@@ -141,7 +141,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             9) Third-party services
           </h2>
           <p>
@@ -153,7 +153,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             10) Changes to the Service
           </h2>
           <p>
@@ -164,7 +164,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">11) Termination</h2>
+          <h2 className="text-xl font-semibold text-ink-900">11) Termination</h2>
           <p>
             We may suspend or terminate your access to the Service at any time
             for any reason (including suspected misuse or security risk), with
@@ -173,7 +173,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             12) Disclaimer of warranties
           </h2>
           <p>
@@ -187,7 +187,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             13) Limitation of liability
           </h2>
           <p>
@@ -207,7 +207,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             14) Indemnification
           </h2>
           <p>
@@ -221,7 +221,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             15) Dispute resolution
           </h2>
           <p>
@@ -230,14 +230,14 @@ export default function TermsPage() {
             resolved in the courts located in the jurisdiction where PrimeState
             Health is organized (unless applicable law requires otherwise).
           </p>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-ink-500">
             (Optional upgrade later: add arbitration and class-action waiver if
             you want maximum protection.)
           </p>
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             16) Governing law
           </h2>
           <p>
@@ -248,7 +248,7 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">
+          <h2 className="text-xl font-semibold text-ink-900">
             17) Changes to these Terms
           </h2>
           <p>
@@ -260,11 +260,11 @@ export default function TermsPage() {
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-white">18) Contact</h2>
+          <h2 className="text-xl font-semibold text-ink-900">18) Contact</h2>
           <p>
             Questions about these Terms? Email{" "}
             <a
-              className="font-medium text-emerald-300 hover:text-emerald-200"
+              className="font-medium text-brand-600 hover:text-brand-500"
               href="mailto:support@primestatehealth.com"
             >
               support@primestatehealth.com
@@ -273,8 +273,8 @@ export default function TermsPage() {
           </p>
         </div>
 
-        <hr className="border-slate-800" />
-        <p className="text-xs text-slate-400">
+        <hr className="border-ink-200" />
+        <p className="text-xs text-ink-500">
           This page is a general template and not legal advice. Consider having
           counsel review before launch.
         </p>

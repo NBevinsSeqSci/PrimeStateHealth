@@ -132,16 +132,16 @@ export default function ContactForm() {
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       {state === "success" ? (
-        <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4">
-          <p className="text-sm font-semibold text-emerald-200">
+        <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4">
+          <p className="text-sm font-semibold text-brand-600">
             Message sent.
           </p>
-          <p className="mt-2 text-sm text-slate-300">
+          <p className="mt-2 text-sm text-ink-600">
             Thanks - we will get back to you soon.
           </p>
           <button
             type="button"
-            className="mt-4 rounded-2xl border border-white/10 px-4 py-2 text-sm text-white transition hover:border-white/30"
+            className="mt-4 rounded-2xl border border-ink-300 px-4 py-2 text-sm text-ink-700 transition hover:border-brand-300 hover:text-brand-600"
             onClick={resetForm}
           >
             Send another message
@@ -152,7 +152,7 @@ export default function ContactForm() {
           {error ? (
             <div
               role="alert"
-              className="rounded-2xl border border-rose-400/40 bg-rose-500/10 p-3 text-sm text-rose-200"
+              className="rounded-2xl border border-rose-200 bg-rose-50 p-3 text-sm text-rose-600"
             >
               {error}
             </div>
@@ -160,7 +160,7 @@ export default function ContactForm() {
 
           <div className="grid gap-4 md:grid-cols-2">
             <div>
-              <label className="text-sm font-medium text-white" htmlFor="name">
+              <label className="text-sm font-medium text-ink-700" htmlFor="name">
                 Name
               </label>
               <input
@@ -169,14 +169,14 @@ export default function ContactForm() {
                 value={name}
                 onChange={(event) => setName(event.target.value)}
                 autoComplete="name"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
                 placeholder="Your name"
                 required
                 disabled={state === "submitting"}
               />
             </div>
             <div>
-              <label className="text-sm font-medium text-white" htmlFor="email">
+              <label className="text-sm font-medium text-ink-700" htmlFor="email">
                 Email
               </label>
               <input
@@ -186,7 +186,7 @@ export default function ContactForm() {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 autoComplete="email"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
                 placeholder="you@example.com"
                 required
                 disabled={state === "submitting"}
@@ -195,7 +195,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="text-sm font-medium text-white" htmlFor="subject">
+            <label className="text-sm font-medium text-ink-700" htmlFor="subject">
               Subject
             </label>
             <input
@@ -203,7 +203,7 @@ export default function ContactForm() {
               name="subject"
               value={subject}
               onChange={(event) => setSubject(event.target.value)}
-              className="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+              className="mt-2 w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
               placeholder="How can we help?"
               required
               disabled={state === "submitting"}
@@ -211,7 +211,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="text-sm font-medium text-white" htmlFor="message">
+            <label className="text-sm font-medium text-ink-700" htmlFor="message">
               Message
             </label>
             <textarea
@@ -219,19 +219,19 @@ export default function ContactForm() {
               name="message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
-              className="mt-2 min-h-[140px] w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+              className="mt-2 min-h-[140px] w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
               placeholder="Tell us what is on your mind..."
               minLength={10}
               required
               disabled={state === "submitting"}
             />
-            <p className="mt-2 text-xs text-slate-400">
+            <p className="mt-2 text-xs text-ink-500">
               Please do not include sensitive health information.
             </p>
           </div>
 
           <div className="hidden">
-            <label className="text-sm font-medium text-white" htmlFor="company">
+            <label className="text-sm font-medium text-ink-700" htmlFor="company">
               Company
             </label>
             <input
@@ -241,7 +241,7 @@ export default function ContactForm() {
               onChange={(event) => setCompany(event.target.value)}
               autoComplete="off"
               tabIndex={-1}
-              className="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none"
+              className="mt-2 w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
             />
           </div>
 
@@ -255,7 +255,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={!canSubmit}
-            className="w-full rounded-2xl bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300 disabled:cursor-not-allowed disabled:opacity-50"
+            className="w-full rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-500 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {state === "submitting" ? "Sending..." : "Send message"}
           </button>

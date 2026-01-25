@@ -79,40 +79,40 @@ export default function TestScaffold({
     <main className="mx-auto w-full max-w-4xl px-6 pb-24 pt-16">
       <Link
         href={backTarget}
-        className="text-xs uppercase tracking-[0.3em] text-emerald-200 transition hover:text-emerald-100"
+        className="text-xs uppercase tracking-[0.3em] text-brand-600 transition hover:text-brand-500"
       >
         {backText}
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold text-white">{title}</h1>
+      <h1 className="mt-4 text-3xl font-semibold text-ink-900">{title}</h1>
       {description ? (
-        <p className="mt-2 text-slate-200">{description}</p>
+        <p className="mt-2 text-ink-600">{description}</p>
       ) : null}
-      <p className="mt-2 text-sm text-slate-300">
+      <p className="mt-2 text-sm text-ink-500">
         Tip: Do this in a quiet spot. Close other tabs for the cleanest results.
       </p>
 
-      <section className="mt-8 rounded-3xl border border-white/10 bg-slate-900/80 p-6">
+      <section className="mt-8 rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
         {children({ onComplete: setRaw, isComplete: raw != null })}
       </section>
 
-      <section className="mt-6 rounded-3xl border border-white/10 bg-slate-900/80 p-6">
+      <section className="mt-6 rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <div className="flex-1">
-            <div className="text-sm text-slate-300">Your score</div>
-            <div className="text-4xl font-semibold text-white">
+            <div className="text-sm text-ink-500">Your score</div>
+            <div className="text-4xl font-semibold text-ink-900">
               {score == null ? "-" : score}
               {score == null ? "" : (
-                <span className="text-base text-slate-300">/100</span>
+                <span className="text-base text-ink-500">/100</span>
               )}
             </div>
-            <div className="mt-2 text-sm text-slate-300">
+            <div className="mt-2 text-sm text-ink-500">
               Scores are for tracking your baseline and trend - not diagnosis or
               treatment.
             </div>
             {resultCallout}
           </div>
           <button
-            className="rounded-2xl border border-emerald-300/40 px-4 py-3 text-sm font-semibold text-emerald-100 transition hover:border-emerald-300/80 hover:text-white disabled:opacity-50"
+            className="rounded-2xl border border-brand-200 px-4 py-3 text-sm font-semibold text-brand-700 transition hover:border-brand-300 hover:text-brand-600 disabled:opacity-50"
             disabled={score == null || saving}
             onClick={save}
             type="button"
@@ -120,7 +120,7 @@ export default function TestScaffold({
             {saving ? "Saving..." : "Save result"}
           </button>
         </div>
-        {saveMsg ? <div className="mt-3 text-sm text-slate-300">{saveMsg}</div> : null}
+        {saveMsg ? <div className="mt-3 text-sm text-ink-500">{saveMsg}</div> : null}
       </section>
     </main>
   );

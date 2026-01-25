@@ -1,34 +1,38 @@
-import Link from "next/link";
+import DashboardShell from "@/components/DashboardShell";
+import TestResultCard from "@/components/results/TestResultCard";
 
-export default function ResultsIndexPage() {
+export default function ResultsPage() {
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-16">
-      <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-200">
-          Results
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold text-white">
-          Your Brain Clarity Snapshot
-        </h1>
-        <p className="mt-3 text-sm text-slate-300">
-          These scores help you track your baseline and trend over time.
-          Complete the check-in to generate your snapshot.
-        </p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            href="/cognitive-test"
-            className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
-          >
-            Take the check-in
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40"
-          >
-            Get started
-          </Link>
-        </div>
+    <DashboardShell>
+      <h1 className="text-4xl font-bold text-primary">
+        Your Cognitive Performance
+      </h1>
+
+      <p className="text-muted max-w-2xl">
+        These results are based on your most recent free check-in and are
+        compared against age-matched reference data.
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        <TestResultCard
+          title="Reaction Time"
+          score={87}
+          percentile={72}
+          summary="Your reaction speed is above average."
+        />
+        <TestResultCard
+          title="Executive Function"
+          score={82}
+          percentile={65}
+          summary="You show strong cognitive control."
+        />
+        <TestResultCard
+          title="Memory"
+          score={91}
+          percentile={80}
+          summary="Excellent visual memory performance."
+        />
       </div>
-    </div>
+    </DashboardShell>
   );
 }

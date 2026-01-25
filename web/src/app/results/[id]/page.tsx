@@ -26,31 +26,31 @@ export default async function ResultsPage({ params }: ResultsPageProps) {
 
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-16">
-      <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-200">
+      <div className="rounded-3xl border border-ink-200 bg-white/90 p-8 shadow-sm">
+        <p className="text-xs uppercase tracking-[0.3em] text-brand-600">
           Your Brain Clarity Snapshot
         </p>
-        <h1 className="mt-3 text-3xl font-semibold text-white">
+        <h1 className="mt-3 text-3xl font-semibold text-ink-900">
           Score: {result.score}
         </h1>
-        <p className="mt-3 text-sm text-slate-300">
+        <p className="mt-3 text-sm text-ink-500">
           These scores help you track your baseline and trend over time.
         </p>
-        <p className="mt-3 text-sm text-slate-300">
+        <p className="mt-3 text-sm text-ink-500">
           {insightFromScore(result.score)}
         </p>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4">
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+          <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4">
+            <p className="text-xs uppercase tracking-[0.3em] text-ink-500">
               Email
             </p>
-            <p className="mt-2 text-sm text-slate-200">{result.email}</p>
+            <p className="mt-2 text-sm text-ink-700">{result.email}</p>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4">
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+          <div className="rounded-2xl border border-ink-200 bg-ink-50 p-4">
+            <p className="text-xs uppercase tracking-[0.3em] text-ink-500">
               Completed
             </p>
-            <p className="mt-2 text-sm text-slate-200">
+            <p className="mt-2 text-sm text-ink-700">
               {result.createdAt.toLocaleString()}
             </p>
           </div>
@@ -58,18 +58,18 @@ export default async function ResultsPage({ params }: ResultsPageProps) {
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             href="/cognitive-test"
-            className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+            className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-500"
           >
             Run another check-in
           </Link>
           <Link
             href="/"
-            className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40"
+            className="rounded-full border border-ink-300 px-6 py-3 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:text-brand-600"
           >
             Return home
           </Link>
         </div>
-        <p className="mt-6 text-xs text-slate-400">
+        <p className="mt-6 text-xs text-ink-500">
           Prime State is for measurement and trend tracking - not diagnosis or
           treatment. If you have concerns, talk with a licensed clinician.
         </p>
