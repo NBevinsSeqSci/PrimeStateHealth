@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ValueCard from "@/components/ValueCard";
 
 export default function HomePage() {
   const steps = [
@@ -24,11 +25,23 @@ export default function HomePage() {
     },
   ];
 
-  const why = [
-    { title: "Get a baseline fast", body: "Know how you're doing today." },
-    { title: "See what's working", body: "Keep the habits that move the trend." },
-    { title: "Stay consistent", body: "Same check-in, month to month." },
-    { title: "Low friction", body: "No appointments. No equipment." },
+  const valueCards = [
+    {
+      title: "Get a baseline fast",
+      description: "Know how you're doing today — before guessing what to change.",
+    },
+    {
+      title: "See what's working",
+      description: "Trends show which habits and interventions actually help.",
+    },
+    {
+      title: "Stay consistent",
+      description: "Same tests, month to month, for clean comparisons.",
+    },
+    {
+      title: "Low friction",
+      description: "No appointments. No equipment. Just your device.",
+    },
   ];
 
   const faqs = [
@@ -175,9 +188,10 @@ export default function HomePage() {
       <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <p className="text-xs font-medium opacity-70">How it works</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight">Four simple steps</h2>
-            <p className="mt-2 text-sm opacity-80">Start free. Upgrade only if you want saved history.</p>
+            <h2 className="text-2xl font-semibold tracking-tight">How it works — and why it matters</h2>
+            <p className="mt-2 text-sm opacity-80">
+              Four simple steps to get your baseline and see what actually moves your brain-health trend.
+            </p>
           </div>
           <Link href="/try" className="hidden rounded-xl border px-4 py-2 text-sm font-medium sm:inline-flex">
             Try free check-in
@@ -193,22 +207,10 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
 
-      {/* WHY */}
-      <section id="why" className="mx-auto max-w-6xl px-6 pb-16">
-        <p className="text-xs font-medium opacity-70">Why PrimeState</p>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight">Make change measurable</h2>
-        <p className="mt-2 max-w-2xl text-sm opacity-80">
-          Baselines help you stop guessing. Trends help you see what actually works.
-        </p>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {why.map((w) => (
-            <div key={w.title} className="rounded-2xl border p-5 shadow-sm">
-              <div className="text-sm font-semibold">{w.title}</div>
-              <div className="mt-1 text-sm opacity-80">{w.body}</div>
-            </div>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {valueCards.map((card) => (
+            <ValueCard key={card.title} title={card.title} description={card.description} />
           ))}
         </div>
       </section>

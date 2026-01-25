@@ -1,5 +1,6 @@
 "use client";
 
+import SignupEnticement from "@/components/SignupEnticement";
 import ReactionTest from "@/components/tests/ReactionTest";
 import TestScaffold from "@/components/tests/TestScaffold";
 
@@ -25,6 +26,12 @@ export default function ReactionTimePage() {
         const penalty = Math.min(40, early * 8);
         return speedScore - penalty;
       }}
+      resultCallout={
+        <SignupEnticement
+          title="Track your speed over time"
+          subtitle="Create a free account to save results, compare today vs your baseline, and see your trendline."
+        />
+      }
     >
       {({ onComplete }) => <ReactionTest onComplete={onComplete} />}
     </TestScaffold>

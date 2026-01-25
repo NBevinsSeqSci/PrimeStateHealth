@@ -2,127 +2,157 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Free Check-in | Prime State Health",
-  description: "Get a quick Brain Clarity Snapshot in 3–6 minutes and track your trend over time.",
 };
+
+const TESTS = [
+  {
+    title: "Executive function",
+    subtitle: "Stroop test",
+    description: "Measures focus + inhibition (classic color-word interference).",
+    href: "/cognitive-test/executive",
+    cta: "Start Stroop",
+  },
+  {
+    title: "Memory",
+    subtitle: "Visual memory",
+    description: "Measures short-term visual memory with a simple game-like task.",
+    href: "/cognitive-test/memory",
+    cta: "Start Memory",
+  },
+  {
+    title: "Reaction time",
+    subtitle: "Response speed",
+    description: "Measures simple response speed (best on laptop/desktop).",
+    href: "/cognitive-test/reaction-time",
+    cta: "Start Reaction",
+  },
+];
+
+function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.07 7.1a1 1 0 0 1-1.418.002L3.29 8.88a1 1 0 1 1 1.414-1.414l3.225 3.224 6.363-6.39a1 1 0 0 1 1.412-.01Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
 
 export default function TryPage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-16">
-      <section className="grid gap-10 md:grid-cols-2 md:items-center">
-        {/* Left: Hero copy */}
-        <div>
-          <p className="text-sm font-medium opacity-70">Free check-in</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight">
-            Get a quick <span className="whitespace-nowrap">Brain Clarity Snapshot</span> (3–6 minutes)
-          </h1>
-          <p className="mt-4 text-base leading-relaxed opacity-80">
-            A short set of science-based tasks that estimate <strong>attention</strong>, <strong>speed</strong>, and{" "}
-            <strong>memory</strong>—then gives you a simple score you can track over time.
-          </p>
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
+      <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:py-16">
+        {/* Header */}
+        <div className="mb-10 flex items-center justify-between">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 shadow-sm hover:bg-slate-50"
+          >
+            <span className="h-2.5 w-2.5 rounded-full bg-sky-300" />
+            Prime State Health
+          </Link>
 
-          <ul className="mt-6 space-y-3 text-sm opacity-85">
-            <li className="flex gap-2">
-              <span aria-hidden="true">✓</span>
-              <span>
-                Works best on a <strong>laptop/desktop</strong> in a quiet spot
-              </span>
-            </li>
-            <li className="flex gap-2">
-              <span aria-hidden="true">✓</span>
-              <span>Repeat monthly to see your trend</span>
-            </li>
-            <li className="flex gap-2">
-              <span aria-hidden="true">✓</span>
-              <span>Simple results, no jargon</span>
-            </li>
-          </ul>
-
-          <div className="mt-8 flex flex-col gap-3">
-            <p className="text-sm font-medium opacity-80">Pick a test (no signup required):</p>
-            <div className="grid gap-3 sm:grid-cols-3">
-              <Link
-                href="/cognitive-test/executive"
-                className="inline-flex items-center justify-center rounded-xl border px-4 py-3 text-sm font-medium shadow-sm"
-              >
-                Executive function
-              </Link>
-              <Link
-                href="/cognitive-test/memory"
-                className="inline-flex items-center justify-center rounded-xl border px-4 py-3 text-sm font-medium shadow-sm"
-              >
-                Memory
-              </Link>
-              <Link
-                href="/cognitive-test/reaction-time"
-                className="inline-flex items-center justify-center rounded-xl border px-4 py-3 text-sm font-medium shadow-sm"
-              >
-                Reaction time
-              </Link>
-            </div>
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-              <Link
-                href="/signup"
-                className="inline-flex items-center justify-center rounded-xl border px-4 py-2 text-sm font-medium opacity-90"
-              >
-                Create account to save results
-              </Link>
-              <span className="text-xs opacity-65">
-                (Optional — you can take any test and see results without signing up.)
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/login"
+              className="rounded-full px-3 py-1.5 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+            >
+              Log in
+            </Link>
+            <Link
+              href="/signup"
+              className="rounded-full bg-slate-900 px-4 py-1.5 text-sm font-medium text-white shadow hover:bg-slate-800"
+            >
+              Get started
+            </Link>
           </div>
-
-          <p className="mt-6 rounded-2xl border p-4 text-xs leading-relaxed opacity-75">
-            <strong>Important:</strong> This is not medical advice, diagnosis, or treatment. If you’re worried about
-            symptoms, talk with a licensed clinician. If you think you may be having an emergency, call 911.
-          </p>
         </div>
 
-        {/* Right: “How it works” card */}
-        <aside className="rounded-2xl border p-6 shadow-sm">
-          <h2 className="text-lg font-semibold">How it works</h2>
-          <p className="mt-2 text-sm opacity-80">Take one quick test and get an immediate result.</p>
+        {/* Hero */}
+        <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
+          <div className="max-w-2xl">
+            <p className="mb-3 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-800 ring-1 ring-inset ring-sky-100">
+              Free check-in • No signup required
+            </p>
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+              Get a quick Brain Clarity Snapshot
+            </h1>
+            <p className="mt-3 text-base leading-relaxed text-slate-600 sm:text-lg">
+              3–6 minutes. A short set of science-based tasks that estimate attention, speed, and memory—then gives you a
+              simple score you can track over time.
+            </p>
 
-          <div className="mt-5 space-y-4">
-            <div className="rounded-xl border p-4">
-              <p className="text-sm font-semibold">Executive function (Stroop)</p>
-              <p className="mt-1 text-sm opacity-80">Measures focus + inhibition (classic color-word interference).</p>
-              <Link
-                href="/cognitive-test/executive"
-                className="mt-3 inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium"
-              >
-                Start Stroop
-              </Link>
-            </div>
-
-            <div className="rounded-xl border p-4">
-              <p className="text-sm font-semibold">Memory</p>
-              <p className="mt-1 text-sm opacity-80">Measures short-term visual memory with a simple game-like task.</p>
-              <Link
-                href="/cognitive-test/memory"
-                className="mt-3 inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium"
-              >
-                Start Memory
-              </Link>
-            </div>
-
-            <div className="rounded-xl border p-4">
-              <p className="text-sm font-semibold">Reaction time</p>
-              <p className="mt-1 text-sm opacity-80">Measures simple response speed (best on laptop/desktop).</p>
-              <Link
-                href="/cognitive-test/reaction-time"
-                className="mt-3 inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium"
-              >
-                Start Reaction
-              </Link>
-            </div>
+            <ul className="mt-6 grid gap-3 text-sm text-slate-700 sm:grid-cols-3">
+              <li className="flex items-start gap-2 rounded-2xl bg-slate-50 p-3">
+                <CheckIcon className="mt-0.5 h-5 w-5 text-sky-500" />
+                <span>Best on laptop/desktop in a quiet spot</span>
+              </li>
+              <li className="flex items-start gap-2 rounded-2xl bg-slate-50 p-3">
+                <CheckIcon className="mt-0.5 h-5 w-5 text-sky-500" />
+                <span>Repeat monthly to see your trend</span>
+              </li>
+              <li className="flex items-start gap-2 rounded-2xl bg-slate-50 p-3">
+                <CheckIcon className="mt-0.5 h-5 w-5 text-sky-500" />
+                <span>Simple results, no jargon</span>
+              </li>
+            </ul>
           </div>
 
-          <div className="mt-6 border-t pt-4 text-xs opacity-70">
-            Tip: For the most consistent results, try to take the check-in at a similar time of day each month.
+          {/* Cards */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            {TESTS.map((t) => (
+              <div
+                key={t.href}
+                className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow"
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h2 className="text-lg font-semibold text-slate-900">{t.title}</h2>
+                    <p className="text-xs font-medium text-slate-500">{t.subtitle}</p>
+                  </div>
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sky-700 ring-1 ring-inset ring-sky-100">
+                    →
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{t.description}</p>
+                <Link
+                  href={t.href}
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-medium text-white shadow hover:bg-slate-800"
+                >
+                  {t.cta}
+                </Link>
+              </div>
+            ))}
           </div>
-        </aside>
-      </section>
+
+          {/* Optional account nudge */}
+          <div className="mt-6 flex flex-col gap-2 rounded-2xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              Want to save results and track your history?{" "}
+              <span className="text-slate-500">(Optional)</span>
+            </p>
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-inset ring-slate-200 hover:bg-slate-100"
+            >
+              Create an account
+            </Link>
+          </div>
+
+          {/* Disclaimer */}
+          <p className="mt-6 text-xs leading-relaxed text-slate-500">
+            Important: This is not medical advice, diagnosis, or treatment. If you’re worried about symptoms, talk with a
+            licensed clinician. If you think you may be having an emergency, call 911.
+          </p>
+        </section>
+
+        {/* Footer note */}
+        <p className="mx-auto mt-8 max-w-3xl text-center text-sm text-slate-500">
+          Tip: For the most consistent results, take the check-in at a similar time of day each month.
+        </p>
+      </div>
     </main>
   );
 }

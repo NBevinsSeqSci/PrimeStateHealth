@@ -1,5 +1,6 @@
 "use client";
 
+import SignupEnticement from "@/components/SignupEnticement";
 import StroopTest from "@/components/tests/StroopTest";
 import TestScaffold from "@/components/tests/TestScaffold";
 
@@ -19,6 +20,12 @@ export default function ExecutivePage() {
         if (!Number.isFinite(rawScore)) return 0;
         return (rawScore / MAX_STROOP_SCORE) * 100;
       }}
+      resultCallout={
+        <SignupEnticement
+          title="Save this score + see comparisons"
+          subtitle="Create a free account to track your trend over time and compare today's score to your baseline."
+        />
+      }
     >
       {({ onComplete }) => <StroopTest onComplete={onComplete} />}
     </TestScaffold>

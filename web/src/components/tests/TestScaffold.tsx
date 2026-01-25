@@ -23,6 +23,7 @@ type Props = {
   backLabel?: string;
   children: (args: { onComplete: (raw: unknown) => void; isComplete: boolean }) => ReactNode;
   scoreFromRaw: (raw: unknown) => number;
+  resultCallout?: ReactNode;
 };
 
 export default function TestScaffold({
@@ -33,6 +34,7 @@ export default function TestScaffold({
   backLabel,
   children,
   scoreFromRaw,
+  resultCallout,
 }: Props) {
   const [raw, setRaw] = useState<unknown | null>(null);
   const [saving, setSaving] = useState(false);
@@ -94,8 +96,8 @@ export default function TestScaffold({
       </section>
 
       <section className="mt-6 rounded-3xl border border-white/10 bg-slate-900/80 p-6">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+          <div className="flex-1">
             <div className="text-sm text-slate-300">Your score</div>
             <div className="text-4xl font-semibold text-white">
               {score == null ? "-" : score}
@@ -107,6 +109,7 @@ export default function TestScaffold({
               Scores are for tracking your baseline and trend - not diagnosis or
               treatment.
             </div>
+            {resultCallout}
           </div>
           <button
             className="rounded-2xl border border-emerald-300/40 px-4 py-3 text-sm font-semibold text-emerald-100 transition hover:border-emerald-300/80 hover:text-white disabled:opacity-50"

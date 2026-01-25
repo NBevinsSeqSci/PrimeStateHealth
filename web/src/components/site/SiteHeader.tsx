@@ -2,8 +2,7 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/#how-it-works", label: "How it works" },
-  { href: "/#why", label: "Why PrimeState" },
-  { href: "/try", label: "Free check-in" },
+  { href: "/try", label: "Free Tests" },
 ];
 
 export default function SiteHeader() {
