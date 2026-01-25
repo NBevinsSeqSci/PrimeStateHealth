@@ -4,7 +4,7 @@ import TestResultCard from "@/components/results/TestResultCard";
 export default function ResultsPage() {
   return (
     <DashboardShell>
-      <h1 className="text-4xl font-bold text-primary">
+      <h1 className="text-4xl font-bold text-foreground">
         Your Cognitive Performance
       </h1>
 

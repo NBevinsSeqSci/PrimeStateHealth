@@ -5,20 +5,23 @@
    ============================================================ */
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --surface: #ffffff;
-  --surface-muted: #f1f5f9;
-  --accent: #4fa9ff;
-  --accent-strong: #2f8de6;
-  --warm: #f59e0b;
-  --ps-primary: #0D47A1;
-  --ps-secondary: #1976D2;
-  --ps-bg-soft: #E3F2FD;
+  --background: #F3F6F9;
+  --foreground: #1F2933;
+  --surface: #FFFFFFCC;
+  --surface-muted: #E9EFF5;
+  --accent: #BFEAF7;
+  --accent-strong: #7FC7E6;
+  --warm: #F2C98A;
+  --ps-primary: #7FC7E6;
+  --ps-secondary: #6BB7DA;
+  --ps-bg-soft: #E9EFF5;
   --ps-white: #FFFFFF;
-  --ps-gray: #B0BEC5;
-  --ps-text-main: #0f172a;
-  --ps-text-muted: #64748b;
+  --ps-gray: #D8E2EA;
+  --ps-text-main: #1F2933;
+  --ps-text-muted: #64748B;
+  --ps-accent: #BFEAF7;
+  --ps-positive: #7FD1AE;
+  --ps-warning: #F2C98A;
 }
 
 @theme inline {
@@ -28,32 +31,43 @@
   --color-surface-muted: var(--surface-muted);
   --color-primary: var(--ps-primary);
   --color-secondary: var(--ps-secondary);
+  --color-accent: var(--ps-accent);
   --color-muted: var(--ps-text-muted);
   --color-gray: var(--ps-gray);
-  --color-brand-50: #f5fbff;
-  --color-brand-100: #e8f4ff;
-  --color-brand-200: #cfe9ff;
-  --color-brand-300: #a9d8ff;
-  --color-brand-400: #7fc4ff;
-  --color-brand-500: #4fa9ff;
-  --color-brand-600: #2f8de6;
-  --color-brand-700: #2470b8;
-  --color-ink-900: #0f172a;
-  --color-ink-700: #334155;
-  --color-ink-600: #475569;
-  --color-ink-500: #64748b;
-  --color-ink-200: #e2e8f0;
-  --color-ink-300: #cbd5e1;
-  --color-ink-100: #f1f5f9;
-  --color-ink-50: #f8fafc;
+  --color-positive: var(--ps-positive);
+  --color-warning: var(--ps-warning);
+  --color-brand-50: #F3F6F9;
+  --color-brand-100: #E9EFF5;
+  --color-brand-200: #D8E2EA;
+  --color-brand-300: #BFEAF7;
+  --color-brand-400: #BFEAF7;
+  --color-brand-500: #7FC7E6;
+  --color-brand-600: #6BB7DA;
+  --color-brand-700: #1F2933;
+  --color-ink-900: #1F2933;
+  --color-ink-700: #1F2933;
+  --color-ink-600: #64748B;
+  --color-ink-500: #64748B;
+  --color-ink-200: #D8E2EA;
+  --color-ink-300: #D8E2EA;
+  --color-ink-100: #E9EFF5;
+  --color-ink-50: #F3F6F9;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--ps-white);
-  color: var(--ps-text-main);
+  /* ---------- Prime State Health Palette Softening ---------- */
+  @apply bg-background text-foreground;
   font-family: var(--font-geist-sans);
+}
+
+.psh-bg {
+  @apply bg-surface-muted;
+}
+
+.psh-card {
+  @apply bg-surface backdrop-blur-sm border border-gray shadow-sm;
 }
 
 section.bg-soft,
@@ -62,11 +76,11 @@ section.bg-soft,
 }
 
 a {
-  color: var(--accent-strong);
+  color: var(--ps-primary);
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--ps-secondary);
 }
 
 nav {
@@ -75,7 +89,7 @@ nav {
 }
 
 nav a {
-  color: var(--ps-primary);
+  color: var(--ps-text-main);
 }
 
 nav a:hover {
@@ -107,19 +121,19 @@ button.secondary:hover {
 }
 
 .card {
-  background: var(--ps-white);
+  background: var(--surface);
   border: 1px solid var(--ps-gray);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.08);
+  box-shadow: 0 4px 12px rgba(31, 41, 51, 0.08);
 }
 
 footer {
-  background-color: var(--ps-primary);
+  background-color: var(--ps-text-main);
   color: var(--ps-white);
 }
 
 footer a {
-  color: #bbdefb;
+  color: var(--ps-accent);
 }
 
 footer a:hover {
@@ -131,11 +145,11 @@ footer a:hover {
    ============================================================ */
 
 html {
-  background: var(--ps-white);
+  background: var(--background);
 }
 
 body {
-  background: var(--ps-white);
+  background: var(--background);
   color: var(--ps-text-main);
 }
 
@@ -145,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--ps-primary);
+  color: var(--ps-text-main);
 }
 
 p,
@@ -160,12 +174,12 @@ small,
 }
 
 a {
-  color: var(--ps-secondary);
+  color: var(--ps-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--ps-primary);
+  color: var(--ps-secondary);
 }
 
 /* ============================================================
@@ -173,7 +187,7 @@ a:hover {
    ============================================================ */
 
 section {
-  background-color: var(--ps-white);
+  background-color: var(--background);
 }
 
 section.alt,
@@ -210,11 +224,11 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--ps-secondary);
-  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+  box-shadow: 0 0 0 3px rgba(107, 183, 218, 0.3);
 }
 
 label {
-  color: var(--ps-primary);
+  color: var(--ps-text-main);
   font-weight: 500;
 }
 
@@ -259,20 +273,20 @@ button.outline:hover,
 .panel,
 .box,
 .surface {
-  background: var(--ps-white);
+  background: var(--surface);
   border: 1px solid var(--ps-gray);
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.06);
+  box-shadow: 0 6px 20px rgba(31, 41, 51, 0.06);
 }
 
 .shadow-card {
-  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.08);
+  box-shadow: 0 6px 20px rgba(31, 41, 51, 0.08);
 }
 
 .card-header,
 .panel-header {
   border-bottom: 1px solid var(--ps-gray);
-  color: var(--ps-primary);
+  color: var(--ps-text-main);
 }
 
 /* ============================================================
@@ -283,7 +297,7 @@ button.outline:hover,
   background: linear-gradient(
     180deg,
     var(--ps-bg-soft) 0%,
-    var(--ps-white) 100%
+    var(--background) 100%
   );
 }
 
@@ -308,7 +322,7 @@ button.outline:hover,
    ============================================================ */
 
 footer {
-  background-color: var(--ps-primary);
+  background-color: var(--ps-text-main);
   color: var(--ps-white);
 }
 
@@ -317,5 +331,5 @@ footer h4 {
 }
 
 footer p {
-  color: #dbeafe;
+  color: var(--ps-accent);
 }

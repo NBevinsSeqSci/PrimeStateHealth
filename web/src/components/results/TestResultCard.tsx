@@ -14,8 +14,8 @@ export default function TestResultCard({
   return (
     <Card>
       <div className="flex items-start justify-between">
-        <h3 className="text-xl font-semibold text-primary">{title}</h3>
-        <span className="bg-soft text-secondary text-sm px-3 py-1 rounded-full">
+        <h3 className="text-xl font-semibold text-foreground">{title}</h3>
+        <span className="bg-soft text-foreground text-sm px-3 py-1 rounded-full">
           {percentile}th %
         </span>
       </div>
@@ -23,7 +23,7 @@ export default function TestResultCard({
       <p className="text-muted mt-3 mb-6">{summary}</p>
 
       <div className="flex items-end justify-between">
-        <div className="text-4xl font-bold text-primary">{score}</div>
+        <div className="text-4xl font-bold text-foreground">{score}</div>
 
         <div className="flex gap-3">
           <button className="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-xl shadow-card transition">

@@ -23,7 +23,7 @@ export default function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="transition hover:text-brand-600"
+              className="no-underline transition hover:text-slate-700"
             >
               {item.label}
             </Link>

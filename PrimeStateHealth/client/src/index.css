@@ -12,57 +12,56 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
-  /* Clinical Clean Palette */
-  /* Primary: Deep Medical Navy */
-  --color-primary: hsl(215 28% 17%);
-  --color-primary-foreground: hsl(0 0% 100%);
+  /* Prime State Health Palette */
+  --color-primary: #7FC7E6;
+  --color-primary-foreground: #1F2933;
 
-  /* Secondary: Soft Slate */
-  --color-secondary: hsl(210 20% 96%);
-  --color-secondary-foreground: hsl(215 28% 17%);
+  --color-secondary: #E9EFF5;
+  --color-secondary-foreground: #1F2933;
 
-  /* Accent: Vitality Teal */
-  --color-accent: hsl(172 66% 40%);
-  --color-accent-foreground: hsl(0 0% 100%);
+  --color-accent: #BFEAF7;
+  --color-accent-foreground: #1F2933;
 
   /* Muted */
-  --color-muted: hsl(210 20% 96%);
-  --color-muted-foreground: hsl(215 16% 47%);
+  --color-muted: #E9EFF5;
+  --color-muted-foreground: #64748B;
 
   /* Backgrounds */
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(215 28% 17%);
+  --color-background: #F3F6F9;
+  --color-foreground: #1F2933;
   
-  --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(215 28% 17%);
+  --color-card: #FFFFFFCC;
+  --color-card-foreground: #1F2933;
   
-  --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(215 28% 17%);
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1F2933;
 
   /* Borders */
-  --color-border: hsl(214 32% 91%);
-  --color-input: hsl(214 32% 91%);
-  --color-ring: hsl(172 66% 40%);
+  --color-border: #D8E2EA;
+  --color-input: #D8E2EA;
+  --color-ring: #7FC7E6;
 
   /* Status */
-  --color-destructive: hsl(0 84% 60%);
-  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-destructive: #F2C98A;
+  --color-destructive-foreground: #1F2933;
+  --color-positive: #7FD1AE;
+  --color-warning: #F2C98A;
 
   /* Chart Colors */
-  --color-chart-1: hsl(172 66% 40%); /* Teal */
-  --color-chart-2: hsl(215 28% 37%); /* Light Navy */
-  --color-chart-3: hsl(280 30% 60%); /* Soft Purple */
-  --color-chart-4: hsl(35 80% 60%);  /* Soft Orange */
-  --color-chart-5: hsl(190 60% 50%);  /* Sky Blue */
+  --color-chart-1: #7FC7E6;
+  --color-chart-2: #7FD1AE;
+  --color-chart-3: #F2C98A;
+  --color-chart-4: #BFEAF7;
+  --color-chart-5: #64748B;
 
-  --color-sidebar: hsl(215 28% 15%);
-  --color-sidebar-foreground: hsl(210 20% 96%);
-  --color-sidebar-primary: hsl(172 66% 40%);
-  --color-sidebar-primary-foreground: hsl(0 0% 100%);
-  --color-sidebar-accent: hsl(215 28% 20%);
-  --color-sidebar-accent-foreground: hsl(210 20% 96%);
-  --color-sidebar-border: hsl(215 28% 20%);
-  --color-sidebar-ring: hsl(172 66% 40%);
+  --color-sidebar: #1F2933;
+  --color-sidebar-foreground: #F3F6F9;
+  --color-sidebar-primary: #7FC7E6;
+  --color-sidebar-primary-foreground: #1F2933;
+  --color-sidebar-accent: #E9EFF5;
+  --color-sidebar-accent-foreground: #1F2933;
+  --color-sidebar-border: #D8E2EA;
+  --color-sidebar-ring: #7FC7E6;
 }
 
 @layer base {
@@ -72,8 +71,8 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
     background-image: 
-      radial-gradient(circle at 100% 0%, hsla(172, 66%, 40%, 0.03) 0%, transparent 25%),
-      radial-gradient(circle at 0% 100%, hsla(215, 28%, 17%, 0.03) 0%, transparent 25%);
+      radial-gradient(circle at 100% 0%, rgba(191, 234, 247, 0.12) 0%, transparent 25%),
+      radial-gradient(circle at 0% 100%, rgba(31, 41, 51, 0.06) 0%, transparent 25%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4, h5, h6 {
