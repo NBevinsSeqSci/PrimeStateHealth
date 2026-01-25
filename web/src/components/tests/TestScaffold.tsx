@@ -19,6 +19,8 @@ type Props = {
   title: string;
   description?: string;
   kind: TestKind;
+  backHref?: string;
+  backLabel?: string;
   children: (args: { onComplete: (raw: unknown) => void; isComplete: boolean }) => ReactNode;
   scoreFromRaw: (raw: unknown) => number;
 };
@@ -27,6 +29,8 @@ export default function TestScaffold({
   title,
   description,
   kind,
+  backHref,
+  backLabel,
   children,
   scoreFromRaw,
 }: Props) {
@@ -66,13 +70,16 @@ export default function TestScaffold({
     }
   }
 
+  const backTarget = backHref ?? "/cognitive-test";
+  const backText = backLabel ?? "Back to check-in";
+
   return (
     <main className="mx-auto w-full max-w-4xl px-6 pb-24 pt-16">
       <Link
-        href="/cognitive-test"
+        href={backTarget}
         className="text-xs uppercase tracking-[0.3em] text-emerald-200 transition hover:text-emerald-100"
       >
-        Back to check-in
+        {backText}
       </Link>
       <h1 className="mt-4 text-3xl font-semibold text-white">{title}</h1>
       {description ? (

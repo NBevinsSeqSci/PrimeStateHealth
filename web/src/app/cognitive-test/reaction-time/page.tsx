@@ -9,6 +9,8 @@ export default function ReactionTimePage() {
       title="Reaction Time"
       description="A quick baseline of speed and consistency."
       kind="reaction-time"
+      backHref="/try"
+      backLabel="Back"
       scoreFromRaw={(raw) => {
         const data = raw as {
           rawScore?: number;
