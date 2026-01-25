@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LinkButton } from "@/components/ui/link-button";
 
 const navItems = [
   { href: "/#how-it-works", label: "How it works" },
@@ -23,25 +24,19 @@ export default function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="no-underline transition hover:text-slate-700"
+              className="psh-link"
             >
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-3">
-          <Link
-            href="/login"
-            className="text-sm font-semibold text-ink-700 transition hover:text-brand-600"
-          >
+        <div className="flex items-center gap-2">
+          <LinkButton href="/login" variant="ghost" size="sm">
             Log in
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-full border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-300 hover:text-brand-600"
-          >
+          </LinkButton>
+          <LinkButton href="/signup" variant="primary" size="sm">
             Get started
-          </Link>
+          </LinkButton>
         </div>
       </div>
     </header>

@@ -77,6 +77,7 @@ section.bg-soft,
 
 a {
   color: var(--ps-primary);
+  text-underline-offset: 4px;
 }
 
 a:hover {
@@ -176,9 +177,20 @@ small,
 a {
   color: var(--ps-primary);
   text-decoration: none;
+  text-underline-offset: 4px;
 }
 
 a:hover {
+  color: var(--ps-secondary);
+}
+
+.psh-link {
+  color: var(--ps-text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.psh-link:hover {
   color: var(--ps-secondary);
 }
 

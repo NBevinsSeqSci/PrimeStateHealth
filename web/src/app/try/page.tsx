@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LinkButton } from "@/components/ui/link-button";
 
 export const metadata = {
   title: "Free Check-in | Prime State Health",
@@ -55,18 +56,12 @@ export default function TryPage() {
           </Link>
 
           <div className="flex items-center gap-2">
-            <Link
-              href="/login"
-              className="rounded-full px-3 py-1.5 text-sm text-ink-600 hover:text-ink-900 hover:bg-ink-100"
-            >
+            <LinkButton href="/login" variant="ghost" size="sm">
               Log in
-            </Link>
-            <Link
-              href="/signup"
-              className="rounded-full bg-brand-600 px-4 py-1.5 text-sm font-medium text-white shadow hover:bg-brand-500"
-            >
+            </LinkButton>
+            <LinkButton href="/signup" variant="primary" size="sm">
               Get started
-            </Link>
+            </LinkButton>
           </div>
         </div>
 
@@ -117,12 +112,14 @@ export default function TryPage() {
                   </span>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-ink-600">{t.description}</p>
-                <Link
+                <LinkButton
                   href={t.href}
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-medium text-white shadow hover:bg-brand-500"
+                  variant="primary"
+                  size="md"
+                  className="mt-5 w-full"
                 >
                   {t.cta}
-                </Link>
+                </LinkButton>
               </div>
             ))}
           </div>

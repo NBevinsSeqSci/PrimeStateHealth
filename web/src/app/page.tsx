@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ValueCard from "@/components/ValueCard";
+import { LinkButton } from "@/components/ui/link-button";
 
 export default function HomePage() {
   const steps = [
@@ -85,18 +86,12 @@ export default function HomePage() {
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link
-                  href="/try"
-                  className="inline-flex items-center justify-center rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-500"
-                >
-                  Try free check-in - no signup required
-                </Link>
-                <Link
-                  href="/signup"
-                  className="inline-flex items-center justify-center rounded-2xl border border-ink-300 px-6 py-3 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:text-brand-600"
-                >
+                <LinkButton href="/try" variant="secondary" size="lg">
+                  Try free check-in
+                </LinkButton>
+                <LinkButton href="/signup" variant="primary" size="lg">
                   Get started
-                </Link>
+                </LinkButton>
               </div>
 
               <p className="mt-3 text-xs text-ink-500">
