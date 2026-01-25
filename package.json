@@ -1,0 +1,11 @@
+{
+  "name": "primestatehealth",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web run dev -- --hostname 127.0.0.1 --port 3001",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix web run start",
+    "lint": "npm --prefix web run lint",
+    "typecheck": "npm --prefix web run typecheck"
+  }
+}

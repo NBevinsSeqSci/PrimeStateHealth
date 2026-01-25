@@ -17,11 +17,13 @@
 
 ## Deployment (Vercel)
 1. Set project root to `web/`.
-2. Add the environment variables from `.env.example`.
-3. Configure build command: `npm run build`
-4. Configure output: `Next.js` (default).
+2. Add the environment variables from `.env.example` in both Preview and Production.
+   - `DATABASE_URL` and `DIRECT_URL` are required because migrations run during build.
+   - Set `NEXTAUTH_URL` and `APP_URL` to the deployed domain.
+3. Build command: `npm run vercel-build` (runs `prisma migrate deploy` then `next build`).
+4. Output: `Next.js` (default).
 
 ## Monitoring + background jobs
-- **UptimeRobot**: monitor `https://<domain>/api/health`.
+- **UptimeRobot**: monitor `https://<domain>/api/health` for a JSON OK response.
 - **Inngest**: point the Inngest app to `https://<domain>/api/inngest`.
 - **Sentry**: set `SENTRY_DSN` to enable error monitoring.
