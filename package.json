@@ -8,7 +8,7 @@
     "lint": "npm --prefix web run lint",
     "typecheck": "npm --prefix web run typecheck"
   },
-  "devDependencies": {
+  "dependencies": {
     "next": "16.1.4"
   }
 }
