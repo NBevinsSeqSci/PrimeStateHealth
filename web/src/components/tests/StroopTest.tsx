@@ -39,7 +39,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
   const endGame = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     setGameState("finished");
-    setTimeout(() => onComplete(scoreRef.current), 1500);
+    onComplete(scoreRef.current);
   }, [onComplete]);
 
   const nextRound = useCallback(() => {
@@ -154,9 +154,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold text-white">Challenge Complete!</h3>
           <p className="text-4xl font-black text-emerald-300">{score}</p>
-          <p className="text-sm text-slate-300">
-            Calculating executive function score...
-          </p>
+          <p className="text-sm text-slate-300">Raw score. Your score appears below.</p>
         </div>
       )}
     </div>

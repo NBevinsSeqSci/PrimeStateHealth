@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "installCommand": "npm install && npm --prefix web install",
+  "installCommand": "NPM_CONFIG_PRODUCTION=false npm install && NPM_CONFIG_PRODUCTION=false npm --prefix web install",
   "buildCommand": "npm --prefix web run vercel-build",
   "devCommand": "npm --prefix web run dev",
   "outputDirectory": "web/.next"

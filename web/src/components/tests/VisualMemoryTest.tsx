@@ -24,6 +24,7 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
   const [level, setLevel] = useState(1);
   const [sequenceHistory, setSequenceHistory] = useState<number[][]>([]);
   const [completedLevels, setCompletedLevels] = useState(0);
+  const [finalResult, setFinalResult] = useState<VisualMemoryResult | null>(null);
 
   const startTest = () => {
     setGameState("idle");
@@ -71,7 +72,8 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
         failureSequence: [...sequence],
         completedLevels,
       };
-      setTimeout(() => onComplete(result), 1500);
+      setFinalResult(result);
+      onComplete(result);
       return;
     }
 
@@ -147,6 +149,31 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
           />
         ))}
       </div>
+
+      {finalResult ? (
+        <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+            Results
+          </p>
+          <div className="mt-3 grid gap-2">
+            <div>
+              Highest level:{" "}
+              <span className="font-semibold text-white">
+                {finalResult.highestLevel}
+              </span>
+            </div>
+            <div>
+              Completed levels:{" "}
+              <span className="font-semibold text-white">
+                {finalResult.completedLevels}
+              </span>
+            </div>
+          </div>
+          <p className="mt-3 text-xs text-slate-400">
+            Your score appears below.
+          </p>
+        </div>
+      ) : null}
 
       <div className="h-6 text-sm font-medium">
         {gameState === "playing" && (

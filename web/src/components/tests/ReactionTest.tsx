@@ -20,7 +20,7 @@ const MAX_ATTEMPTS = 3;
 
 export default function ReactionTest({ onComplete }: ReactionTestProps) {
   const [state, setState] = useState<
-    "intro" | "waiting" | "ready" | "clicked" | "early"
+    "intro" | "waiting" | "ready" | "clicked" | "early" | "finished"
   >("intro");
   const [startTime, setStartTime] = useState(0);
   const [reactionTime, setReactionTime] = useState<number | null>(null);
@@ -30,6 +30,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
   const [trialTimes, setTrialTimes] = useState<number[]>([]);
   const [earlyClicks, setEarlyClicks] = useState(0);
   const [sessionStart, setSessionStart] = useState<number | null>(null);
+  const [finalResult, setFinalResult] = useState<ReactionResult | null>(null);
 
   const startAttempt = () => {
     if (sessionStart === null) {
@@ -56,7 +57,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
   }, []);
 
   const handleClick = () => {
-    if (state === "intro") return;
+    if (state === "intro" || state === "finished") return;
 
     if (state === "waiting") {
       setState("early");
@@ -76,19 +77,19 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
 
       if (attempts + 1 >= MAX_ATTEMPTS) {
         const sessionEnd = Date.now();
-        setTimeout(() => {
-          const trials = [...trialTimes, time];
-          const result: ReactionResult = {
-            rawScore: Math.round(newAvg),
-            trials,
-            attempts: trials.length,
-            earlyClicks,
-            fastest: trials.length ? Math.min(...trials) : null,
-            slowest: trials.length ? Math.max(...trials) : null,
-            durationMs: sessionStart ? sessionEnd - sessionStart : 0,
-          };
-          onComplete(result);
-        }, 1500);
+        const trials = [...trialTimes, time];
+        const result: ReactionResult = {
+          rawScore: Math.round(newAvg),
+          trials,
+          attempts: trials.length,
+          earlyClicks,
+          fastest: trials.length ? Math.min(...trials) : null,
+          slowest: trials.length ? Math.max(...trials) : null,
+          durationMs: sessionStart ? sessionEnd - sessionStart : 0,
+        };
+        setFinalResult(result);
+        setState("finished");
+        onComplete(result);
       } else {
         setAttempts((value) => value + 1);
         setTimeout(startAttempt, 1500);
@@ -141,27 +142,65 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
         <p className="text-sm text-slate-300">
           Click anywhere inside the box as soon as it turns green.
           <br />
-          Attempt {Math.min(attempts + 1, MAX_ATTEMPTS)} of {MAX_ATTEMPTS}
+          {state === "finished"
+            ? "Completed"
+            : `Attempt ${Math.min(attempts + 1, MAX_ATTEMPTS)} of ${MAX_ATTEMPTS}`}
         </p>
       </div>
 
-      <div
-        onClick={handleClick}
-        className={`
-          aspect-square cursor-pointer select-none rounded-2xl border border-white/10 shadow-lg transition-all duration-200
-          ${state === "waiting" ? "bg-slate-900/70 text-slate-400 hover:bg-slate-800/80" : ""}
-          ${state === "ready" ? "bg-emerald-400 text-slate-950 scale-105 shadow-emerald-500/20" : ""}
-          ${state === "clicked" ? "bg-emerald-300 text-slate-950" : ""}
-          ${state === "early" ? "bg-rose-500/10 border-2 border-rose-400 text-rose-200" : ""}
-        `}
-      >
-        <div className="text-2xl font-semibold">
-          {state === "waiting" && "Wait for Green..."}
-          {state === "ready" && "CLICK!"}
-          {state === "clicked" && `${reactionTime}ms`}
-          {state === "early" && "Too Early!"}
+      {state === "finished" && finalResult ? (
+        <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-left text-sm text-slate-200">
+          <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+            Results
+          </p>
+          <div className="mt-3 grid gap-2">
+            <div>
+              Average: <span className="font-semibold text-white">{finalResult.rawScore}ms</span>
+            </div>
+            <div>
+              Fastest:{" "}
+              <span className="font-semibold text-white">
+                {finalResult.fastest == null
+                  ? "-"
+                  : `${finalResult.fastest}ms`}
+              </span>
+            </div>
+            <div>
+              Slowest:{" "}
+              <span className="font-semibold text-white">
+                {finalResult.slowest == null
+                  ? "-"
+                  : `${finalResult.slowest}ms`}
+              </span>
+            </div>
+            <div>
+              Early clicks:{" "}
+              <span className="font-semibold text-white">{finalResult.earlyClicks}</span>
+            </div>
+          </div>
+          <p className="mt-3 text-xs text-slate-400">
+            Your score appears below.
+          </p>
         </div>
-      </div>
+      ) : (
+        <div
+          onClick={handleClick}
+          className={`
+            aspect-square cursor-pointer select-none rounded-2xl border border-white/10 shadow-lg transition-all duration-200
+            ${state === "waiting" ? "bg-slate-900/70 text-slate-400 hover:bg-slate-800/80" : ""}
+            ${state === "ready" ? "bg-emerald-400 text-slate-950 scale-105 shadow-emerald-500/20" : ""}
+            ${state === "clicked" ? "bg-emerald-300 text-slate-950" : ""}
+            ${state === "early" ? "bg-rose-500/10 border-2 border-rose-400 text-rose-200" : ""}
+          `}
+        >
+          <div className="text-2xl font-semibold">
+            {state === "waiting" && "Wait for Green..."}
+            {state === "ready" && "CLICK!"}
+            {state === "clicked" && `${reactionTime}ms`}
+            {state === "early" && "Too Early!"}
+          </div>
+        </div>
+      )}
 
       {state === "early" && (
         <button
