@@ -116,7 +116,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
             <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-600">
               <li>
                 Wait for the box to turn{" "}
-                <span className="font-semibold text-brand-600">BLUE</span>.
+                <span className="font-semibold text-emerald-600">GREEN</span>.
               </li>
               <li>Click anywhere inside the box as fast as you can.</li>
               <li>If you click too early, you will have to retry.</li>
@@ -140,7 +140,7 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
       <div className="space-y-2">
         <h3 className="text-xl font-semibold text-ink-900">Reaction Time Test</h3>
         <p className="text-sm text-ink-500">
-          Click anywhere inside the box as soon as it turns blue.
+          Click anywhere inside the box as soon as it turns green.
           <br />
           {state === "finished"
             ? "Completed"
@@ -188,8 +188,8 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
           className={`
             aspect-square cursor-pointer select-none rounded-2xl border border-ink-200 shadow-lg transition-all duration-200
             ${state === "waiting" ? "bg-ink-100 text-ink-500 hover:bg-ink-200" : ""}
-            ${state === "ready" ? "bg-brand-500 text-white scale-105 shadow-brand-500/30" : ""}
-            ${state === "clicked" ? "bg-brand-400 text-white" : ""}
+            ${state === "ready" ? "bg-emerald-500 border-emerald-400 text-white scale-105 shadow-emerald-500/30" : ""}
+            ${state === "clicked" ? "bg-emerald-400 border-emerald-300 text-white" : ""}
             ${state === "early" ? "bg-rose-50 border-2 border-rose-300 text-rose-600" : ""}
           `}
         >

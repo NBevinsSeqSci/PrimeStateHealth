@@ -37,8 +37,6 @@ export default function TestScaffold({
   resultCallout,
 }: Props) {
   const [raw, setRaw] = useState<unknown | null>(null);
-  const [saving, setSaving] = useState(false);
-  const [saveMsg, setSaveMsg] = useState<string | null>(null);
 
   const score = useMemo(() => {
     if (raw == null) return null;
@@ -46,31 +44,6 @@ export default function TestScaffold({
     if (!Number.isFinite(computed)) return null;
     return Math.max(0, Math.min(100, Math.round(computed)));
   }, [raw, scoreFromRaw]);
-
-  async function save() {
-    if (score == null) return;
-    setSaving(true);
-    setSaveMsg(null);
-    try {
-      const payload: TestResultPayload = {
-        kind,
-        score,
-        raw,
-        createdAt: new Date().toISOString(),
-      };
-      const res = await fetch("/api/test-results", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      setSaveMsg("Saved.");
-    } catch {
-      setSaveMsg("Could not save. Please try again.");
-    } finally {
-      setSaving(false);
-    }
-  }
 
   const backTarget = backHref ?? "/cognitive-test";
   const backText = backLabel ?? "Back to check-in";
@@ -111,16 +84,7 @@ export default function TestScaffold({
             </div>
             {resultCallout}
           </div>
-          <button
-            className="rounded-2xl border border-brand-200 px-4 py-3 text-sm font-semibold text-brand-700 transition hover:border-brand-300 hover:text-brand-600 disabled:opacity-50"
-            disabled={score == null || saving}
-            onClick={save}
-            type="button"
-          >
-            {saving ? "Saving..." : "Save result"}
-          </button>
         </div>
-        {saveMsg ? <div className="mt-3 text-sm text-ink-500">{saveMsg}</div> : null}
       </section>
     </main>
   );

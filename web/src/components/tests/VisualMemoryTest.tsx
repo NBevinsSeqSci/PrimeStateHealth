@@ -132,19 +132,20 @@ export default function VisualMemoryTest({ onComplete }: VisualMemoryTestProps) 
         </p>
       </div>
 
-      <div className="grid aspect-square grid-cols-3 gap-3 rounded-2xl border border-ink-200 bg-ink-50 p-4">
+      <div className="mx-auto grid aspect-square w-full max-w-xs grid-cols-3 gap-3 rounded-2xl border border-ink-200 bg-ink-50 p-4">
         {Array.from({ length: 9 }).map((_, i) => (
           <button
             key={i}
             onClick={() => handleGridClick(i)}
             disabled={gameState !== "input"}
-            className={`
-              rounded-xl border transition-all duration-200
-              ${playbackIdx === i ? "bg-brand-500 scale-95 shadow-lg shadow-brand-500/30" : "bg-white border-ink-200 hover:border-brand-300"}
-              ${gameState === "input" ? "cursor-pointer active:scale-95" : "cursor-default"}
-              ${gameState === "success" ? "bg-brand-100 border-brand-300" : ""}
-              ${gameState === "fail" ? "bg-rose-50 border-rose-300" : ""}
-            `}
+            className={[
+              "memory-tile aspect-square rounded-xl border transition-all duration-150",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400",
+              playbackIdx === i ? "memory-tile-active" : "",
+              gameState === "input" ? "cursor-pointer active:scale-[0.97]" : "cursor-default",
+              gameState === "success" ? "bg-brand-100 border-brand-300" : "",
+              gameState === "fail" ? "bg-rose-50 border-rose-300" : "",
+            ].join(" ")}
             type="button"
           />
         ))}

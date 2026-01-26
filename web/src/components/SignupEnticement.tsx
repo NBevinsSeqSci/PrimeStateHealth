@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LinkButton } from "@/components/ui/link-button";
 
 type Props = {
   variant?: "default" | "compact";
@@ -24,19 +24,13 @@ export default function SignupEnticement({
           <p className="text-sm font-semibold text-ink-900">{title}</p>
           <p className="mt-1 text-sm text-ink-600">{subtitle}</p>
         </div>
-        <div className="flex gap-2">
-          <Link
-            href="/signup"
-            className="inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand-500"
-          >
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+          <LinkButton href="/signup" variant="primary" size="lg" className="w-full sm:w-auto">
             Create free account
-          </Link>
-          <Link
-            href="/login"
-            className="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium text-ink-900 ring-1 ring-inset ring-ink-200 hover:bg-ink-100"
-          >
+          </LinkButton>
+          <LinkButton href="/login" variant="ghost" size="lg" className="w-full sm:w-auto">
             Log in
-          </Link>
+          </LinkButton>
         </div>
       </div>
 
