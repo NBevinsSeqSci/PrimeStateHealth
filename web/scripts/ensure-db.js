@@ -57,7 +57,7 @@ function hasMigrations(cwd) {
   return entries.some((entry) => entry.isDirectory());
 }
 
-(function main() {
+function main() {
   const cwd = process.cwd();
   normalizeDatabaseEnv();
 
@@ -86,7 +86,10 @@ function hasMigrations(cwd) {
   sh("npx prisma generate", { cwd });
   sh("npx prisma migrate deploy", { cwd });
   console.log("[ensure-db] prisma migrate deploy: OK");
-})()
+}
+
+Promise.resolve()
+  .then(main)
   .catch((error) => {
     console.error("\n[ensure-db] FAILED:");
     console.error(error?.stack || error?.message || error);
