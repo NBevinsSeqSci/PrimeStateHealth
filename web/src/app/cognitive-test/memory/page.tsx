@@ -6,11 +6,26 @@ import VisualMemoryTest from "@/components/tests/VisualMemoryTest";
 
 const MAX_MEMORY_LEVEL = 12;
 
+// Simple percentile calculation based on score
+// These are placeholder values - can be refined with actual normative data
+function getMemoryPercentile(score: number): number {
+  if (score >= 95) return 95;
+  if (score >= 90) return 90;
+  if (score >= 80) return 80;
+  if (score >= 70) return 70;
+  if (score >= 60) return 60;
+  if (score >= 50) return 50;
+  if (score >= 40) return 40;
+  if (score >= 30) return 30;
+  if (score >= 20) return 20;
+  return 10;
+}
+
 export default function MemoryPage() {
   return (
     <TestScaffold
       title="Memory"
-      description="Quick visual memory task. No signup required."
+      description="Quick visual memory task. Free to take—create an account to save results."
       kind="visual-memory"
       backHref="/try"
       backLabel="Back"
@@ -38,6 +53,7 @@ export default function MemoryPage() {
         const percent = Number(data?.percent ?? data?.score100);
         return Number.isFinite(percent) ? percent : 0;
       }}
+      getPercentile={getMemoryPercentile}
       resultCallout={
         <SignupEnticement
           title="See your memory trend"

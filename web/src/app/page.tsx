@@ -78,27 +78,39 @@ export default function Page() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm text-slate-600 sm:flex">
-          <Link className="hover:text-slate-900" href="/how-it-works">
-            How it works
-          </Link>
-          <Link className="hover:text-slate-900" href="/try">
-            Free Tests
-          </Link>
-          <Link className="hover:text-slate-900" href="/login">
-            Log in
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
-          >
-            Get started
-          </Link>
-        </nav>
+        <div className="flex items-center gap-8">
+          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 sm:flex">
+            <Link className="transition hover:text-slate-900" href="/how-it-works">
+              How it works
+            </Link>
+            <Link className="transition hover:text-slate-900" href="/try">
+              Try for Free
+            </Link>
+            <Link className="transition hover:text-slate-900" href="/getting-better">
+              Getting Better
+            </Link>
+          </nav>
 
+          <div className="hidden items-center gap-3 sm:flex">
+            <Link
+              href="/login"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              Log in
+            </Link>
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+            >
+              Get started
+            </Link>
+          </div>
+        </div>
+
+        {/* Mobile menu button */}
         <Link
           href="/signup"
-          className="sm:hidden rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+          className="rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 sm:hidden"
         >
           Get started
         </Link>

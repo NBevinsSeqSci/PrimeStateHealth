@@ -9,17 +9,24 @@ datasource db {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id                    String    @id @default(cuid())
+  name                  String?
+  email                 String?   @unique
+  emailVerified         DateTime?
+  image                 String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
 
-  accounts      Account[]
-  sessions      Session[]
-  tests         CognitiveTest[]
+  // Demographics
+  dateOfBirth           DateTime?
+  sex                   String?   // "male", "female", "other"
+  education             String?   // Education level
+  country               String?
+  demographicsCompleted Boolean   @default(false)
+
+  accounts              Account[]
+  sessions              Session[]
+  tests                 CognitiveTest[]
 }
 
 model Account {

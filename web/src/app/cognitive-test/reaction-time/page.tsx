@@ -4,11 +4,26 @@ import SignupEnticement from "@/components/SignupEnticement";
 import ReactionTest from "@/components/tests/ReactionTest";
 import TestScaffold from "@/components/tests/TestScaffold";
 
+// Simple percentile calculation based on score
+// These are placeholder values - can be refined with actual normative data
+function getReactionPercentile(score: number): number {
+  if (score >= 95) return 95;
+  if (score >= 90) return 90;
+  if (score >= 80) return 80;
+  if (score >= 70) return 70;
+  if (score >= 60) return 60;
+  if (score >= 50) return 50;
+  if (score >= 40) return 40;
+  if (score >= 30) return 30;
+  if (score >= 20) return 20;
+  return 10;
+}
+
 export default function ReactionTimePage() {
   return (
     <TestScaffold
       title="Reaction Time"
-      description="A quick baseline of speed and consistency."
+      description="A quick baseline of speed and consistency. Free to take—create an account to save results."
       kind="reaction-time"
       backHref="/try"
       backLabel="Back"
@@ -26,6 +41,7 @@ export default function ReactionTimePage() {
         const penalty = Math.min(40, early * 8);
         return speedScore - penalty;
       }}
+      getPercentile={getReactionPercentile}
       resultCallout={
         <SignupEnticement
           title="Track your speed over time"

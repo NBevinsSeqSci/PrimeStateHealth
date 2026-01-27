@@ -27,7 +27,7 @@ export default function SignUpForm() {
     const result = await signIn("email", {
       email,
       redirect: false,
-      callbackUrl: "/cognitive-test",
+      callbackUrl: "/onboarding/demographics",
     });
 
     if (result?.error) {

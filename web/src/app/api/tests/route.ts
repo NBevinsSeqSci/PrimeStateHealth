@@ -53,6 +53,15 @@ export async function POST(request: Request) {
   }
 
   const session = await getServerSession(authOptions);
+
+  // Require authentication to save results
+  if (!session?.user?.id) {
+    return NextResponse.json(
+      { error: "Authentication required to save results. Please log in or create an account." },
+      { status: 401 }
+    );
+  }
+
   const score = scoreFromAnswers(answers);
 
   const test = await prisma.cognitiveTest.create({
@@ -60,7 +69,7 @@ export async function POST(request: Request) {
       email,
       answers,
       score,
-      userId: session?.user?.id ?? null,
+      userId: session.user.id,
     },
   });
 
