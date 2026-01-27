@@ -1,255 +1,244 @@
 import Link from "next/link";
-import ValueCard from "@/components/ValueCard";
-import { LinkButton } from "@/components/ui/link-button";
+import Image from "next/image";
 
-export default function HomePage() {
-  const steps = [
-    {
-      n: "01",
-      title: "Check in",
-      body: "Complete a short set of tasks.",
-    },
-    {
-      n: "02",
-      title: "See your snapshot",
-      body: "Get clear scores and context.",
-    },
-    {
-      n: "03",
-      title: "Pick one change",
-      body: "Choose a simple next step.",
-    },
-    {
-      n: "04",
-      title: "Repeat monthly",
-      body: "Watch your trendline over time.",
-    },
-  ];
+function cn(...classes: Array<string | false | null | undefined>) {
+  return classes.filter(Boolean).join(" ");
+}
 
-  const valueCards = [
-    {
-      title: "Get a baseline fast",
-      description: "Know how you're doing today — before guessing what to change.",
-    },
-    {
-      title: "See what's working",
-      description: "Trends show which habits and interventions actually help.",
-    },
-    {
-      title: "Stay consistent",
-      description: "Same tests, month to month, for clean comparisons.",
-    },
-    {
-      title: "Low friction",
-      description: "No appointments. No equipment. Just your device.",
-    },
-  ];
-
-  const faqs = [
-    {
-      q: "Is this a medical diagnosis?",
-      a: "No. It's a measurement and tracking tool. If you're worried about symptoms, talk with a licensed clinician.",
-    },
-    {
-      q: "How often should I do it?",
-      a: "Monthly works well for most people. If you're testing a change, you can recheck weekly for a short stretch.",
-    },
-    {
-      q: "Is my data private?",
-      a: "You control your account and results. We aim for privacy-first defaults and minimal data needed to run the service.",
-    },
-  ];
-
+function Pill({ children }: { children: React.ReactNode }) {
   return (
-    <main className="min-h-screen">
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 opacity-60">
-          <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full border border-brand-200/60 blur-3xl" />
-          <div className="absolute -right-24 top-20 h-72 w-72 rounded-full border border-brand-200/60 blur-3xl" />
+    <span className="inline-flex items-center rounded-full border border-slate-200 bg-white/60 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur">
+      {children}
+    </span>
+  );
+}
+
+function Feature({ title, desc }: { title: string; desc: string }) {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 shadow-sm backdrop-blur">
+      <div className="text-sm font-semibold text-slate-900">{title}</div>
+      <div className="mt-1 text-sm text-slate-600">{desc}</div>
+    </div>
+  );
+}
+
+function TestCard({
+  href,
+  title,
+  subtitle,
+  meta,
+}: {
+  href: string;
+  title: string;
+  subtitle: string;
+  meta: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "group relative block rounded-2xl border border-slate-200 bg-white/70 p-6 shadow-sm",
+        "transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md",
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
+      )}
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <div className="text-base font-semibold text-slate-900">{title}</div>
+          <div className="mt-1 text-sm text-slate-600">{subtitle}</div>
         </div>
+        <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition group-hover:border-slate-300">
+          →
+        </span>
+      </div>
+      <div className="mt-4 text-xs text-slate-500">{meta}</div>
+    </Link>
+  );
+}
 
-        <div className="mx-auto max-w-6xl px-6 pb-16 pt-16">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-3 py-1 text-xs font-medium text-ink-600">
-                <span aria-hidden="true">•</span> At-home brain check-ins
-              </p>
+export default function Page() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+      {/* Header */}
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="flex h-9 w-9 items-center justify-center">
+            <Image
+              src="/logo.png"
+              alt="Prime State Health"
+              width={36}
+              height={36}
+              className="h-9 w-9 object-contain"
+              priority
+            />
+          </div>
+          <div className="leading-tight">
+            <div className="text-sm font-semibold">Prime State Health</div>
+            <div className="text-xs text-slate-500">At-home brain check-ins</div>
+          </div>
+        </Link>
 
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-                Know where you stand.
-                <span className="block text-ink-600">Track your trend.</span>
-              </h1>
+        <nav className="hidden items-center gap-6 text-sm text-slate-600 sm:flex">
+          <Link className="hover:text-slate-900" href="/how-it-works">
+            How it works
+          </Link>
+          <Link className="hover:text-slate-900" href="/try">
+            Free Tests
+          </Link>
+          <Link className="hover:text-slate-900" href="/login">
+            Log in
+          </Link>
+          <Link
+            href="/signup"
+            className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+          >
+            Get started
+          </Link>
+        </nav>
 
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-600">
-                Measure attention, speed, and memory in minutes, then follow your progress over time.
-              </p>
+        <Link
+          href="/signup"
+          className="sm:hidden rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+        >
+          Get started
+        </Link>
+      </header>
 
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <LinkButton href="/try" variant="secondary" size="lg">
-                  Try free check-in
-                </LinkButton>
-                <LinkButton href="/signup" variant="primary" size="lg">
-                  Get started
-                </LinkButton>
-              </div>
-
-              <p className="mt-3 text-xs text-ink-500">
-                All testing is free. See results instantly - no account required. Create an account only if you want to
-                save and track results over time.
-              </p>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-ink-200 bg-white/80 p-4 shadow-sm">
-                  <div className="text-xs font-medium text-ink-500">3-6 minutes</div>
-                  <div className="mt-1 text-sm font-semibold text-ink-900">Quick check-in</div>
-                </div>
-                <div className="rounded-2xl border border-ink-200 bg-white/80 p-4 shadow-sm">
-                  <div className="text-xs font-medium text-ink-500">No equipment</div>
-                  <div className="mt-1 text-sm font-semibold text-ink-900">Just your device</div>
-                </div>
-                <div className="rounded-2xl border border-ink-200 bg-white/80 p-4 shadow-sm">
-                  <div className="text-xs font-medium text-ink-500">Do it anywhere</div>
-                  <div className="mt-1 text-sm font-semibold text-ink-900">Quiet spot helps</div>
-                </div>
-              </div>
-
-              <p className="mt-6 rounded-2xl border border-ink-200 bg-white/70 p-4 text-xs leading-relaxed text-ink-500">
-                Prime State Health is for measurement and trend tracking - not diagnosis or treatment. If you have
-                concerns, talk with a licensed clinician.
-              </p>
+      {/* Hero */}
+      <section className="mx-auto w-full max-w-6xl px-4 pb-10 pt-6 sm:px-6 sm:pb-14">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <div className="flex flex-wrap gap-2">
+              <Pill>Free testing</Pill>
+              <Pill>No signup required</Pill>
+              <Pill>3–6 minutes</Pill>
             </div>
 
-            {/* RIGHT PANEL */}
-            <div className="rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h2 className="text-lg font-semibold text-ink-900">Start with one test</h2>
-                  <p className="mt-1 text-sm text-ink-600">Pick what you want to measure today.</p>
-                </div>
-                <span className="rounded-full border border-ink-200 px-3 py-1 text-xs font-medium text-ink-500">
-                  Free
-                </span>
-              </div>
+            <h1 className="mt-5 text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+              Know where you stand.
+              <span className="block text-slate-600">Track your trend.</span>
+            </h1>
 
-              <div className="mt-5 grid gap-3">
-                <Link
-                  href="/cognitive-test/executive"
-                  className="group rounded-2xl border border-ink-200 bg-ink-50 p-4 transition hover:border-brand-300 hover:shadow-sm"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <div className="text-sm font-semibold text-ink-900">Executive function</div>
-                      <div className="mt-1 text-xs text-ink-500">Stroop task (focus + inhibition)</div>
-                    </div>
-                    <span className="text-xs text-ink-500 group-hover:text-brand-600">Start -&gt;</span>
-                  </div>
-                </Link>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+              Measure attention, speed, and memory in minutes. See results instantly — then
+              create an account only if you want to save and track progress over time.
+            </p>
 
-                <Link
-                  href="/cognitive-test/memory"
-                  className="group rounded-2xl border border-ink-200 bg-ink-50 p-4 transition hover:border-brand-300 hover:shadow-sm"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <div className="text-sm font-semibold text-ink-900">Memory</div>
-                      <div className="mt-1 text-xs text-ink-500">Short-term visual memory</div>
-                    </div>
-                    <span className="text-xs text-ink-500 group-hover:text-brand-600">Start -&gt;</span>
-                  </div>
-                </Link>
-
-                <Link
-                  href="/cognitive-test/reaction-time"
-                  className="group rounded-2xl border border-ink-200 bg-ink-50 p-4 transition hover:border-brand-300 hover:shadow-sm"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <div className="text-sm font-semibold text-ink-900">Reaction time</div>
-                      <div className="mt-1 text-xs text-ink-500">Simple response speed</div>
-                    </div>
-                    <span className="text-xs text-ink-500 group-hover:text-brand-600">Start -&gt;</span>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="mt-6 rounded-2xl border border-ink-200 bg-ink-50 p-4 text-xs text-ink-500">
-                Tip: For the most consistent results, test at a similar time of day.
-              </div>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link
+                href="/try"
+                className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+              >
+                Try free check-in
+              </Link>
+              <Link
+                href="/signup"
+                className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
+              >
+                Create account to track
+              </Link>
             </div>
+
+            <p className="mt-4 text-xs leading-relaxed text-slate-500">
+              Prime State Health is for measurement and trend tracking — not diagnosis or treatment.
+              If you have concerns, talk with a licensed clinician.
+            </p>
+          </div>
+
+          {/* Right panel: quick features */}
+          <div className="grid gap-3 sm:grid-cols-2">
+            <Feature title="Fast baseline" desc="Get a snapshot today before guessing what to change." />
+            <Feature title="See what works" desc="Trends reveal which habits actually move the needle." />
+            <Feature title="Low friction" desc="No appointments. No equipment. Just your device." />
+            <Feature title="Repeat monthly" desc="Consistent tests enable clean comparisons over time." />
           </div>
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="flex items-end justify-between gap-6">
+      {/* Tests */}
+      <section className="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6">
+        <div className="flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-ink-900">How it works — and why it matters</h2>
-            <p className="mt-2 text-sm text-ink-600">
-              Four simple steps to get your baseline and see what actually moves your brain-health trend.
+            <h2 className="text-lg font-semibold text-slate-900">Start with one test</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Pick what you want to measure today. Tip: test at a similar time of day for consistency.
             </p>
           </div>
-          <Link
-            href="/try"
-            className="hidden rounded-xl border border-ink-300 px-4 py-2 text-sm font-medium text-ink-700 transition hover:border-brand-300 hover:text-brand-600 sm:inline-flex"
-          >
-            Try free check-in
+          <Link href="/try" className="hidden text-sm font-semibold text-slate-700 hover:text-slate-900 sm:inline">
+            View all →
           </Link>
         </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((s) => (
-            <div key={s.n} className="rounded-2xl border border-ink-200 bg-white/80 p-5 shadow-sm">
-              <div className="text-xs font-medium text-ink-500">{s.n}</div>
-              <div className="mt-2 text-sm font-semibold text-ink-900">{s.title}</div>
-              <div className="mt-1 text-sm text-ink-600">{s.body}</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {valueCards.map((card) => (
-            <ValueCard key={card.title} title={card.title} description={card.description} />
-          ))}
+        <div className="mt-5 grid gap-4 md:grid-cols-3">
+          <TestCard
+            href="/cognitive-test/executive"
+            title="Executive function"
+            subtitle="Stroop task (focus + inhibition)"
+            meta="~2 minutes • attention + control"
+          />
+          <TestCard
+            href="/cognitive-test/memory"
+            title="Memory"
+            subtitle="Short-term visual memory"
+            meta="~2–3 minutes • recall"
+          />
+          <TestCard
+            href="/cognitive-test/reaction-time"
+            title="Reaction time"
+            subtitle="Simple response speed"
+            meta="~1–2 minutes • processing speed"
+          />
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <p className="text-xs font-medium text-ink-500">FAQ</p>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight text-ink-900">Quick answers</h2>
-
-        <div className="mt-8 grid gap-4 lg:grid-cols-3">
-          {faqs.map((f) => (
-            <div key={f.q} className="rounded-2xl border border-ink-200 bg-white/80 p-5 shadow-sm">
-              <div className="text-sm font-semibold text-ink-900">{f.q}</div>
-              <div className="mt-2 text-sm text-ink-600">{f.a}</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
-          <div>
-            <div className="text-lg font-semibold text-ink-900">Get your baseline in under 6 minutes.</div>
-            <div className="mt-1 text-sm text-ink-600">Free testing. No signup required for results.</div>
+      {/* How it works (simplified) */}
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
+          <div className="max-w-2xl">
+            <h2 className="text-lg font-semibold text-slate-900">How it works</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Four steps. No fluff. The goal is a clean baseline and a simple way to measure change.
+            </p>
           </div>
-          <div className="flex gap-3">
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Feature title="1) Check in" desc="Complete a short task (or three)." />
+            <Feature title="2) See your snapshot" desc="Clear score + simple context." />
+            <Feature title="3) Pick one change" desc="Try one habit or intervention." />
+            <Feature title="4) Repeat" desc="Watch your trend over time." />
+          </div>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/try"
-              className="inline-flex items-center justify-center rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-500"
+              className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
             >
               Try free check-in
             </Link>
             <Link
               href="/signup"
-              className="inline-flex items-center justify-center rounded-2xl border border-ink-300 px-5 py-3 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:text-brand-600"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
             >
-              Get started
+              Create account to track
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="mx-auto w-full max-w-6xl px-4 py-10 text-sm text-slate-500 sm:px-6">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div className="font-semibold text-slate-700">Prime State Health</div>
+            <div className="text-xs">Know where you stand. Track your trend.</div>
+          </div>
+          <div className="flex gap-5">
+            <Link className="hover:text-slate-700" href="/terms">Terms</Link>
+            <Link className="hover:text-slate-700" href="/privacy">Privacy</Link>
+            <Link className="hover:text-slate-700" href="/contact">Contact</Link>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

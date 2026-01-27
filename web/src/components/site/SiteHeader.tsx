@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LinkButton } from "@/components/ui/link-button";
 
 const navItems = [
@@ -14,8 +15,15 @@ export default function SiteHeader() {
           href="/"
           className="flex items-center gap-2 text-lg font-semibold text-ink-900"
         >
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-100 text-brand-700">
-            PSH
+          <span className="inline-flex h-9 w-9 items-center justify-center">
+            <Image
+              src="/logo.png"
+              alt="Prime State Health"
+              width={36}
+              height={36}
+              className="h-9 w-9 object-contain"
+              priority
+            />
           </span>
           <span className="text-brand-700">Prime</span> State Health
         </Link>
