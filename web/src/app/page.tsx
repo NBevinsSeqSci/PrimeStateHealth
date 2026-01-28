@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import Script from "next/script";
 
@@ -154,70 +153,6 @@ export default function Page() {
       />
 
       <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
-        {/* Header */}
-        <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-          <Link href="/" className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2 rounded-lg">
-            <div className="flex h-9 w-9 items-center justify-center">
-              <Image
-                src="/logo.png"
-                alt="Prime State Health logo"
-                width={36}
-                height={36}
-                className="h-9 w-9 object-contain"
-                priority
-              />
-            </div>
-            <div className="leading-tight">
-              <div className="text-sm font-semibold">Prime State Health</div>
-              <div className="text-xs text-slate-500">At-home brain check-ins</div>
-            </div>
-          </Link>
-
-          <div className="flex items-center gap-8">
-            <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 sm:flex" aria-label="Main navigation">
-              <Link
-                className="transition hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2 rounded"
-                href="/how-it-works"
-                data-psh-event="nav_how_it_works"
-              >
-                How it works
-              </Link>
-              <Link
-                className="transition hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2 rounded"
-                href="/try"
-                data-psh-event="nav_try_free"
-              >
-                Try free check-in
-              </Link>
-            </nav>
-
-            <div className="hidden items-center gap-3 sm:flex">
-              <Link
-                href="/login"
-                className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
-                data-psh-event="nav_login"
-              >
-                Log in
-              </Link>
-              <Link
-                href="/signup"
-                className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
-                data-psh-event="cta_create_account_nav"
-              >
-                Create account
-              </Link>
-            </div>
-          </div>
-
-          <Link
-            href="/signup"
-            className="rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2 sm:hidden"
-            data-psh-event="cta_create_account_mobile"
-          >
-            Create account
-          </Link>
-        </header>
-
         {/* Hero */}
         <section className="mx-auto w-full max-w-6xl px-4 pb-10 pt-6 sm:px-6 sm:pb-14">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">

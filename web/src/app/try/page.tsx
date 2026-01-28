@@ -45,26 +45,6 @@ export default function TryPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-ink-50 via-white to-ink-100">
       <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:py-16">
-        {/* Header */}
-        <div className="mb-10 flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-3 py-1.5 text-sm text-ink-700 shadow-sm hover:bg-ink-50"
-          >
-            <span className="h-2.5 w-2.5 rounded-full bg-brand-300" />
-            Prime State Health
-          </Link>
-
-          <div className="flex items-center gap-2">
-            <LinkButton href="/login" variant="ghost" size="sm">
-              Log in
-            </LinkButton>
-            <LinkButton href="/signup" variant="primary" size="sm">
-              Get started
-            </LinkButton>
-          </div>
-        </div>
-
         {/* Hero */}
         <section className="rounded-3xl border border-ink-200 bg-white p-6 shadow-sm sm:p-10">
           <div className="max-w-2xl">

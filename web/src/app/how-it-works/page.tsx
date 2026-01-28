@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 function Step({
   number,
@@ -47,51 +46,6 @@ function InfoCard({ title, content }: { title: string; content: string }) {
 export default function HowItWorksPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
-      {/* Header */}
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center">
-            <Image
-              src="/logo.png"
-              alt="Prime State Health"
-              width={36}
-              height={36}
-              className="h-9 w-9 object-contain"
-              priority
-            />
-          </div>
-          <div className="leading-tight">
-            <div className="text-sm font-semibold">Prime State Health</div>
-            <div className="text-xs text-slate-500">At-home brain check-ins</div>
-          </div>
-        </Link>
-
-        <nav className="hidden items-center gap-6 text-sm text-slate-600 sm:flex">
-          <Link className="hover:text-slate-900" href="/how-it-works">
-            How it works
-          </Link>
-          <Link className="hover:text-slate-900" href="/try">
-            Free Tests
-          </Link>
-          <Link className="hover:text-slate-900" href="/login">
-            Log in
-          </Link>
-          <Link
-            href="/signup"
-            className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
-          >
-            Get started
-          </Link>
-        </nav>
-
-        <Link
-          href="/signup"
-          className="rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 sm:hidden"
-        >
-          Get started
-        </Link>
-      </header>
-
       {/* Hero Section */}
       <section className="mx-auto w-full max-w-4xl px-4 pb-12 pt-8 sm:px-6">
         <div className="text-center">

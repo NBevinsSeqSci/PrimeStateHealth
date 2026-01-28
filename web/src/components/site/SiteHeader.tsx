@@ -3,8 +3,8 @@ import Image from "next/image";
 import { LinkButton } from "@/components/ui/link-button";
 
 const navItems = [
-  { href: "/#how-it-works", label: "How it works" },
-  { href: "/try", label: "Free Tests" },
+  { href: "/how-it-works", label: "How it works" },
+  { href: "/try", label: "Try free check-in" },
 ];
 
 export default function SiteHeader() {
@@ -13,7 +13,7 @@ export default function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-semibold text-ink-900"
+          className="flex items-center gap-2 text-ink-900"
         >
           <span className="inline-flex h-9 w-9 items-center justify-center">
             <Image
@@ -25,7 +25,12 @@ export default function SiteHeader() {
               priority
             />
           </span>
-          <span className="text-brand-700">Prime</span> State Health
+          <span className="leading-tight">
+            <span className="block text-lg font-semibold">
+              <span className="text-brand-700">Prime</span> State Health
+            </span>
+            <span className="block text-xs text-ink-500">At-home brain check-ins</span>
+          </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-ink-600 md:flex">
           {navItems.map((item) => (
@@ -43,7 +48,7 @@ export default function SiteHeader() {
             Log in
           </LinkButton>
           <LinkButton href="/signup" variant="primary" size="sm">
-            Get started
+            Create account
           </LinkButton>
         </div>
       </div>
