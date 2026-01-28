@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useSession } from "next-auth/react";
 
 export type TestKind =
@@ -47,6 +47,8 @@ export default function TestScaffold({
   getPercentile,
 }: Props) {
   const [raw, setRaw] = useState<unknown | null>(null);
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const savedRef = useRef(false);
   const { data: session, status } = useSession();
 
   const score = useMemo(() => {
@@ -55,6 +57,32 @@ export default function TestScaffold({
     if (!Number.isFinite(computed)) return null;
     return Math.max(0, Math.min(100, Math.round(computed)));
   }, [raw, scoreFromRaw]);
+
+  // Save result to database when test completes
+  useEffect(() => {
+    if (score == null || status !== "authenticated" || savedRef.current) return;
+
+    const saveResult = async () => {
+      savedRef.current = true;
+      setSaveStatus("saving");
+      try {
+        const res = await fetch("/api/test-results", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ kind, score, answers: raw }),
+        });
+        if (res.ok) {
+          setSaveStatus("saved");
+        } else {
+          setSaveStatus("error");
+        }
+      } catch {
+        setSaveStatus("error");
+      }
+    };
+
+    saveResult();
+  }, [score, status, kind, raw]);
 
   const percentile = useMemo(() => {
     if (score == null || !getPercentile) return null;
@@ -137,6 +165,14 @@ export default function TestScaffold({
                 <p className="mt-4 text-xs text-slate-500">
                   These scores are for tracking your baseline and trend — not for diagnosis or treatment.
                 </p>
+                {isAuthenticated && saveStatus === "saved" && (
+                  <p className="mt-2 flex items-center gap-1.5 text-xs text-emerald-600">
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Result saved to your account
+                  </p>
+                )}
               </div>
               {!isAuthenticated && resultCallout}
             </div>

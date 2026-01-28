@@ -97,9 +97,13 @@ model CognitiveTest {
   id        String   @id @default(cuid())
   userId    String?
   email     String?
+  kind      String?  // Test type: "reaction-time", "executive-function", "visual-memory", etc.
   score     Int
   answers   Json?
   createdAt DateTime @default(now())
 
   user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId, kind])
+  @@index([userId, createdAt])
 }
