@@ -1,3 +1,5 @@
+"use client";
+
 import TestScaffold from "@/components/tests/TestScaffold";
 import DigitSpanTest from "@/components/tests/DigitSpanTest";
 

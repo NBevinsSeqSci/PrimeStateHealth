@@ -1,3 +1,5 @@
+"use client";
+
 import TestScaffold from "@/components/tests/TestScaffold";
 import OrientationTest from "@/components/tests/OrientationTest";
 

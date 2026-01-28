@@ -1,3 +1,5 @@
+"use client";
+
 import TestScaffold from "@/components/tests/TestScaffold";
 import GoNoGoTask from "@/components/tests/GoNoGoTask";
 
