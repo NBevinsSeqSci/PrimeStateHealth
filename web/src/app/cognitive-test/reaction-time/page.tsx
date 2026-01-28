@@ -4,19 +4,10 @@ import SignupEnticement from "@/components/SignupEnticement";
 import ReactionTest from "@/components/tests/ReactionTest";
 import TestScaffold from "@/components/tests/TestScaffold";
 
-// Simple percentile calculation based on score
-// These are placeholder values - can be refined with actual normative data
-function getReactionPercentile(score: number): number {
-  if (score >= 95) return 95;
-  if (score >= 90) return 90;
-  if (score >= 80) return 80;
-  if (score >= 70) return 70;
-  if (score >= 60) return 60;
-  if (score >= 50) return 50;
-  if (score >= 40) return 40;
-  if (score >= 30) return 30;
-  if (score >= 20) return 20;
-  return 10;
+// Percentile calculation not used for reaction time test
+// We show raw metrics (ms) instead of normalized score
+function getReactionPercentile(): null {
+  return null;
 }
 
 export default function ReactionTimePage() {
@@ -27,19 +18,10 @@ export default function ReactionTimePage() {
       kind="reaction-time"
       backHref="/try"
       backLabel="Back"
-      scoreFromRaw={(raw) => {
-        const data = raw as {
-          rawScore?: number;
-          meanMs?: number;
-          medianMs?: number;
-          earlyClicks?: number;
-        };
-        const mean = Number(data?.rawScore ?? data?.meanMs ?? data?.medianMs);
-        const early = Number(data?.earlyClicks ?? 0);
-        if (!Number.isFinite(mean)) return 0;
-        const speedScore = 100 - ((mean - 250) / (600 - 250)) * 100;
-        const penalty = Math.min(40, early * 8);
-        return speedScore - penalty;
+      scoreFromRaw={() => {
+        // Return NaN to hide the /100 score display
+        // Useful metrics (Average, Fastest, Slowest, Early clicks) are shown in ReactionTest component
+        return NaN;
       }}
       getPercentile={getReactionPercentile}
       resultCallout={

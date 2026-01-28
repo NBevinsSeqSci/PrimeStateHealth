@@ -16,7 +16,7 @@ type ReactionTestProps = {
   onComplete: (result: ReactionResult) => void;
 };
 
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 7;
 
 export default function ReactionTest({ onComplete }: ReactionTestProps) {
   const [state, setState] = useState<
