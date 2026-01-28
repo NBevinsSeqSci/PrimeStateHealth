@@ -43,7 +43,7 @@ export default function CommunityPage() {
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-slate-400" />
-              <span>Share your "one-change" experiments and results</span>
+              <span>Share your &ldquo;one-change&rdquo; experiments and results</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-slate-400" />
@@ -55,7 +55,7 @@ export default function CommunityPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-slate-400" />
-              <span>Learn from others' successful strategies</span>
+              <span>Learn from others&rsquo; successful strategies</span>
             </li>
           </ul>
         </div>

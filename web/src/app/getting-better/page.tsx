@@ -129,26 +129,6 @@ export default function GettingBetterPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mx-auto w-full max-w-6xl px-4 py-10 text-sm text-slate-500 sm:px-6">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <div className="font-semibold text-slate-700">Prime State Health</div>
-            <div className="text-xs">Know where you stand. Track your trend.</div>
-          </div>
-          <div className="flex gap-5">
-            <Link className="hover:text-slate-700" href="/terms">
-              Terms
-            </Link>
-            <Link className="hover:text-slate-700" href="/privacy">
-              Privacy
-            </Link>
-            <Link className="hover:text-slate-700" href="/contact">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }

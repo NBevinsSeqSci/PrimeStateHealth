@@ -213,7 +213,7 @@ export default function HowItWorksPage() {
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-slate-900">Turn scores into progress</h2>
             <p className="mt-3 text-sm text-slate-600 sm:text-base">
-              Testing tells you "what." The course tells you "what to do next," and the community keeps you consistent.
+              Testing tells you &ldquo;what.&rdquo; The course tells you &ldquo;what to do next,&rdquo; and the community keeps you consistent.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ export default function HowItWorksPage() {
                 <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>"One-change" experiments and tracking templates</span>
+                <span>&ldquo;One-change&rdquo; experiments and tracking templates</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-700">
                 <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -284,7 +284,7 @@ export default function HowItWorksPage() {
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <h4 className="text-sm font-semibold text-slate-900">Don't over-test</h4>
+            <h4 className="text-sm font-semibold text-slate-900">Don&rsquo;t over-test</h4>
             <p className="mt-1 text-sm text-slate-600">
               Monthly is ideal to reduce practice effects. Testing too frequently makes it harder to see real changes.
             </p>
@@ -316,7 +316,7 @@ export default function HowItWorksPage() {
               Prime State Health is a measurement and tracking tool. It does not diagnose cognitive impairment, dementia, ADHD, or any medical condition.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
-              If you're experiencing concerning symptoms or significant cognitive changes, consult a licensed healthcare professional.
+              If you&rsquo;re experiencing concerning symptoms or significant cognitive changes, consult a licensed healthcare professional.
             </p>
           </div>
         </div>
@@ -347,26 +347,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mx-auto w-full max-w-6xl px-4 py-10 text-sm text-slate-500 sm:px-6">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <div className="font-semibold text-slate-700">Prime State Health</div>
-            <div className="text-xs">Know where you stand. Track your trend.</div>
-          </div>
-          <div className="flex gap-5">
-            <Link className="hover:text-slate-700" href="/terms">
-              Terms
-            </Link>
-            <Link className="hover:text-slate-700" href="/privacy">
-              Privacy
-            </Link>
-            <Link className="hover:text-slate-700" href="/contact">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
