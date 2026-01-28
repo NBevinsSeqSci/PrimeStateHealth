@@ -44,7 +44,7 @@ const ANIMAL_WORDS = new Set<string>([
   "butterfly", "moth", "beetle", "ladybug", "dragonfly", "grasshopper", "cricket",
   "fly", "mosquito", "spider", "tarantula", "scorpion", "centipede", "worm",
   "camel", "llama", "alpaca", "yak", "sloth", "meerkat", "mongoose", "bat",
-  "dingo", "ocelot", "mammal", "bird", "reptile", "amphibian", "insect",
+  "aardvark", "anteater", "dingo", "ocelot", "mammal", "bird", "reptile", "amphibian", "insect",
 ]);
 
 function normalizeAnimalWord(raw: string): string {

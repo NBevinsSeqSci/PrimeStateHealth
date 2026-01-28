@@ -2,11 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import AuthNav from "@/components/auth/AuthNav";
 
-const navItems = [
-  { href: "/how-it-works", label: "How it works" },
-  { href: "/try", label: "Try free check-in" },
-];
-
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-ink-200/70 bg-white/80 backdrop-blur">
@@ -32,17 +27,6 @@ export default function SiteHeader() {
             <span className="block text-xs text-ink-500">At-home brain check-ins</span>
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm text-ink-600 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="psh-link"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
         <AuthNav />
       </div>
     </header>

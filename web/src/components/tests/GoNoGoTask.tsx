@@ -194,7 +194,7 @@ export default function GoNoGoTask({ onComplete }: GoNoGoTaskProps) {
     return (
       <div className="text-center space-y-4">
         <h3 className="text-xl font-semibold text-slate-900">Task Complete</h3>
-        <p className="text-slate-600">Processing results...</p>
+        <p className="text-slate-600">Your results are below.</p>
       </div>
     );
   }

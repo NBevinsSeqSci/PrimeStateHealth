@@ -207,8 +207,8 @@ export default function TestScaffold({
                   <div className="text-xl font-medium text-slate-400">/100</div>
                 </div>
 
-                {/* Percentile explanation - conditional based on age availability */}
-                {isAuthenticated && percentile != null ? (
+                {/* Percentile explanation - only when authenticated and percentile available */}
+                {isAuthenticated && percentile != null && (
                   <div className="mt-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
                     {userAge !== null ? (
                       <p>
@@ -220,7 +220,10 @@ export default function TestScaffold({
                       </p>
                     )}
                   </div>
-                ) : (
+                )}
+
+                {/* Upsell - only for unauthenticated users */}
+                {!isAuthenticated && (
                   <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
                     <div className="flex gap-3">
                       <svg className="mt-0.5 h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
