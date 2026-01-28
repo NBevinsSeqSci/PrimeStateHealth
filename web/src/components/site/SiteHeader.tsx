@@ -48,7 +48,7 @@ export default function SiteHeader() {
             Log in
           </LinkButton>
           <LinkButton href="/signup" variant="primary" size="sm">
-            Create account
+            Create free account
           </LinkButton>
         </div>
       </div>

@@ -154,7 +154,7 @@ export default function CognitiveTestPage() {
                 href="/signup"
                 className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
               >
-                Create account
+                Create free account
               </Link>
             </div>
           </div>

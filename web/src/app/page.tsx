@@ -187,7 +187,7 @@ export default function Page() {
                   className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
                   data-psh-event="cta_create_account"
                 >
-                  Create account to track
+                  Create free account
                 </Link>
               </div>
 
@@ -419,7 +419,7 @@ export default function Page() {
                   className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
                   data-psh-event="cta_create_account_footer"
                 >
-                  Create account to track
+                  Create free account
                 </Link>
               </div>
               <p className="mt-4 text-xs text-slate-500">
