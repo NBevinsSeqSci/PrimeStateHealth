@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Script from "next/script";
+import { ClinicalTrialAlignment } from "@/components/sections/ClinicalTrialAlignment";
 
 export const metadata: Metadata = {
   title: "Prime State Health — At-home brain check-ins",
@@ -208,10 +209,10 @@ export default function Page() {
           </div>
         </section>
 
-        {/* What you'll see */}
+        {/* What you&rsquo;ll see */}
         <section className="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6">
           <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900">What you'll see</h2>
+            <h2 className="text-xl font-semibold text-slate-900">What you&rsquo;ll see</h2>
             <p className="mt-2 text-sm text-slate-600">
               Each brain check-in gives you clear, actionable information:
             </p>
@@ -316,6 +317,19 @@ export default function Page() {
               eventName="test_card_reaction"
             />
           </div>
+        </section>
+
+        {/* Research-driven testing */}
+        <section className="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-lg font-semibold text-slate-900">Research-driven testing</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Our cognitive tests are based on validated assessments used in research and clinical settings.
+              The modalities align with common clinical trial endpoints, making them suitable for tracking
+              cognitive performance over time.
+            </p>
+          </div>
+          <ClinicalTrialAlignment />
         </section>
 
         {/* How it works (simplified) */}
