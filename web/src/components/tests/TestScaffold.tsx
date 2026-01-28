@@ -7,7 +7,14 @@ import { useSession } from "next-auth/react";
 export type TestKind =
   | "reaction-time"
   | "executive-function"
-  | "visual-memory";
+  | "visual-memory"
+  | "orientation"
+  | "digit-span"
+  | "go-nogo"
+  | "fluency"
+  | "symbol-coding"
+  | "trails"
+  | "verbal-list";
 
 export type TestResultPayload = {
   kind: TestKind;

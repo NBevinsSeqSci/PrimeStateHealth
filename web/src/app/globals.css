@@ -289,6 +289,22 @@ button.outline:hover,
 }
 
 /* ============================================================
+   PS-BTN UTILITY CLASSES (Dashboard + Consistent Buttons)
+   ============================================================ */
+
+.ps-btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2;
+}
+
+.ps-btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border-2 border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2;
+}
+
+.ps-btn-ghost {
+  @apply inline-flex items-center justify-center rounded-xl bg-transparent px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2;
+}
+
+/* ============================================================
    CARDS / PANELS / DASHBOARDS
    ============================================================ */
 
