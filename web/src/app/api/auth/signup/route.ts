@@ -5,11 +5,19 @@ import bcrypt from "bcryptjs";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { email, password } = body;
+    const { email, password, termsAccepted, termsVersion } = body;
 
     if (!email || typeof email !== "string") {
       return NextResponse.json(
         { error: "Email is required" },
+        { status: 400 }
+      );
+    }
+
+    // Enforce terms acceptance
+    if (termsAccepted !== true) {
+      return NextResponse.json(
+        { error: "You must accept the Terms of Use to create an account" },
         { status: 400 }
       );
     }
@@ -32,12 +40,14 @@ export async function POST(request: Request) {
       passwordHash = await bcrypt.hash(password, 12);
     }
 
-    // Create user
+    // Create user with terms acceptance
     const user = await prisma.user.create({
       data: {
         email,
         passwordHash,
-        emailVerified: null, // Will be verified via magic link or after first password login
+        emailVerified: null,
+        acceptedTermsAt: new Date(),
+        acceptedTermsVersion: termsVersion || process.env.TERMS_VERSION || "2026-01-28",
       },
     });
 

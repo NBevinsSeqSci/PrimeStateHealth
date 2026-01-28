@@ -40,32 +40,34 @@ const cognitiveTests = [
     duration: "1-2 min",
   },
   {
-    href: "#",
+    href: "/cognitive-test/fluency",
     label: "Verbal Fluency",
     description: "Language generation test",
-    duration: "Coming soon",
-    disabled: true,
+    duration: "1 min",
   },
   {
-    href: "#",
+    href: "/cognitive-test/symbol-coding",
     label: "Symbol Coding",
     description: "Processing speed test",
-    duration: "Coming soon",
-    disabled: true,
+    duration: "90 sec",
   },
   {
-    href: "#",
+    href: "/cognitive-test/trails",
     label: "Trails",
     description: "Visual attention test",
-    duration: "Coming soon",
-    disabled: true,
+    duration: "1-2 min",
   },
   {
-    href: "#",
+    href: "/cognitive-test/verbal-list",
     label: "Verbal List Learning",
     description: "Episodic memory test",
-    duration: "Coming soon",
-    disabled: true,
+    duration: "5-7 min",
+  },
+  {
+    href: "/cognitive-test/health-questionnaire",
+    label: "Health Questionnaire",
+    description: "Mood & attention screening",
+    duration: "2-3 min",
   },
 ];
 
@@ -97,36 +99,21 @@ export default function DashboardPage() {
         <div>
           <h2 className="mb-4 text-xl font-semibold text-ink-900">Cognitive Tests</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {cognitiveTests.map((test) =>
-              test.disabled ? (
-                <div
-                  key={test.label}
-                  className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm opacity-60"
-                >
-                  <h3 className="text-base font-semibold text-slate-700">
-                    {test.label}
-                  </h3>
-                  <p className="mt-1 text-sm text-slate-500">{test.description}</p>
-                  <p className="mt-2 text-xs font-medium text-slate-400">
-                    {test.duration}
-                  </p>
-                </div>
-              ) : (
-                <Link
-                  key={test.href}
-                  href={test.href}
-                  className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-slate-300 hover:shadow-md"
-                >
-                  <h3 className="text-base font-semibold text-slate-900 group-hover:text-slate-700">
-                    {test.label}
-                  </h3>
-                  <p className="mt-1 text-sm text-slate-600">{test.description}</p>
-                  <p className="mt-2 text-xs font-medium text-slate-500">
-                    {test.duration}
-                  </p>
-                </Link>
-              )
-            )}
+            {cognitiveTests.map((test) => (
+              <Link
+                key={test.href}
+                href={test.href}
+                className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+              >
+                <h3 className="text-base font-semibold text-slate-900 group-hover:text-slate-700">
+                  {test.label}
+                </h3>
+                <p className="mt-1 text-sm text-slate-600">{test.description}</p>
+                <p className="mt-2 text-xs font-medium text-slate-500">
+                  {test.duration}
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
 

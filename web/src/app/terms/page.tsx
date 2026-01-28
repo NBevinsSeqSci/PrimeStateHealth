@@ -3,7 +3,7 @@ export const metadata = {
   description: "Terms that govern your use of PrimeState Health.",
 };
 
-const EFFECTIVE_DATE = "January 24, 2026";
+const EFFECTIVE_DATE = "January 28, 2026";
 
 export default function TermsPage() {
   return (
@@ -13,8 +13,8 @@ export default function TermsPage() {
           Terms of Service
         </h1>
         <p className="mt-3 text-sm text-ink-600 md:text-base">
-          These terms explain how PrimeState Health works and what you can
-          expect when using the service.
+          These Terms govern your access to and use of PrimeState Health and
+          our websites, applications, and services.
         </p>
         <p className="mt-2 text-xs text-ink-500">
           Effective date: <span className="font-medium">{EFFECTIVE_DATE}</span>
@@ -22,133 +22,140 @@ export default function TermsPage() {
       </header>
 
       <section className="space-y-8 text-sm text-ink-600 md:text-base">
+        <p className="text-sm font-semibold uppercase tracking-wide text-ink-500">
+          PLEASE READ CAREFULLY. THESE TERMS CONTAIN A BINDING ARBITRATION
+          AGREEMENT, A WAIVER OF JURY TRIAL, AND A WAIVER OF CLASS, COLLECTIVE,
+          REPRESENTATIVE, AND PRIVATE-ATTORNEY-GENERAL ACTIONS THAT AFFECT YOUR
+          LEGAL RIGHTS.
+        </p>
+
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">1) Agreement</h2>
           <p>
-            By accessing or using PrimeState Health (the &quot;Service&quot;), you agree
-            to these Terms of Service (&quot;Terms&quot;). If you do not agree, do not use
-            the Service.
+            By accessing or using the Service, you agree to be bound by these
+            Terms and our Privacy Policy. If you do not agree, do not use the
+            Service.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            2) What the Service is (and isn&apos;t)
+            2) What the Service Is (and Isn&apos;t)
           </h2>
           <p>
-            The Service provides tools for measurement and trend tracking (for
-            example, brief cognitive check-ins, summaries, and suggestions). The
-            Service does <strong>not</strong> provide medical advice, diagnosis,
-            or treatment, and it is not a substitute for care from a licensed
-            clinician. If you have urgent symptoms or concerns, seek medical
-            attention.
+            The Service provides tools for measurement, self-tracking,
+            education, and trend visualization (including brief cognitive
+            check-ins, summaries, and general suggestions).
+          </p>
+          <p className="font-semibold text-ink-900">
+            THE SERVICE IS NOT A MEDICAL DEVICE, DIAGNOSTIC TOOL, OR CLINICAL
+            DECISION-SUPPORT SYSTEM AND IS NOT INTENDED TO DIAGNOSE, TREAT, CURE,
+            OR PREVENT ANY DISEASE OR CONDITION.
+          </p>
+          <p>
+            The Service does not provide medical advice and does not replace
+            care from a licensed clinician. No physician-patient or
+            clinician-patient relationship is created through use of the
+            Service.
+          </p>
+          <p>
+            Do not rely on the Service for emergencies. Seek immediate medical
+            attention for urgent symptoms or concerns.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">3) Eligibility</h2>
           <p>
-            You must be at least 18 years old (or the age of majority where you
-            live) to use the Service. By using the Service, you represent you
-            meet these requirements.
+            You must be at least eighteen (18) years old (or the age of majority
+            where you live). By using the Service, you represent and warrant
+            that you meet this requirement.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            4) Accounts and secure sign-in links
+            4) Accounts and Secure Access
           </h2>
-          <ul className="list-disc space-y-2 pl-5">
-            <li>
-              You may need an account to use parts of the Service. We may use
-              passwordless &quot;magic links&quot; sent to your email.
-            </li>
-            <li>
-              You are responsible for maintaining the confidentiality of access
-              to your email account and for all activity under your account.
-            </li>
-            <li>
-              You agree to provide accurate information and to keep your
-              account information up to date.
-            </li>
-          </ul>
+          <p>
+            Certain features require an account. We may provide passwordless
+            sign-in links or other authentication methods.
+          </p>
+          <p>
+            You are responsible for safeguarding access to your account and for
+            all activity conducted under it. You agree to provide accurate,
+            current information and to keep it updated.
+          </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            5) Acceptable use
+            5) Acceptable Use
           </h2>
           <p>You agree not to:</p>
           <ul className="list-disc space-y-2 pl-5">
-            <li>Use the Service in a way that violates any law or regulation.</li>
-            <li>
-              Attempt to interfere with or disrupt the Service (including
-              probing, scanning, or testing vulnerabilities).
-            </li>
-            <li>
-              Reverse engineer, scrape, or extract data from the Service except
-              as allowed by law or with our permission.
-            </li>
-            <li>
-              Use the Service to develop or train a competing product using our
-              content, results formats, or UI.
-            </li>
-            <li>
-              Share, resell, or provide access to the Service to others except
-              as expressly allowed.
-            </li>
+            <li>Use the Service unlawfully or in violation of regulations.</li>
+            <li>Interfere with or disrupt security or performance.</li>
+            <li>Attempt to reverse engineer, scrape, or extract data.</li>
+            <li>Use outputs for clinical or professional decision-making.</li>
+            <li>Develop competing services using our materials.</li>
+            <li>Resell or share access without permission.</li>
           </ul>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            6) Your content and inputs
+            6) Your Inputs and License
           </h2>
           <p>
-            You may provide inputs (such as responses during a check-in). You
-            retain rights in your inputs. You grant us a worldwide,
-            non-exclusive, royalty-free license to host, store, process, and
-            use your inputs and results to provide, maintain, secure, and
-            improve the Service.
+            You may submit information or responses (&quot;Inputs&quot;). You retain
+            ownership of your Inputs.
+          </p>
+          <p>
+            You grant PrimeState a worldwide, non-exclusive, royalty-free
+            license to host, store, process, analyze, and use Inputs and derived
+            results to operate, secure, maintain, and improve the Service,
+            subject to our Privacy Policy.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            7) Results and suggestions
+            7) Results, Suggestions, and Variability
           </h2>
           <p>
-            Results may vary based on environment, device, fatigue,
-            distractions, and other factors. Any suggestions are general
-            informational guidance and may not be appropriate for everyone. You
-            are responsible for how you use the Service and for decisions you
-            make based on it.
+            Results may vary based on device differences, environment, fatigue,
+            medications, health conditions, or other factors.
+          </p>
+          <p>
+            Any summaries or suggestions are informational only and may not
+            apply to you.
+          </p>
+          <p>You are solely responsible for how you use the Service.</p>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">
+            8) Intellectual Property
+          </h2>
+          <p>
+            The Service and its content (excluding your Inputs) are owned by
+            PrimeState or its licensors and protected by intellectual-property
+            laws.
+          </p>
+          <p>
+            We grant you a limited, revocable, non-transferable, non-commercial
+            license to use the Service in accordance with these Terms.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            8) Intellectual property
+            9) Third-Party Services
           </h2>
           <p>
-            The Service, including software, design, text, graphics, logos, and
-            content (excluding your inputs), is owned by PrimeState Health or
-            its licensors and is protected by intellectual property laws. We
-            grant you a limited, revocable, non-transferable license to use the
-            Service for your personal, non-commercial use in accordance with
-            these Terms.
-          </p>
-        </div>
-
-        <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-ink-900">
-            9) Third-party services
-          </h2>
-          <p>
-            The Service may rely on third-party services (for example, hosting,
-            analytics, and email delivery). We are not responsible for
-            third-party services, and your use of them may be governed by their
-            terms and policies.
+            The Service may integrate third-party providers. We are not
+            responsible for those services, and their terms govern your use.
           </p>
         </div>
 
@@ -157,52 +164,49 @@ export default function TermsPage() {
             10) Changes to the Service
           </h2>
           <p>
-            We may change, suspend, or discontinue any part of the Service at
-            any time, with or without notice. We are not liable for any
-            modification, suspension, or discontinuation.
+            We may modify, suspend, or discontinue any part of the Service at
+            any time without liability.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">11) Termination</h2>
           <p>
-            We may suspend or terminate your access to the Service at any time
-            for any reason (including suspected misuse or security risk), with
-            or without notice. You may stop using the Service at any time.
+            We may suspend or terminate access at any time for suspected
+            misuse, legal risk, or operational reasons.
+          </p>
+          <p>You may stop using the Service at any time.</p>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">
+            12) Disclaimer of Warranties
+          </h2>
+          <p className="font-semibold text-ink-900">
+            THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot;
+          </p>
+          <p className="font-semibold text-ink-900">
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES,
+            EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
+            PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            12) Disclaimer of warranties
+            13) Limitation of Liability
           </h2>
-          <p>
-            THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot; TO THE MAXIMUM
-            EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR
-            IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
-            FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT
-            THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT RESULTS
-            WILL BE ACCURATE OR RELIABLE FOR ANY PARTICULAR PURPOSE.
+          <p className="font-semibold text-ink-900">
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, PRIME STATE HEALTH AND ITS
+            AFFILIATES SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST
+            PROFITS, DATA, OR GOODWILL.
           </p>
-        </div>
-
-        <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-ink-900">
-            13) Limitation of liability
-          </h2>
-          <p>
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, PRIMESTATE HEALTH AND ITS
-            AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, AND SUPPLIERS WILL NOT BE
-            LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
-            EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, USE,
-            GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO
-            YOUR USE OF (OR INABILITY TO USE) THE SERVICE.
-          </p>
-          <p>
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY FOR ANY
-            CLAIM ARISING OUT OF OR RELATING TO THE SERVICE OR THESE TERMS WILL
-            NOT EXCEED THE GREATER OF (A) AMOUNTS YOU PAID TO USE THE SERVICE IN
-            THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM OR (B) $100.
+          <p className="font-semibold text-ink-900">
+            OUR TOTAL LIABILITY ARISING OUT OF OR RELATING TO THE SERVICE OR
+            THESE TERMS SHALL NOT EXCEED THE GREATER OF (A) FEES YOU PAID IN THE
+            SIX (6) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM OR (B)
+            $100.
           </p>
         </div>
 
@@ -211,56 +215,141 @@ export default function TermsPage() {
             14) Indemnification
           </h2>
           <p>
-            You agree to defend, indemnify, and hold harmless PrimeState Health
-            and its affiliates, officers, employees, agents, and suppliers from
-            any claims, liabilities, damages, losses, and expenses (including
-            reasonable attorneys&apos; fees) arising out of or related to your use
-            of the Service, your violation of these Terms, or your violation of
-            any rights of another.
+            You agree to defend, indemnify, and hold harmless PrimeState and its
+            affiliates, officers, employees, and agents from any claims arising
+            from:
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Your use of the Service.</li>
+            <li>Reliance on results.</li>
+            <li>Violation of these Terms.</li>
+            <li>Violation of law or third-party rights.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">
+            15) Binding Arbitration; Waiver of Class and Representative Actions
+          </h2>
+          <p className="font-semibold text-ink-900">PLEASE READ CAREFULLY.</p>
+          <div className="space-y-3">
+            <h3 className="text-base font-semibold text-ink-900">
+              a) Arbitration Agreement
+            </h3>
+            <p>
+              Except for matters that may be brought in small-claims court, any
+              dispute arising from or relating to these Terms or the Service
+              shall be resolved exclusively by binding arbitration administered
+              by the American Arbitration Association under its Consumer
+              Arbitration Rules.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-base font-semibold text-ink-900">b) Location</h3>
+            <p>
+              Arbitration shall take place in San Diego County, California,
+              unless the parties agree otherwise.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-base font-semibold text-ink-900">
+              c) No Class or Representative Actions
+            </h3>
+            <p>
+              You agree to bring claims only in your individual capacity. You
+              waive any right to participate in class, collective,
+              representative, or private-attorney-general actions, including
+              claims under California&apos;s Private Attorneys General Act
+              (&quot;PAGA&quot;), to the maximum extent permitted by law.
+            </p>
+            <p>
+              If a court determines that the PAGA waiver is unenforceable, PAGA
+              claims shall be stayed while individual claims are arbitrated.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-base font-semibold text-ink-900">
+              d) Jury Trial Waiver
+            </h3>
+            <p>You waive the right to a trial by jury.</p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-base font-semibold text-ink-900">e) Opt-Out</h3>
+            <p>
+              You may opt out of this arbitration agreement within thirty (30)
+              days of creating an account by emailing{" "}
+              <a
+                className="font-medium text-brand-600 hover:text-brand-500"
+                href="mailto:support@primestatehealth.com"
+              >
+                support@primestatehealth.com
+              </a>{" "}
+              with your name and account email.
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">
+            16) Governing Law
+          </h2>
+          <p>
+            These Terms are governed by the laws of the State of California,
+            without regard to conflict-of-laws principles.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            15) Dispute resolution
+            17) Changes to These Terms
           </h2>
           <p>
-            Before filing a claim, you agree to contact us to try to resolve
-            the dispute informally. If we can&apos;t resolve it, disputes will be
-            resolved in the courts located in the jurisdiction where PrimeState
-            Health is organized (unless applicable law requires otherwise).
+            We may update these Terms from time to time. Continued use of the
+            Service after changes take effect constitutes acceptance.
           </p>
-          <p className="text-xs text-ink-500">
-            (Optional upgrade later: add arbitration and class-action waiver if
-            you want maximum protection.)
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">18) Force Majeure</h2>
+          <p>
+            We are not liable for delays or failures caused by events beyond
+            our reasonable control, including natural disasters, cyber
+            incidents, power outages, government actions, labor disputes, or
+            telecommunications failures.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            16) Governing law
+            19) Assumption of Risk
           </h2>
           <p>
-            These Terms are governed by the laws of the jurisdiction where
-            PrimeState Health is organized, without regard to conflict of law
-            principles.
+            You acknowledge inherent uncertainty in measurement tools and
+            assume all risks associated with reliance on results, technical
+            limitations, data inaccuracies, or user-specific factors.
           </p>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-ink-900">
-            17) Changes to these Terms
+            20) Beta and Experimental Features
           </h2>
           <p>
-            We may update these Terms from time to time. If we make material
-            changes, we will post the updated Terms here and update the
-            effective date. Your continued use of the Service after changes
-            become effective means you accept the updated Terms.
+            Features labeled &quot;beta,&quot; &quot;experimental,&quot; or &quot;preview&quot;
+            are provided without warranties and may change or be discontinued
+            at any time.
           </p>
         </div>
 
         <div className="space-y-3">
-          <h2 className="text-xl font-semibold text-ink-900">18) Contact</h2>
+          <h2 className="text-xl font-semibold text-ink-900">
+            21) Export Controls
+          </h2>
+          <p>You agree to comply with U.S. export laws and sanctions regulations.</p>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-ink-900">22) Contact</h2>
           <p>
             Questions about these Terms? Email{" "}
             <a
@@ -272,12 +361,6 @@ export default function TermsPage() {
             .
           </p>
         </div>
-
-        <hr className="border-ink-200" />
-        <p className="text-xs text-ink-500">
-          This page is a general template and not legal advice. Consider having
-          counsel review before launch.
-        </p>
       </section>
     </main>
   );

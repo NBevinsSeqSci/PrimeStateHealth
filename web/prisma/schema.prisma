@@ -20,12 +20,37 @@ model User {
   // Authentication
   passwordHash          String?
 
-  // Demographics
+  // Identity
+  firstName             String?
+  lastName              String?
+  preferredName         String?
+
+  // Demographics - Basic
   dateOfBirth           DateTime?
   sex                   String?   // "male", "female", "other"
   education             String?   // Education level
+
+  // Location
   country               String?
+  region                String?   // State/Province/Region
+  city                  String?
+  postalCode            String?
+  timeZone              String?
+
+  // Background - Cognition relevant
+  primaryLanguage       String?
+  englishProficiency    String?   // "native", "fluent", "conversational", "limited"
+  isMultilingual        Boolean?  @default(false)
+  additionalLanguages   String[]  // Array of additional languages
+  handedness            String?   // "right", "left", "ambidextrous"
+  raceEthnicity         String[]  // Multi-select array
+  deviceType            String?   // Auto-captured: "desktop", "laptop", "tablet", "phone"
+
   demographicsCompleted Boolean   @default(false)
+
+  // Terms of Use acceptance
+  acceptedTermsAt       DateTime?
+  acceptedTermsVersion  String?   // e.g., "2026-01-28"
 
   accounts              Account[]
   sessions              Session[]

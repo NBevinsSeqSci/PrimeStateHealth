@@ -12,7 +12,11 @@ export type DigitSpanResult = {
   totalTrials: number;
 };
 
-export default function DigitSpanTest({ onComplete }: { onComplete: (result: DigitSpanResult) => void }) {
+export default function DigitSpanTest({
+  onComplete,
+}: {
+  onComplete: (result: DigitSpanResult) => void;
+}) {
   const [phase, setPhase] = useState<"intro" | "display" | "input" | "finished">("intro");
   const [mode, setMode] = useState<"forward" | "backward">("forward");
   const [level, setLevel] = useState(3);
@@ -45,7 +49,9 @@ export default function DigitSpanTest({ onComplete }: { onComplete: (result: Dig
   }, [phase, currentDigitIndex, sequence, showBlank]);
 
   const startTrial = () => {
-    const newSeq = Array.from({ length: level }, () => Math.floor(Math.random() * 10).toString());
+    const newSeq = Array.from({ length: level }, () =>
+      Math.floor(Math.random() * 10).toString()
+    );
     setSequence(newSeq);
     if (mode === "forward") {
       setForwardSequences((prev) => [...prev, newSeq]);
@@ -88,7 +94,10 @@ export default function DigitSpanTest({ onComplete }: { onComplete: (result: Dig
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const target = mode === "forward" ? sequence.join("") : [...sequence].reverse().join("");
+    const target =
+      mode === "forward"
+        ? sequence.join("")
+        : [...sequence].reverse().join("");
 
     if (userInput === target) {
       if (mode === "forward") {
@@ -132,7 +141,7 @@ export default function DigitSpanTest({ onComplete }: { onComplete: (result: Dig
     return (
       <div className="flex items-center justify-center min-h-[300px]">
         {currentDigitIndex < sequence.length ? (
-          <div className="text-8xl font-bold text-slate-900 transition-opacity duration-200">
+          <div className="text-8xl font-bold text-slate-900 animate-in zoom-in duration-200">
             {showBlank ? "" : sequence[currentDigitIndex]}
           </div>
         ) : (
@@ -145,9 +154,11 @@ export default function DigitSpanTest({ onComplete }: { onComplete: (result: Dig
   if (phase === "input") {
     return (
       <div className="text-center space-y-6 max-w-md mx-auto">
-        <h3 className="text-xl font-semibold text-slate-900">Enter Sequence</h3>
-        <p className="text-sm text-slate-600">
-          {mode === "forward" ? "Type the numbers in order." : "Type the numbers in REVERSE order."}
+        <h3 className="text-2xl font-semibold text-slate-900">Enter Sequence</h3>
+        <p className="text-slate-600">
+          {mode === "forward"
+            ? "Type the numbers in order."
+            : "Type the numbers in REVERSE order."}
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -175,7 +186,7 @@ export default function DigitSpanTest({ onComplete }: { onComplete: (result: Dig
 
   return (
     <div className="text-center space-y-4">
-      <h3 className="text-xl font-semibold text-slate-900">Test Complete</h3>
+      <h3 className="text-2xl font-semibold text-slate-900">Test Complete</h3>
       <p className="text-slate-600">Saving results...</p>
     </div>
   );

@@ -1,0 +1,15 @@
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "additionalLanguages" TEXT[],
+ADD COLUMN     "city" TEXT,
+ADD COLUMN     "deviceType" TEXT,
+ADD COLUMN     "englishProficiency" TEXT,
+ADD COLUMN     "firstName" TEXT,
+ADD COLUMN     "handedness" TEXT,
+ADD COLUMN     "isMultilingual" BOOLEAN DEFAULT false,
+ADD COLUMN     "lastName" TEXT,
+ADD COLUMN     "postalCode" TEXT,
+ADD COLUMN     "preferredName" TEXT,
+ADD COLUMN     "primaryLanguage" TEXT,
+ADD COLUMN     "raceEthnicity" TEXT[],
+ADD COLUMN     "region" TEXT,
+ADD COLUMN     "timeZone" TEXT;

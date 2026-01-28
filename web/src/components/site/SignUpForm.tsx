@@ -2,20 +2,54 @@
 
 import { useState } from "react";
 import { signIn } from "next-auth/react";
+import Link from "next/link";
+
+const TERMS_VERSION = "2026-01-28";
 
 export default function SignUpForm() {
   const [mode, setMode] = useState<"magic" | "password">("magic");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [termsError, setTermsError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
   const [error, setError] = useState<string | null>(null);
 
+  const validateTerms = (): boolean => {
+    if (!termsAccepted) {
+      setTermsError("You must accept the Terms of Use to create an account.");
+      return false;
+    }
+    setTermsError(null);
+    return true;
+  };
+
+  const recordTermsAcceptance = async (userEmail: string) => {
+    try {
+      await fetch("/api/auth/accept-terms", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: userEmail,
+          termsVersion: TERMS_VERSION,
+        }),
+      });
+    } catch {
+      // Terms recording failure should not block the flow
+      console.error("Failed to record terms acceptance");
+    }
+  };
+
   const handleMagicLinkSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!email) return;
+
+    if (!validateTerms()) {
+      return;
+    }
 
     setStatus("sending");
     setError(null);
@@ -40,6 +74,8 @@ export default function SignUpForm() {
       setStatus("error");
       setError("Something went wrong. Try again in a moment.");
     } else {
+      // Record terms acceptance for the user
+      await recordTermsAcceptance(email);
       setStatus("sent");
     }
   };
@@ -47,6 +83,10 @@ export default function SignUpForm() {
   const handlePasswordSignup = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!email || !password) return;
+
+    if (!validateTerms()) {
+      return;
+    }
 
     if (password.length < 8) {
       setError("Password must be at least 8 characters");
@@ -73,11 +113,16 @@ export default function SignUpForm() {
         // Marketing failures should not block signup
       }
 
-      // Create account with password
+      // Create account with password and terms acceptance
       const signupRes = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({
+          email,
+          password,
+          termsAccepted: true,
+          termsVersion: TERMS_VERSION,
+        }),
       });
 
       const signupData = await signupRes.json();
@@ -113,6 +158,15 @@ export default function SignUpForm() {
     }
   };
 
+  const handleTermsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTermsAccepted(e.target.checked);
+    if (e.target.checked) {
+      setTermsError(null);
+    }
+  };
+
+  const isSubmitDisabled = status === "sending" || !termsAccepted;
+
   return (
     <div className="rounded-3xl border border-ink-200 bg-white/90 p-8 shadow-sm">
       <label className="text-xs uppercase tracking-[0.3em] text-brand-600">
@@ -140,12 +194,49 @@ export default function SignUpForm() {
               />
               <button
                 type="submit"
-                disabled={status === "sending"}
-                className="rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-500 disabled:opacity-60"
+                disabled={isSubmitDisabled}
+                className="rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-500 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {status === "sending" ? "Sending..." : "Send link"}
               </button>
             </div>
+
+            {/* Terms Checkbox */}
+            <div className="mt-4">
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="termsAcceptedMagic"
+                  checked={termsAccepted}
+                  onChange={handleTermsChange}
+                  aria-invalid={termsError ? "true" : "false"}
+                  aria-describedby={termsError ? "terms-error-magic" : undefined}
+                  className="mt-0.5 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+                />
+                <label
+                  htmlFor="termsAcceptedMagic"
+                  className="text-sm text-slate-700"
+                >
+                  I agree to the{" "}
+                  <Link
+                    href="/terms"
+                    className="font-medium text-brand-600 underline hover:text-brand-500"
+                  >
+                    Terms of Use
+                  </Link>
+                </label>
+              </div>
+              {termsError && (
+                <p
+                  id="terms-error-magic"
+                  className="mt-2 text-sm text-red-600"
+                  role="alert"
+                >
+                  {termsError}
+                </p>
+              )}
+            </div>
+
             {status === "sent" && (
               <p className="mt-4 text-sm text-brand-600">
                 Check your inbox for the sign-in link.
@@ -217,14 +308,50 @@ export default function SignUpForm() {
               />
             </div>
 
+            {/* Terms Checkbox */}
+            <div className="pt-2">
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="termsAcceptedPassword"
+                  checked={termsAccepted}
+                  onChange={handleTermsChange}
+                  aria-invalid={termsError ? "true" : "false"}
+                  aria-describedby={termsError ? "terms-error-password" : undefined}
+                  className="mt-0.5 h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-500"
+                />
+                <label
+                  htmlFor="termsAcceptedPassword"
+                  className="text-sm text-slate-700"
+                >
+                  I agree to the{" "}
+                  <Link
+                    href="/terms"
+                    className="font-medium text-slate-900 underline hover:text-slate-700"
+                  >
+                    Terms of Use
+                  </Link>
+                </label>
+              </div>
+              {termsError && (
+                <p
+                  id="terms-error-password"
+                  className="mt-2 text-sm text-red-600"
+                  role="alert"
+                >
+                  {termsError}
+                </p>
+              )}
+            </div>
+
             {error && (
               <p className="text-sm text-red-600">{error}</p>
             )}
 
             <button
               type="submit"
-              disabled={status === "sending"}
-              className="w-full rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 disabled:opacity-60"
+              disabled={isSubmitDisabled}
+              className="w-full rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {status === "sending" ? "Creating account…" : "Create account"}
             </button>
