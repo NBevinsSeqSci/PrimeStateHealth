@@ -9,9 +9,9 @@ function cx(...parts: Array<string | false | null | undefined>) {
 }
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all " +
-  "focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary/60 " +
-  "focus-visible:ring-offset-background select-none";
+  "inline-flex items-center justify-center gap-2 rounded-md font-semibold transition-all " +
+  "focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 " +
+  "focus-visible:ring-offset-white select-none";
 
 const sizes: Record<Size, string> = {
   sm: "h-9 px-3 text-sm",
@@ -21,15 +21,16 @@ const sizes: Record<Size, string> = {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-primary text-foreground shadow-sm " +
-    "hover:bg-secondary active:bg-secondary " +
-    "ring-1 ring-inset ring-primary/40",
+    "bg-slate-900 text-white shadow-sm " +
+    "hover:bg-slate-800 active:bg-slate-700 " +
+    "focus-visible:ring-slate-400",
   secondary:
     "bg-secondary text-foreground ring-1 ring-inset ring-gray/70 " +
     "hover:bg-secondary/80 active:bg-secondary/70",
   ghost:
-    "bg-transparent text-foreground ring-1 ring-inset ring-gray/70 " +
-    "hover:bg-secondary/40 active:bg-secondary/60",
+    "bg-white text-slate-900 border border-slate-300 shadow-sm " +
+    "hover:bg-slate-50 active:bg-slate-100 " +
+    "focus-visible:ring-slate-400",
   link:
     "bg-transparent text-foreground underline-offset-4 " +
     "hover:underline hover:text-foreground/80",
