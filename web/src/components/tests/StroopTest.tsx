@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState, type SVGProps } from "react";
 
 type StroopTestProps = {
-  onComplete: (score: number) => void;
+  onComplete: (result: { score: number; elapsedMs: number; correct: number; total: number }) => void;
 };
 
 const COLORS = [
@@ -25,12 +25,15 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
   const [timeLeft, setTimeLeft] = useState(30);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [justSelectedPulse, setJustSelectedPulse] = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const pulseTimeoutRef = useRef<number | null>(null);
   const selectionTimeoutRef = useRef<number | null>(null);
   const scoreRef = useRef(0);
   const roundRef = useRef(0);
+  const correctRef = useRef(0);
+  const startTimeRef = useRef<number>(0);
 
   useEffect(() => {
     scoreRef.current = score;
@@ -39,6 +42,10 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
   useEffect(() => {
     roundRef.current = round;
   }, [round]);
+
+  useEffect(() => {
+    correctRef.current = correct;
+  }, [correct]);
 
   const resetSelections = useCallback(() => {
     if (pulseTimeoutRef.current !== null) {
@@ -68,7 +75,16 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
     if (timerRef.current) clearInterval(timerRef.current);
     resetSelections();
     setGameState("finished");
-    onComplete(scoreRef.current);
+
+    const endTime = performance.now();
+    const elapsedMs = Math.round(endTime - startTimeRef.current);
+
+    onComplete({
+      score: scoreRef.current,
+      elapsedMs,
+      correct: correctRef.current,
+      total: TOTAL_ROUNDS,
+    });
   }, [onComplete, resetSelections]);
 
   const nextRound = useCallback(() => {
@@ -110,6 +126,9 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
   const startGame = () => {
     resetSelections();
+    startTimeRef.current = performance.now();
+    setScore(0);
+    setCorrect(0);
     setGameState("playing");
     nextRound();
   };
@@ -134,6 +153,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
 
     if (colorValue === currentWord.color) {
       setScore((value) => value + 100 + timeLeft * 2);
+      setCorrect((value) => value + 1);
     } else {
       setScore((value) => Math.max(0, value - 50));
     }
@@ -227,8 +247,7 @@ export default function StroopTest({ onComplete }: StroopTestProps) {
       {gameState === "finished" && (
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold text-ink-900">Challenge Complete!</h3>
-          <p className="text-4xl font-black text-brand-600">{score}</p>
-          <p className="text-sm text-ink-500">Raw score. Your score appears below.</p>
+          <p className="text-sm text-ink-600">Your score appears below.</p>
         </div>
       )}
     </div>
