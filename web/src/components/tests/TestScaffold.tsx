@@ -39,6 +39,8 @@ type Props = {
   scoreFromRaw: (raw: unknown) => number;
   resultCallout?: ReactNode;
   getPercentile?: (score: number) => number | null;
+  /** Optional test-specific explanation shown to authenticated users after the score. */
+  aboutScore?: ReactNode;
 };
 
 type UserProfile = {
@@ -55,13 +57,14 @@ export default function TestScaffold({
   scoreFromRaw,
   resultCallout,
   getPercentile,
+  aboutScore,
 }: Props) {
   const [raw, setRaw] = useState<unknown | null>(null);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
   const [showReferenceDetails, setShowReferenceDetails] = useState(false);
   const savedRef = useRef(false);
-  const { data: session, status } = useSession();
+  const { status } = useSession();
 
   const score = useMemo(() => {
     if (raw == null) return null;
@@ -318,10 +321,22 @@ export default function TestScaffold({
                   </div>
                 )}
 
+                {/* Test-specific "About this score" block (authenticated only) */}
+                {isAuthenticated && aboutScore && (
+                  <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-4">
+                    {aboutScore}
+                    {saveStatus === "saved" && (
+                      <p className="mt-2 text-xs text-slate-500">
+                        Because you are signed in, this result has been saved and will appear in your Trends dashboard.
+                      </p>
+                    )}
+                  </div>
+                )}
+
                 <p className="mt-4 text-xs text-slate-500">
                   These scores are for tracking your baseline and trend — not for diagnosis or treatment.
                 </p>
-                {isAuthenticated && saveStatus === "saved" && (
+                {isAuthenticated && saveStatus === "saved" && !aboutScore && (
                   <p className="mt-2 flex items-center gap-1.5 text-xs text-emerald-600">
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

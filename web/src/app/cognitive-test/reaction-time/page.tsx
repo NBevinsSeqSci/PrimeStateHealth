@@ -3,11 +3,17 @@
 import SignupEnticement from "@/components/SignupEnticement";
 import ReactionTest from "@/components/tests/ReactionTest";
 import TestScaffold from "@/components/tests/TestScaffold";
+import type { ReactionResult } from "@/components/tests/ReactionTest";
 
-// Percentile calculation not used for reaction time test
-// We show raw metrics (ms) instead of normalized score
-function getReactionPercentile(): null {
-  return null;
+/**
+ * Convert average reaction time (ms) to a 0–100 score.
+ * ~200ms (elite) => 100, ~600ms (very slow) => 0.
+ */
+function reactionTimeToScore(avgMs: number): number {
+  const best = 200;
+  const worst = 600;
+  const t = (worst - avgMs) / (worst - best);
+  return Math.round(Math.max(0, Math.min(1, t)) * 100);
 }
 
 export default function ReactionTimePage() {
@@ -18,12 +24,26 @@ export default function ReactionTimePage() {
       kind="reaction-time"
       backHref="/try"
       backLabel="Back"
-      scoreFromRaw={() => {
-        // Return NaN to hide the /100 score display
-        // Useful metrics (Average, Fastest, Slowest, Early clicks) are shown in ReactionTest component
-        return NaN;
+      scoreFromRaw={(raw) => {
+        if (!raw || typeof raw !== "object") return 0;
+        const result = raw as ReactionResult;
+        if (!result.rawScore || result.rawScore <= 0) return 0;
+        return reactionTimeToScore(result.rawScore);
       }}
-      getPercentile={getReactionPercentile}
+      aboutScore={
+        <>
+          <h3 className="text-sm font-semibold text-slate-900">About this score</h3>
+          <p className="mt-2 text-sm text-slate-700">
+            Score is derived from your average reaction time (lower is better).
+            Faster average responses map to a higher score out of 100.
+          </p>
+          <p className="mt-2 text-sm text-slate-700">
+            Reaction time can be affected by alertness, caffeine, fatigue, and
+            device input lag. Tracking changes across sessions is more
+            informative than any single result.
+          </p>
+        </>
+      }
       resultCallout={
         <SignupEnticement
           title="Track your speed over time"

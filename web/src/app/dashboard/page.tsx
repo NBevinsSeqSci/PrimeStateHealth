@@ -6,6 +6,21 @@ import { useSession } from "next-auth/react";
 import { ProfileIntakeTrigger } from "@/components/ProfileIntakeTrigger";
 import QuickCheckIn from "@/components/QuickCheckIn";
 
+const ctaClass = [
+  "inline-flex items-center justify-center gap-1.5",
+  "h-10 px-4",
+  "rounded-xl",
+  "whitespace-nowrap",
+  "bg-slate-900 text-white",
+  "font-semibold text-sm",
+  "shadow-sm",
+  "hover:bg-slate-800",
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2",
+  "active:translate-y-[1px]",
+  "dark:bg-white dark:text-slate-900",
+  "dark:hover:bg-slate-100",
+].join(" ");
+
 type TestResultsData = {
   displayName: string | null;
   totalTests: number;
@@ -311,7 +326,7 @@ export default function DashboardPage() {
                     </p>
                     <Link
                       href={test.href}
-                      className="inline-flex items-center gap-1.5 rounded-lg bg-brand-600 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-brand-500"
+                      className={ctaClass}
                     >
                       {isCompleted ? "Retake" : "Start"}
                       <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

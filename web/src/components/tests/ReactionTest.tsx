@@ -178,9 +178,6 @@ export default function ReactionTest({ onComplete }: ReactionTestProps) {
               <span className="font-semibold text-ink-900">{finalResult.earlyClicks}</span>
             </div>
           </div>
-          <p className="mt-3 text-xs text-ink-500">
-            Your score appears below.
-          </p>
         </div>
       ) : (
         <div
