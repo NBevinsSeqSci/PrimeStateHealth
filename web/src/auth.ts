@@ -1,8 +1,10 @@
 import type { NextAuthOptions } from "next-auth";
 import EmailProvider from "next-auth/providers/email";
+import CredentialsProvider from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
 import { sendMagicLinkEmail } from "@/lib/brevo";
+import bcrypt from "bcryptjs";
 
 const normalizeAuthEnv = () => {
   const explicitUrl = process.env.NEXTAUTH_URL || process.env.APP_URL;
@@ -49,14 +51,57 @@ export const authOptions: NextAuthOptions = {
         });
       },
     }),
+    CredentialsProvider({
+      name: "Credentials",
+      credentials: {
+        identifier: { label: "Email or Username", type: "text" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        const identifier = credentials?.identifier?.trim();
+        const password = credentials?.password;
+
+        if (!identifier || !password) return null;
+
+        // Look up user by email (we can add username support later)
+        const user = await prisma.user.findFirst({
+          where: {
+            email: identifier,
+          },
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            passwordHash: true,
+          },
+        });
+
+        if (!user?.passwordHash) return null;
+
+        const ok = await bcrypt.compare(password, user.passwordHash);
+        if (!ok) return null;
+
+        return {
+          id: user.id,
+          name: user.name ?? null,
+          email: user.email ?? "",
+        };
+      },
+    }),
   ],
   session: {
-    strategy: "database",
+    strategy: "jwt", // Changed from "database" to support credentials
   },
   callbacks: {
-    session({ session, user }) {
-      if (session.user) {
-        session.user.id = user.id;
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (session.user && token.id) {
+        session.user.id = token.id as string;
       }
       return session;
     },
