@@ -191,7 +191,7 @@ function formatRelativeTime(dateString: string): string {
 }
 
 export default function DashboardPage() {
-  const { status } = useSession();
+  const { data: session, status } = useSession();
   const [resultsData, setResultsData] = useState<TestResultsData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -220,6 +220,11 @@ export default function DashboardPage() {
       <div className="space-y-8">
         {/* Header with Personalization */}
         <div className="rounded-3xl border border-ink-200 bg-white/90 p-8 shadow-sm">
+          {status === "authenticated" && session?.user?.email && (
+            <p className="mb-2 text-xs text-ink-400">
+              Signed in as {session.user.name || session.user.email}
+            </p>
+          )}
           <p className="text-xs uppercase tracking-[0.3em] text-brand-600">
             Dashboard
           </p>

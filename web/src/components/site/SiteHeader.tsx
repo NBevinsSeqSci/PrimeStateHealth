@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LinkButton } from "@/components/ui/link-button";
+import AuthNav from "@/components/auth/AuthNav";
 
 const navItems = [
   { href: "/how-it-works", label: "How it works" },
@@ -43,14 +43,7 @@ export default function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-          <LinkButton href="/login" variant="ghost" size="sm">
-            Log in
-          </LinkButton>
-          <LinkButton href="/signup" variant="primary" size="sm">
-            Create free account
-          </LinkButton>
-        </div>
+        <AuthNav />
       </div>
     </header>
   );
