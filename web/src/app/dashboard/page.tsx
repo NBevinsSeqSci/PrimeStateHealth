@@ -169,13 +169,6 @@ const cognitiveTests = [
   },
 ];
 
-const dashboardLinks = [
-  { href: "/dashboard/my-results", label: "My Results", icon: "📊" },
-  { href: "/dashboard/trends", label: "Trends", icon: "📈" },
-  { href: "/dashboard/suggestions", label: "Suggestions", icon: "💡" },
-  { href: "/dashboard/retest", label: "Retest", icon: "🔄" },
-];
-
 const testKindLabels: Record<string, string> = {
   "executive-function": "Executive Function",
   "visual-memory": "Visual Memory",
@@ -393,22 +386,6 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Dashboard Links */}
-        <div>
-          <h2 className="mb-4 text-xl font-semibold text-ink-900">Your Data</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {dashboardLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="flex items-center gap-3 rounded-2xl border border-ink-200 bg-ink-50 px-5 py-4 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:bg-white"
-              >
-                <span className="text-lg">{link.icon}</span>
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

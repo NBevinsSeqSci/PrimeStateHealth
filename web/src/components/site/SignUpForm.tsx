@@ -8,6 +8,8 @@ const TERMS_VERSION = "2026-01-28";
 
 export default function SignUpForm() {
   const [mode, setMode] = useState<"magic" | "password">("magic");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -43,13 +45,20 @@ export default function SignUpForm() {
     }
   };
 
+  const validateName = (): boolean => {
+    if (!firstName.trim() || !lastName.trim()) {
+      setError("Please enter your first and last name.");
+      return false;
+    }
+    return true;
+  };
+
   const handleMagicLinkSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!email) return;
 
-    if (!validateTerms()) {
-      return;
-    }
+    if (!validateName()) return;
+    if (!validateTerms()) return;
 
     setStatus("sending");
     setError(null);
@@ -64,6 +73,24 @@ export default function SignUpForm() {
       // Marketing sign-up failures should not block auth.
     }
 
+    // Pre-create or update the user with name before sending magic link
+    try {
+      await fetch("/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          termsAccepted: true,
+          termsVersion: TERMS_VERSION,
+          magicLinkOnly: true,
+        }),
+      });
+    } catch {
+      // If pre-creation fails (e.g. user exists), the magic link flow will still work
+    }
+
     const result = await signIn("email", {
       email,
       redirect: false,
@@ -74,7 +101,6 @@ export default function SignUpForm() {
       setStatus("error");
       setError("Something went wrong. Try again in a moment.");
     } else {
-      // Record terms acceptance for the user
       await recordTermsAcceptance(email);
       setStatus("sent");
     }
@@ -84,9 +110,8 @@ export default function SignUpForm() {
     event.preventDefault();
     if (!email || !password) return;
 
-    if (!validateTerms()) {
-      return;
-    }
+    if (!validateName()) return;
+    if (!validateTerms()) return;
 
     if (password.length < 8) {
       setError("Password must be at least 8 characters");
@@ -120,6 +145,8 @@ export default function SignUpForm() {
         body: JSON.stringify({
           email,
           password,
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
           termsAccepted: true,
           termsVersion: TERMS_VERSION,
         }),
@@ -182,7 +209,27 @@ export default function SignUpForm() {
             Enter your email to get a secure link. You&apos;ll be able to start right away.
           </p>
           <form onSubmit={handleMagicLinkSubmit}>
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              <input
+                type="text"
+                required
+                value={firstName}
+                onChange={(event) => setFirstName(event.target.value)}
+                placeholder="First name"
+                className="rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
+                autoComplete="given-name"
+              />
+              <input
+                type="text"
+                required
+                value={lastName}
+                onChange={(event) => setLastName(event.target.value)}
+                placeholder="Last name"
+                className="rounded-2xl border border-ink-300 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-500 focus:border-brand-400 focus:outline-none"
+                autoComplete="family-name"
+              />
+            </div>
+            <div className="mt-3 flex flex-col gap-4 sm:flex-row">
               <input
                 type="email"
                 required
@@ -263,6 +310,35 @@ export default function SignUpForm() {
             Create your account with email and password.
           </p>
           <form onSubmit={handlePasswordSignup} className="mt-6 space-y-4">
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-sm font-medium text-slate-700">
+                  First name
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={firstName}
+                  onChange={(event) => setFirstName(event.target.value)}
+                  className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-300"
+                  autoComplete="given-name"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-slate-700">
+                  Last name
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={lastName}
+                  onChange={(event) => setLastName(event.target.value)}
+                  className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-300"
+                  autoComplete="family-name"
+                />
+              </div>
+            </div>
+
             <div>
               <label className="block text-sm font-medium text-slate-700">
                 Email

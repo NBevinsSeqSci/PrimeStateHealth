@@ -5,11 +5,25 @@ import bcrypt from "bcryptjs";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { email, password, termsAccepted, termsVersion } = body;
+    const { email, password, firstName, lastName, termsAccepted, termsVersion, magicLinkOnly } = body;
 
     if (!email || typeof email !== "string") {
       return NextResponse.json(
         { error: "Email is required" },
+        { status: 400 }
+      );
+    }
+
+    if (!firstName || typeof firstName !== "string" || !firstName.trim()) {
+      return NextResponse.json(
+        { error: "First name is required" },
+        { status: 400 }
+      );
+    }
+
+    if (!lastName || typeof lastName !== "string" || !lastName.trim()) {
+      return NextResponse.json(
+        { error: "Last name is required" },
         { status: 400 }
       );
     }
@@ -28,6 +42,18 @@ export async function POST(request: Request) {
     });
 
     if (existingUser) {
+      // For magic link flow: update existing user's name if they don't have one yet
+      if (magicLinkOnly && !existingUser.firstName) {
+        await prisma.user.update({
+          where: { email },
+          data: {
+            firstName: firstName.trim(),
+            lastName: lastName.trim(),
+            name: `${firstName.trim()} ${lastName.trim()}`,
+          },
+        });
+        return NextResponse.json({ success: true, userId: existingUser.id }, { status: 200 });
+      }
       return NextResponse.json(
         { error: "User with this email already exists" },
         { status: 400 }
@@ -40,10 +66,13 @@ export async function POST(request: Request) {
       passwordHash = await bcrypt.hash(password, 12);
     }
 
-    // Create user with terms acceptance
+    // Create user with names and terms acceptance
     const user = await prisma.user.create({
       data: {
         email,
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        name: `${firstName.trim()} ${lastName.trim()}`,
         passwordHash,
         emailVerified: null,
         acceptedTermsAt: new Date(),
