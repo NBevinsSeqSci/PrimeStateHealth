@@ -55,6 +55,7 @@ model User {
   accounts              Account[]
   sessions              Session[]
   tests                 CognitiveTest[]
+  quickCheckIns         QuickCheckIn[]
 }
 
 model Account {
@@ -91,6 +92,26 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model QuickCheckIn {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  mood        Int
+  anxiety     Int
+  focus       Int
+  motivation  Int
+  stress      Int
+  sleep       Int
+  energy      Int
+  notes       String?
+
+  submittedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  @@index([userId, submittedAt])
 }
 
 model CognitiveTest {

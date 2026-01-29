@@ -15,44 +15,49 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { timestamp, ratings } = body;
+    const { timestamp, ratings, notes } = body;
 
-    if (!timestamp || !ratings) {
+    if (!ratings || typeof ratings !== "object") {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    // TODO: Store check-in data in database
-    // For now, just log and return success
-    console.log("Check-in submitted:", {
-      userId: session.user.id,
-      timestamp,
-      ratings,
-    });
+    const required = ["mood", "anxiety", "focus", "motivation", "stress", "sleep", "energy"] as const;
+    for (const key of required) {
+      const val = ratings[key];
+      if (typeof val !== "number" || val < 0 || val > 4) {
+        return NextResponse.json(
+          { error: `Invalid or missing field: ${key}` },
+          { status: 400 }
+        );
+      }
+    }
 
-    // In a future implementation, create a CheckIn model and store:
-    // await prisma.checkIn.create({
-    //   data: {
-    //     userId: session.user.id,
-    //     timestamp: new Date(timestamp),
-    //     mood: ratings.mood,
-    //     anxiety: ratings.anxiety,
-    //     focus: ratings.focus,
-    //     motivation: ratings.motivation,
-    //     stress: ratings.stress,
-    //     sleep: ratings.sleep,
-    //     energy: ratings.energy,
-    //   },
-    // });
+    const checkIn = await prisma.quickCheckIn.create({
+      data: {
+        userId: session.user.id,
+        mood: ratings.mood,
+        anxiety: ratings.anxiety,
+        focus: ratings.focus,
+        motivation: ratings.motivation,
+        stress: ratings.stress,
+        sleep: ratings.sleep,
+        energy: ratings.energy,
+        notes: typeof notes === "string" ? notes.slice(0, 2000) || null : null,
+        submittedAt: timestamp ? new Date(timestamp) : new Date(),
+      },
+      select: { id: true, submittedAt: true },
+    });
 
     return NextResponse.json(
       {
         success: true,
-        message: "Check-in recorded successfully",
+        id: checkIn.id,
+        submittedAt: checkIn.submittedAt,
       },
-      { status: 200 }
+      { status: 201 }
     );
   } catch (error) {
     console.error("Check-in error:", error);

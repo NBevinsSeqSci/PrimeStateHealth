@@ -50,6 +50,7 @@ const questions: Record<QuestionKey, QuestionData> = {
 
 export default function QuickCheckIn() {
   const [ratings, setRatings] = useState<Partial<Record<QuestionKey, number>>>({});
+  const [notes, setNotes] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   const handleRating = (key: QuestionKey, value: number) => {
@@ -75,6 +76,7 @@ export default function QuickCheckIn() {
         body: JSON.stringify({
           timestamp: new Date().toISOString(),
           ratings,
+          notes: notes.trim() || undefined,
         }),
       });
 
@@ -134,6 +136,20 @@ export default function QuickCheckIn() {
             </div>
           );
         })}
+      </div>
+
+      <div className="mt-5">
+        <label className="block text-sm font-medium text-slate-700">
+          Notes <span className="font-normal text-slate-400">(optional)</span>
+        </label>
+        <textarea
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          placeholder="Anything affecting you today? (sleep, travel, alcohol, illness, stressors, training, etc.)"
+          rows={3}
+          maxLength={2000}
+          className="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-300"
+        />
       </div>
 
       <div className="mt-6 flex items-center gap-3">
