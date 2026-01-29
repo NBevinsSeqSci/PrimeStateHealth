@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
+import posthog from "posthog-js";
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
@@ -25,6 +26,12 @@ export default function LoginForm() {
 
     setStatus("sending");
     setError(null);
+
+    // Track login started
+    posthog.capture("login_started", {
+      method: "magic_link",
+    });
+
     const signInCallbackUrl = callbackUrl ?? "/dashboard";
     const result = await signIn("email", {
       email,
@@ -35,8 +42,17 @@ export default function LoginForm() {
     if (result?.error) {
       setStatus("error");
       setError("Something went wrong. Try again in a moment.");
+      posthog.capture("login_failed", {
+        method: "magic_link",
+        error: result.error,
+      });
     } else {
       setStatus("sent");
+      // Identify user on login
+      posthog.identify(email, { email: email });
+      posthog.capture("login_completed", {
+        method: "magic_link",
+      });
     }
   };
 
@@ -46,6 +62,12 @@ export default function LoginForm() {
 
     setStatus("sending");
     setError(null);
+
+    // Track login started
+    posthog.capture("login_started", {
+      method: "password",
+    });
+
     const signInCallbackUrl = callbackUrl ?? "/dashboard";
 
     try {
@@ -59,13 +81,24 @@ export default function LoginForm() {
       if (result?.error) {
         setStatus("error");
         setError("Invalid email or password. Please try again.");
+        posthog.capture("login_failed", {
+          method: "password",
+          error: "invalid_credentials",
+        });
       } else if (result?.ok) {
+        // Identify user on login
+        posthog.identify(email, { email: email });
+        posthog.capture("login_completed", {
+          method: "password",
+        });
+
         // Redirect on success
         window.location.href = signInCallbackUrl;
       }
-    } catch {
+    } catch (err) {
       setStatus("error");
       setError("Something went wrong. Please try again.");
+      posthog.captureException(err);
     } finally {
       if (status !== "idle") {
         setStatus("idle");

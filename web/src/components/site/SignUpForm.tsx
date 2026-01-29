@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const TERMS_VERSION = "2026-01-28";
 
@@ -63,6 +64,12 @@ export default function SignUpForm() {
     setStatus("sending");
     setError(null);
 
+    // Track signup started
+    posthog.capture("signup_started", {
+      method: "magic_link",
+      email: email,
+    });
+
     try {
       await fetch("/api/marketing/subscribe", {
         method: "POST",
@@ -100,9 +107,24 @@ export default function SignUpForm() {
     if (result?.error) {
       setStatus("error");
       setError("Something went wrong. Try again in a moment.");
+      posthog.capture("signup_failed", {
+        method: "magic_link",
+        error: result.error,
+      });
     } else {
       await recordTermsAcceptance(email);
       setStatus("sent");
+
+      // Identify user and track signup completed
+      posthog.identify(email, {
+        email: email,
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        name: `${firstName.trim()} ${lastName.trim()}`,
+      });
+      posthog.capture("signup_completed", {
+        method: "magic_link",
+      });
     }
   };
 
@@ -125,6 +147,12 @@ export default function SignUpForm() {
 
     setStatus("sending");
     setError(null);
+
+    // Track signup started
+    posthog.capture("signup_started", {
+      method: "password",
+      email: email,
+    });
 
     try {
       // Subscribe to marketing
@@ -157,6 +185,10 @@ export default function SignUpForm() {
       if (!signupRes.ok) {
         setStatus("error");
         setError(signupData.error || "Failed to create account");
+        posthog.capture("signup_failed", {
+          method: "password",
+          error: signupData.error || "Failed to create account",
+        });
         return;
       }
 
@@ -171,13 +203,29 @@ export default function SignUpForm() {
       if (result?.error) {
         setStatus("error");
         setError("Account created but sign-in failed. Please try logging in.");
+        posthog.capture("signup_failed", {
+          method: "password",
+          error: "sign_in_after_create_failed",
+        });
       } else if (result?.ok) {
+        // Identify user and track signup completed
+        posthog.identify(email, {
+          email: email,
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          name: `${firstName.trim()} ${lastName.trim()}`,
+        });
+        posthog.capture("signup_completed", {
+          method: "password",
+        });
+
         // Redirect to demographics
         window.location.href = "/onboarding/demographics";
       }
-    } catch {
+    } catch (err) {
       setStatus("error");
       setError("Something went wrong. Please try again.");
+      posthog.captureException(err);
     } finally {
       if (status !== "idle") {
         setStatus("idle");

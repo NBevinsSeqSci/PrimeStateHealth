@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import TurnstileWidget from "@/components/site/TurnstileWidget";
+import posthog from "posthog-js";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -118,14 +119,21 @@ export default function ContactForm() {
         setState("error");
         setError(msg);
         resetTurnstile();
+        posthog.capture("contact_form_failed", {
+          error: msg,
+        });
         return;
       }
 
       completeSuccess();
-    } catch {
+      posthog.capture("contact_form_submitted", {
+        subject: subject,
+      });
+    } catch (err) {
       setState("error");
       setError("Network error. Please try again.");
       resetTurnstile();
+      posthog.captureException(err);
     }
   }
 

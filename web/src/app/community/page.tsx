@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 
-export default function CommunityPage() {
+export default async function CommunityPage() {
+  const session = await getServerSession(authOptions);
+  const isLoggedIn = !!session?.user;
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
       <section className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center justify-center px-4 py-16 text-center sm:px-6">
@@ -17,25 +22,45 @@ export default function CommunityPage() {
         </p>
 
         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Join the waitlist</h2>
-          <p className="mt-2 text-sm text-slate-600">
-            Create a free account to get early access when the community launches.
-          </p>
+          {isLoggedIn ? (
+            <>
+              <h2 className="text-lg font-semibold text-slate-900">You&apos;re on the list</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                We&apos;ll notify you when the community launches. In the meantime, keep tracking your cognitive health.
+              </p>
 
-          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link
-              href="/signup"
-              className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
-            >
-              Create free account
-            </Link>
-            <Link
-              href="/how-it-works"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
-            >
-              Learn more
-            </Link>
-          </div>
+              <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+                <Link
+                  href="/dashboard"
+                  className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+                >
+                  Back to dashboard
+                </Link>
+              </div>
+            </>
+          ) : (
+            <>
+              <h2 className="text-lg font-semibold text-slate-900">Join the waitlist</h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Create a free account to get early access when the community launches.
+              </p>
+
+              <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+                <Link
+                  href="/signup"
+                  className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+                >
+                  Create free account
+                </Link>
+                <Link
+                  href="/how-it-works"
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
+                >
+                  Learn more
+                </Link>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="mt-12 text-left">

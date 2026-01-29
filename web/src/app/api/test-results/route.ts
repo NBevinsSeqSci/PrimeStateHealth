@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { Prisma } from "@prisma/client";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 type SaveResultPayload = {
   kind: string;
@@ -105,6 +106,20 @@ export async function POST(request: Request) {
       kind,
       score: Math.round(score),
       answers: answers !== undefined ? (answers as Prisma.InputJsonValue) : Prisma.JsonNull,
+    },
+  });
+
+  // Track server-side test result saved event
+  const posthog = getPostHogClient();
+  posthog.capture({
+    distinctId: session.user.email ?? session.user.id,
+    event: "test_result_saved",
+    properties: {
+      testId: result.id,
+      testKind: result.kind,
+      score: result.score,
+      userId: session.user.id,
+      source: "api",
     },
   });
 

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { ratelimit } from "@/lib/ratelimit";
 import { subscribeToKit } from "@/lib/kit";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 export async function POST(request: Request) {
   if (ratelimit) {
@@ -23,5 +24,17 @@ export async function POST(request: Request) {
   }
 
   await subscribeToKit({ email: body.email, firstName: body.firstName });
+
+  // Track newsletter subscription
+  const posthog = getPostHogClient();
+  posthog.capture({
+    distinctId: body.email,
+    event: "newsletter_subscribed",
+    properties: {
+      email: body.email,
+      source: "api",
+    },
+  });
+
   return NextResponse.json({ ok: true });
 }

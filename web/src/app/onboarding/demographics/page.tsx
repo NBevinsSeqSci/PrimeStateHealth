@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 // Country list (subset for brevity - expand as needed)
 const COUNTRIES = [
@@ -267,10 +268,25 @@ export default function DemographicsPage() {
         throw new Error(data.error || "Failed to save demographics");
       }
 
+      // Track demographics submitted
+      posthog.capture("demographics_submitted", {
+        country: formData.country,
+        education: formData.education,
+        deviceType: formData.deviceType,
+      });
+
+      // Update PostHog user properties
+      posthog.people.set({
+        country: formData.country,
+        education: formData.education,
+        primaryLanguage: formData.primaryLanguage,
+      });
+
       router.push("/try");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
       setIsSubmitting(false);
+      posthog.captureException(err);
     }
   };
 

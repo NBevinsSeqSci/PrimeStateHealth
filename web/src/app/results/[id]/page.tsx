@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 type ResultsPageProps = {
   params: { id: string };
@@ -23,6 +24,19 @@ export default async function ResultsPage({ params }: ResultsPageProps) {
   if (!result) {
     notFound();
   }
+
+  // Track result viewed (server-side)
+  const posthog = getPostHogClient();
+  posthog.capture({
+    distinctId: result.email ?? result.userId ?? "anonymous",
+    event: "result_viewed",
+    properties: {
+      resultId: result.id,
+      testKind: result.kind,
+      score: result.score,
+      source: "server",
+    },
+  });
 
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-16">

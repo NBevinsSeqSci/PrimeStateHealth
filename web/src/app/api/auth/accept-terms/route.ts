@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 export async function POST(request: Request) {
   try {
@@ -26,6 +27,18 @@ export async function POST(request: Request) {
         email,
         acceptedTermsAt: new Date(),
         acceptedTermsVersion: termsVersion || process.env.TERMS_VERSION || "2026-01-28",
+      },
+    });
+
+    // Track terms accepted event
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: email,
+      event: "terms_accepted",
+      properties: {
+        termsVersion: termsVersion || process.env.TERMS_VERSION || "2026-01-28",
+        userId: user.id,
+        source: "api",
       },
     });
 

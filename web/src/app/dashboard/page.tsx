@@ -371,6 +371,29 @@ export default function DashboardPage() {
         {/* Quick Check-In */}
         <QuickCheckIn />
 
+        {/* Community CTA */}
+        <div className="rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
+          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p className="text-sm font-semibold text-ink-900">
+                Join the Prime State Health Community
+              </p>
+              <p className="text-sm text-ink-500">
+                Connect with others tracking their cognitive health. Share experiments, stay accountable, and learn together.
+              </p>
+            </div>
+            <Link
+              href="/community"
+              className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+            >
+              Learn more
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
         {/* Demographics Prompt */}
         <div className="rounded-3xl border border-ink-200 bg-white/90 p-6 shadow-sm">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">

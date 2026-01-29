@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import bcrypt from "bcryptjs";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 export async function POST(request: Request) {
   try {
@@ -80,6 +81,30 @@ export async function POST(request: Request) {
       },
     });
 
+    // Track server-side signup event
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: email,
+      event: "signup_completed",
+      properties: {
+        method: magicLinkOnly ? "magic_link" : "password",
+        userId: user.id,
+        source: "api",
+      },
+    });
+
+    // Identify user on server side
+    posthog.identify({
+      distinctId: email,
+      properties: {
+        email: email,
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        name: `${firstName.trim()} ${lastName.trim()}`,
+        createdAt: new Date().toISOString(),
+      },
+    });
+
     return NextResponse.json(
       {
         success: true,
@@ -89,6 +114,18 @@ export async function POST(request: Request) {
     );
   } catch (error) {
     console.error("Signup error:", error);
+
+    // Track signup failure
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: "anonymous",
+      event: "signup_failed",
+      properties: {
+        error: error instanceof Error ? error.message : "Unknown error",
+        source: "api",
+      },
+    });
+
     return NextResponse.json(
       { error: "Failed to create account" },
       { status: 500 }

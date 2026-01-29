@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useSession } from "next-auth/react";
+import posthog from "posthog-js";
 import {
   NORMATIVE_REFERENCE,
   calculateAge,
@@ -73,6 +74,25 @@ export default function TestScaffold({
     if (!Number.isFinite(computed)) return null;
     return Math.max(0, Math.min(100, Math.round(computed)));
   }, [raw, scoreFromRaw]);
+
+  // Track test completion when score is calculated
+  useEffect(() => {
+    if (score != null && raw != null) {
+      posthog.capture("cognitive_test_completed", {
+        testKind: kind,
+        score: score,
+        isAuthenticated: status === "authenticated",
+      });
+    }
+  }, [score, kind, raw, status]);
+
+  // Track test started on mount
+  useEffect(() => {
+    posthog.capture("cognitive_test_started", {
+      testKind: kind,
+      isAuthenticated: status === "authenticated",
+    });
+  }, [kind, status]);
 
   // Fetch user profile to get DOB for age calculation
   useEffect(() => {
