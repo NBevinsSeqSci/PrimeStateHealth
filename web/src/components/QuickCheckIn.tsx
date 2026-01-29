@@ -121,9 +121,9 @@ export default function QuickCheckIn() {
                       type="button"
                       onClick={() => handleRating(key, value)}
                       className={[
-                        "flex h-10 w-10 items-center justify-center rounded-lg border-2 text-sm font-semibold transition",
+                        "flex h-10 w-10 items-center justify-center rounded-lg border-2 text-sm font-semibold transition-all",
                         currentValue === value
-                          ? "border-slate-900 bg-slate-900 text-white shadow-sm"
+                          ? "border-brand-600 bg-brand-600 text-white shadow-md ring-2 ring-brand-300 scale-110"
                           : "border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50",
                       ].join(" ")}
                     >
