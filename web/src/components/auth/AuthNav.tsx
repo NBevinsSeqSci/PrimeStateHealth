@@ -1,11 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { LinkButton } from "@/components/ui/link-button";
 
 export default function AuthNav() {
   const { data: session, status } = useSession();
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    if (status !== "authenticated") {
+      setIsAdmin(false);
+      return;
+    }
+    fetch("/api/admin/status")
+      .then((res) => res.json())
+      .then((data) => setIsAdmin(data.isAdmin === true))
+      .catch(() => setIsAdmin(false));
+  }, [status]);
 
   // Show loading skeleton to avoid layout flash
   if (status === "loading") {
@@ -57,6 +70,15 @@ export default function AuthNav() {
       >
         Dashboard
       </Link>
+
+      {isAdmin && (
+        <Link
+          href="/admin"
+          className="text-sm font-medium text-slate-600 transition hover:text-slate-900"
+        >
+          Admin
+        </Link>
+      )}
 
       {/* Account pill */}
       <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-3 pr-1.5">
