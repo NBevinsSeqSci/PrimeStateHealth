@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type QuestionKey = "mood" | "anxiety" | "focus" | "motivation" | "stress" | "sleep" | "energy";
 
@@ -9,6 +9,8 @@ interface QuestionData {
   lowLabel: string;
   highLabel: string;
 }
+
+const CHECKIN_KEY = "psh:last-checkin-date";
 
 const questions: Record<QuestionKey, QuestionData> = {
   mood: {
@@ -52,6 +54,15 @@ export default function QuickCheckIn() {
   const [ratings, setRatings] = useState<Partial<Record<QuestionKey, number>>>({});
   const [notes, setNotes] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    const last = localStorage.getItem(CHECKIN_KEY);
+    const today = new Date().toISOString().slice(0, 10);
+    if (last === today) {
+      setCollapsed(true);
+    }
+  }, []);
 
   const handleRating = (key: QuestionKey, value: number) => {
     setRatings((prev) => ({ ...prev, [key]: value }));
@@ -82,11 +93,11 @@ export default function QuickCheckIn() {
 
       if (response.ok) {
         setStatus("success");
-        // Reset after success
+        const today = new Date().toISOString().slice(0, 10);
+        localStorage.setItem(CHECKIN_KEY, today);
         setTimeout(() => {
-          setRatings({});
-          setStatus("idle");
-        }, 2000);
+          setCollapsed(true);
+        }, 1500);
       } else {
         setStatus("error");
       }
@@ -94,6 +105,33 @@ export default function QuickCheckIn() {
       setStatus("error");
     }
   };
+
+  if (collapsed) {
+    return (
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">Quick Check-In</h3>
+            <p className="mt-1 text-sm text-slate-600">
+              You&apos;ve logged today&apos;s check-in. Nice work.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setCollapsed(false);
+              setRatings({});
+              setNotes("");
+              setStatus("idle");
+            }}
+            className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -159,6 +197,13 @@ export default function QuickCheckIn() {
           className="ps-btn-primary disabled:opacity-60"
         >
           {status === "submitting" ? "Submitting..." : "Submit Check-In"}
+        </button>
+        <button
+          type="button"
+          onClick={() => setCollapsed(true)}
+          className="text-sm text-slate-500 underline underline-offset-4 hover:text-slate-700"
+        >
+          Minimize
         </button>
         {status === "success" && (
           <p className="text-sm font-medium text-green-600">Submitted successfully!</p>
