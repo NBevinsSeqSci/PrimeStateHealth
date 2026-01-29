@@ -20,7 +20,8 @@ export type TestKind =
   | "fluency"
   | "symbol-coding"
   | "trails"
-  | "verbal-list";
+  | "verbal-list"
+  | "health-questionnaire";
 
 export type TestResultPayload = {
   kind: TestKind;
@@ -137,8 +138,8 @@ export default function TestScaffold({
   }, [userAge]);
 
   const isAuthenticated = status === "authenticated";
-  const backTarget = backHref ?? "/cognitive-test";
-  const backText = backLabel ?? "Back to check-in";
+  const backTarget = backHref ?? (isAuthenticated ? "/dashboard" : "/cognitive-test");
+  const backText = backLabel ?? (isAuthenticated ? "Back to dashboard" : "Back to check-in");
 
   // Format reference string for display
   const referenceString = useMemo(() => {
