@@ -93,15 +93,30 @@ export const authOptions: NextAuthOptions = {
     strategy: "jwt", // Changed from "database" to support credentials
   },
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, trigger }) {
       if (user) {
         token.id = user.id;
+        // Look up terms acceptance on first sign-in
+        const dbUser = await prisma.user.findUnique({
+          where: { id: user.id },
+          select: { acceptedTermsAt: true },
+        });
+        token.acceptedTermsAt = dbUser?.acceptedTermsAt?.toISOString() ?? null;
+      }
+      // Refresh terms status when session is updated
+      if (trigger === "update" && token.id) {
+        const dbUser = await prisma.user.findUnique({
+          where: { id: token.id as string },
+          select: { acceptedTermsAt: true },
+        });
+        token.acceptedTermsAt = dbUser?.acceptedTermsAt?.toISOString() ?? null;
       }
       return token;
     },
     async session({ session, token }) {
       if (session.user && token.id) {
         session.user.id = token.id as string;
+        session.user.acceptedTermsAt = (token.acceptedTermsAt as string) ?? null;
       }
       return session;
     },

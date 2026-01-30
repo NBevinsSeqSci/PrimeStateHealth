@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useSession } from "next-auth/react";
 import { ProfileIntakeTrigger } from "@/components/ProfileIntakeTrigger";
 import QuickCheckIn from "@/components/QuickCheckIn";
+import posthog from "posthog-js";
 
 const ctaClass = [
   "inline-flex items-center justify-center gap-1.5",
@@ -202,6 +203,7 @@ export default function DashboardPage() {
   const { data: session, status } = useSession();
   const [resultsData, setResultsData] = useState<TestResultsData | null>(null);
   const [loading, setLoading] = useState(true);
+  const dashboardViewedRef = useRef(false);
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -216,6 +218,17 @@ export default function DashboardPage() {
       setLoading(false);
     }
   }, [status]);
+
+  // Track dashboard view once when authenticated
+  useEffect(() => {
+    if (status === "authenticated" && !loading && !dashboardViewedRef.current) {
+      dashboardViewedRef.current = true;
+      posthog.capture("dashboard_viewed", {
+        testsCompleted: resultsData?.completedTestKinds.length ?? 0,
+        totalAssessments: resultsData?.totalTests ?? 0,
+      });
+    }
+  }, [status, loading, resultsData]);
 
   const completedCount = resultsData?.completedTestKinds.length ?? 0;
   const totalTestTypes = cognitiveTests.length;
@@ -320,6 +333,13 @@ export default function DashboardPage() {
                     <Link
                       href={test.href}
                       className={ctaClass}
+                      onClick={() => {
+                        posthog.capture("cognitive_test_selected", {
+                          testKind: test.kind,
+                          testLabel: test.label,
+                          isRetake: isCompleted,
+                        });
+                      }}
                     >
                       {isCompleted ? "Retake" : "Start"}
                       <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

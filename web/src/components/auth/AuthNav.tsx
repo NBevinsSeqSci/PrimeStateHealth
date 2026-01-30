@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { LinkButton } from "@/components/ui/link-button";
+import posthog from "posthog-js";
 
 export default function AuthNav() {
   const { data: session, status } = useSession();
@@ -91,7 +92,11 @@ export default function AuthNav() {
 
         <button
           type="button"
-          onClick={() => signOut({ callbackUrl: "/" })}
+          onClick={() => {
+            posthog.capture("user_logged_out");
+            posthog.reset();
+            signOut({ callbackUrl: "/" });
+          }}
           className="rounded-full bg-slate-200 px-2.5 py-1 text-xs font-medium text-slate-600 transition hover:bg-slate-300 hover:text-slate-900"
           aria-label="Sign out of your account"
         >

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import posthog from "posthog-js";
 
 type QuestionKey = "mood" | "anxiety" | "focus" | "motivation" | "stress" | "sleep" | "energy";
 
@@ -95,14 +96,33 @@ export default function QuickCheckIn() {
         setStatus("success");
         const today = new Date().toISOString().slice(0, 10);
         localStorage.setItem(CHECKIN_KEY, today);
+
+        // Track successful check-in submission
+        posthog.capture("quick_checkin_submitted", {
+          mood: ratings.mood,
+          anxiety: ratings.anxiety,
+          focus: ratings.focus,
+          motivation: ratings.motivation,
+          stress: ratings.stress,
+          sleep: ratings.sleep,
+          energy: ratings.energy,
+          hasNotes: !!notes.trim(),
+        });
+
         setTimeout(() => {
           setCollapsed(true);
         }, 1500);
       } else {
         setStatus("error");
+        posthog.capture("quick_checkin_failed", {
+          error: "API returned non-ok response",
+        });
       }
-    } catch {
+    } catch (err) {
       setStatus("error");
+      posthog.capture("quick_checkin_failed", {
+        error: err instanceof Error ? err.message : "Unknown error",
+      });
     }
   };
 

@@ -4,11 +4,11 @@ import Script from "next/script";
 import { ClinicalTrialAlignment } from "@/components/sections/ClinicalTrialAlignment";
 
 export const metadata: Metadata = {
-  title: "Prime State Health — At-home brain check-ins",
-  description: "Measure attention, speed, and memory in 3–6 minutes. See results instantly. Create an account to track trends over time.",
+  title: "Prime State Health — Fix brain fog by starting with measurement",
+  description: "Brain fog is real. Guessing is optional. Take a free brain check-in, see your snapshot, then follow a clear plan to improve.",
   openGraph: {
-    title: "Prime State Health — At-home brain check-ins",
-    description: "Measure attention, speed, and memory in 3–6 minutes. See results instantly. Create an account to track trends over time.",
+    title: "Prime State Health — Fix brain fog by starting with measurement",
+    description: "Brain fog is real. Guessing is optional. Take a free brain check-in, see your snapshot, then follow a clear plan to improve.",
     url: "https://primestatehealth.com",
     siteName: "Prime State Health",
     type: "website",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prime State Health — At-home brain check-ins",
-    description: "Measure attention, speed, and memory in 3–6 minutes. See results instantly. Create an account to track trends over time.",
+    title: "Prime State Health — Fix brain fog by starting with measurement",
+    description: "Brain fog is real. Guessing is optional. Take a free brain check-in, see your snapshot, then follow a clear plan to improve.",
     images: ["/og-image.png"],
   },
 };
@@ -156,55 +156,143 @@ export default function Page() {
       <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
         {/* Hero */}
         <section className="mx-auto w-full max-w-6xl px-4 pb-10 pt-6 sm:px-6 sm:pb-14">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <div className="flex flex-wrap gap-2">
-                <Pill>Free check-in</Pill>
-                <Pill>No signup required</Pill>
-                <Pill>3–6 minutes</Pill>
-              </div>
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/60 px-4 py-2 text-sm font-medium text-slate-700 backdrop-blur">
+              Brain fog is real. Guessing is optional.
+            </p>
 
-              <h1 className="mt-5 text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-                Know where you stand.
-                <span className="block text-slate-600">Track your trend.</span>
-              </h1>
+            <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+              Fix brain fog by starting with measurement.
+            </h1>
 
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-                Measure attention, speed, and memory in minutes. See results instantly — then
-                create an account only if you want to save and track progress over time.
-              </p>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-700 sm:text-lg">
+              Prime State turns &ldquo;I feel off&rdquo; into a simple baseline you can track. Take a quick brain
+              check-in, see your snapshot, then follow a clear plan to improve&mdash;powered by community, repeat
+              testing, and targeted stacks.
+            </p>
 
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link
-                  href="/try"
-                  className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
-                  data-psh-event="cta_try_free"
-                >
-                  Take a free brain check-in
-                </Link>
-                <Link
-                  href="/signup"
-                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
-                  data-psh-event="cta_create_account"
-                >
-                  Create free account
-                </Link>
-              </div>
-
-              <p className="mt-4 text-xs leading-relaxed text-slate-500">
-                For measurement and trend tracking — not diagnosis or treatment.{" "}
-                <Link href="/how-it-works" className="underline hover:text-slate-700">
-                  Learn more
-                </Link>
-              </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link
+                href="/try"
+                className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
+                data-psh-event="cta_try_free"
+              >
+                Take a free brain fog baseline
+              </Link>
+              <Link
+                href="/signup"
+                className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-900 shadow-sm hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
+                data-psh-event="cta_create_account"
+              >
+                Create free account to track trends
+              </Link>
             </div>
 
-            {/* Right panel: quick features */}
-            <div className="grid gap-3 sm:grid-cols-2">
-              <Feature title="Fast baseline" desc="Get a snapshot today before guessing what to change." />
-              <Feature title="See what works" desc="Trends reveal which habits actually move the needle." />
-              <Feature title="Low friction" desc="No appointments. No equipment. Just your device." />
-              <Feature title="Repeat monthly" desc="Consistent check-ins enable clean comparisons over time." />
+            <div className="mt-6 flex flex-wrap gap-3 text-sm text-slate-600">
+              <Pill>No signup required</Pill>
+              <Pill>3&ndash;6 minutes</Pill>
+              <Pill>Instant results</Pill>
+              <Pill>Track what actually works</Pill>
+            </div>
+
+            <p className="mt-6 text-sm text-slate-600">
+              For measurement and trend tracking &mdash; not diagnosis or treatment.{" "}
+              <Link href="/how-it-works" className="underline underline-offset-4 hover:text-slate-700">
+                Learn more
+              </Link>
+            </p>
+          </div>
+        </section>
+
+        {/* Why this works */}
+        <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6">
+          <div className="grid gap-6 md:grid-cols-4">
+            <Feature title="Stop guessing" desc="Brain fog has many drivers. A baseline gives you clarity before you change anything." />
+            <Feature title="Pick one lever" desc="Sleep, stress, caffeine, training, supplements—run one &ldquo;experiment&rdquo; at a time so the data stays clean." />
+            <Feature title="See proof fast" desc="Repeat check-ins show if your changes are moving the needle—before motivation fades." />
+            <Feature title="Get a real plan" desc="Join the community for protocols, accountability, and recommended testing + stacks based on your trend." />
+          </div>
+        </section>
+
+        {/* Community / Offer */}
+        <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-10">
+            <div className="grid gap-8 md:grid-cols-2 md:items-center">
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                  The Brain Fog Reset is simple:
+                  <span className="block text-slate-700">Measure &rarr; Adjust &rarr; Repeat &rarr; Upgrade</span>
+                </h2>
+                <p className="mt-4 text-slate-700">
+                  The fastest way to make progress is to stop trying random fixes. Start with measurement, then follow a
+                  step-by-step playbook backed by your own trend data.
+                </p>
+                <ul className="mt-5 space-y-2 text-sm text-slate-700">
+                  <li>&bull; Weekly &ldquo;what to try next&rdquo; guidance (sleep, stress, focus, energy)</li>
+                  <li>&bull; Community accountability + wins that keep you moving</li>
+                  <li>&bull; Recommended lab testing paths when you&rsquo;re ready to go deeper</li>
+                  <li>&bull; Curated supplement stacks aligned to common brain-fog patterns</li>
+                </ul>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href="/signup"
+                    className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800"
+                    data-psh-event="cta_unlock_plan"
+                  >
+                    Create free account &amp; unlock the plan
+                  </Link>
+                  <Link
+                    href="/try"
+                    className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-900 shadow-sm hover:border-slate-300"
+                    data-psh-event="cta_baseline_first"
+                  >
+                    Take baseline first
+                  </Link>
+                </div>
+                <p className="mt-3 text-xs text-slate-600">
+                  Coming soon: community + course content inside your dashboard (no spam, just progress).
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 className="text-base font-semibold text-slate-900">Your first 7 days</h3>
+                <p className="mt-2 text-sm text-slate-600">
+                  A clean, repeatable starter protocol that works because it&rsquo;s measured.
+                </p>
+                <div className="mt-4 space-y-3 text-sm">
+                  <div className="flex gap-3">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">1</div>
+                    <div>
+                      <div className="font-semibold text-slate-900">Baseline</div>
+                      <div className="text-slate-600">Take 1&ndash;3 tests. Log sleep/stress/caffeine.</div>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">2</div>
+                    <div>
+                      <div className="font-semibold text-slate-900">One change</div>
+                      <div className="text-slate-600">Pick one lever (sleep timing, hydration, caffeine window).</div>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">3</div>
+                    <div>
+                      <div className="font-semibold text-slate-900">Re-test</div>
+                      <div className="text-slate-600">Repeat check-in. If trend improves, keep; if not, change.</div>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">4</div>
+                    <div>
+                      <div className="font-semibold text-slate-900">Upgrade</div>
+                      <div className="text-slate-600">When you&rsquo;re ready: deeper testing + targeted supplements aligned to your pattern.</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
+                  <span className="font-semibold">Pro tip:</span> Track consistently. Same time of day, same device, quiet environment.
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -343,10 +431,10 @@ export default function Page() {
             </div>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              <Feature title="1) Check in" desc="Complete a quick brain check-in task." />
-              <Feature title="2) See your snapshot" desc="Clear score + simple context." />
-              <Feature title="3) Pick one change" desc="Try one habit or intervention." />
-              <Feature title="4) Repeat" desc="Watch your trend over time." />
+              <Feature title="1) Take a baseline" desc="Complete a quick brain check-in. Log sleep, stress, and caffeine." />
+              <Feature title="2) See your snapshot" desc="Clear score + simple context on what affects your results." />
+              <Feature title="3) Pick one change" desc="Run one &ldquo;experiment&rdquo; at a time so the data stays clean." />
+              <Feature title="4) Repeat &amp; upgrade" desc="Watch your trend. When ready, go deeper with testing + stacks." />
             </div>
           </div>
         </section>
