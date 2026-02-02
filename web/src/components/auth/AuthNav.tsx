@@ -41,6 +41,12 @@ export default function AuthNav() {
           <Link href="/how-it-works" className="psh-link">
             How it works
           </Link>
+          <Link href="/how-it-works#coaching" className="psh-link inline-flex items-center gap-2">
+            Coaching &amp; Courses
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
+              Coming soon
+            </span>
+          </Link>
           <Link href="/try" className="psh-link">
             Try free check-in
           </Link>

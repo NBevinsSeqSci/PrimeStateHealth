@@ -34,7 +34,7 @@ function Step({
   );
 }
 
-function InfoCard({ title, content }: { title: string; content: string }) {
+function InfoCard({ title, content }: { title: React.ReactNode; content: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 shadow-sm">
       <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
@@ -53,7 +53,10 @@ export default function HowItWorksPage() {
             Know where you stand. Track your trend.
           </h1>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Quick, evidence-based brain check-ins you can repeat monthly—then use the course + community to actually improve what you measure.
+            Quick, evidence-based brain check-ins you can repeat monthly—then follow a clear plan with coaching prompts and mini-courses to actually improve what you measure.
+            <span className="ml-2 inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
           </p>
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
@@ -69,6 +72,23 @@ export default function HowItWorksPage() {
               Try free check-in (no signup)
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section id="coaching" className="mx-auto w-full max-w-4xl px-4 pb-12 sm:px-6">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="text-xl font-semibold text-slate-900">Coaching &amp; Courses</h2>
+            <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
+          </div>
+          <p className="mt-3 text-sm text-slate-600 sm:text-base">
+            Prime State pairs measurement with practical guidance&mdash;weekly coaching prompts and mini-courses designed to help you run simple experiments and track what actually works.
+          </p>
+          <p className="mt-3 text-xs text-slate-500">
+            For measurement and education&mdash;not diagnosis or treatment.
+          </p>
         </div>
       </section>
 
@@ -99,7 +119,12 @@ export default function HowItWorksPage() {
               <svg className="mt-0.5 h-5 w-5 shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Unlock the course + community that turns data into action</span>
+              <span className="flex flex-wrap items-center gap-2">
+                <span>Unlock coaching prompts, mini-courses, and community accountability</span>
+                <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+                  Coming soon
+                </span>
+              </span>
             </li>
           </ul>
         </div>
@@ -200,8 +225,15 @@ export default function HowItWorksPage() {
               content="Your test setup is saved, making monthly check-ins quicker and more convenient."
             />
             <InfoCard
-              title="Course + community access"
-              content="Unlock structured lessons and connect with others tracking their cognitive health."
+              title={
+                <span className="flex flex-wrap items-center gap-2">
+                  <span>Coaching + courses + community access</span>
+                  <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+                    Coming soon
+                  </span>
+                </span>
+              }
+              content="Unlock coaching prompts, structured lessons, and community support that turn data into action."
             />
           </div>
         </div>
@@ -213,18 +245,23 @@ export default function HowItWorksPage() {
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-slate-900">Turn scores into progress</h2>
             <p className="mt-3 text-sm text-slate-600 sm:text-base">
-              Testing tells you &ldquo;what.&rdquo; The course tells you &ldquo;what to do next,&rdquo; and the community keeps you consistent.
+              Testing tells you &ldquo;what.&rdquo; Coaching prompts and mini-courses help you decide &ldquo;what to do next,&rdquo; and the community keeps you consistent.
             </p>
           </div>
 
           <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-            <h3 className="text-lg font-semibold text-slate-900">Course + Community</h3>
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="text-lg font-semibold text-slate-900">Coaching + Courses + Community</h3>
+              <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+                Coming soon
+              </span>
+            </div>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3 text-sm text-slate-700">
                 <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>Weekly lessons: sleep, stress, training, nutrition, focus, and recovery</span>
+                <span>Weekly coaching prompts and mini-courses: sleep, stress, training, nutrition, focus, recovery</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-700">
                 <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -327,7 +364,10 @@ export default function HowItWorksPage() {
         <div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm">
           <h2 className="text-xl font-semibold text-slate-900">Ready to establish your baseline?</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Start with a free check-in now—then create an account to track your trend and unlock the course + community.
+            Start with a free check-in now—then create an account to track your trend and unlock coaching, courses, and community.
+            <span className="ml-2 inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
           </p>
 
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
