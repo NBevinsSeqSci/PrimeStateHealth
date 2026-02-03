@@ -6,6 +6,7 @@ const nonEmpty = (max: number) => z.string().min(1).max(max);
 
 export const DemographicsSchema = z
   .object({
+    name: nonEmpty(120).optional().nullable(),
     firstName: nonEmpty(64).optional().nullable(),
     lastName: nonEmpty(64).optional().nullable(),
     preferredName: nonEmpty(64).optional().nullable(),
@@ -73,8 +74,10 @@ export function normalizeDemographics(input: unknown) {
   const sex = raw.sex ?? raw.sexAtBirth ?? raw.sex_at_birth ?? raw.sex_birth;
   const region =
     raw.region ?? raw.state ?? raw.province ?? raw.stateProvince ?? raw.state_province;
+  const name = raw.name ?? raw.fullName ?? raw.full_name;
 
   return {
+    name: toCleanString(name),
     firstName: toCleanString(raw.firstName ?? raw.first_name),
     lastName: toCleanString(raw.lastName ?? raw.last_name),
     preferredName: toCleanString(raw.preferredName ?? raw.preferred_name),
@@ -96,8 +99,9 @@ export function normalizeDemographics(input: unknown) {
   };
 }
 
-export function zodErrorToMessage(err: z.ZodError) {
-  return err.issues
-    .map((issue) => `${issue.path.join(".") || "body"}: ${issue.message}`)
-    .join("; ");
+export function zodIssues(err: z.ZodError) {
+  return err.issues.map((issue) => ({
+    path: issue.path.join(".") || "body",
+    message: issue.message,
+  }));
 }

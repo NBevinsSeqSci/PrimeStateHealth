@@ -4,8 +4,8 @@ import { prisma } from "@/lib/prisma";
 import {
   DemographicsSchema,
   normalizeDemographics,
-  zodErrorToMessage,
-} from "@/lib/demographicsSchema";
+  zodIssues,
+} from "@/lib/demographics";
 import type { Prisma } from "@prisma/client";
 
 const REQUIRED_REGION_COUNTRIES = new Set([
@@ -73,16 +73,13 @@ export async function POST(request: Request) {
     const validationResult = DemographicsSchema.safeParse(normalized);
 
     if (!validationResult.success) {
-      const errors = validationResult.error.issues.map((issue) => ({
-        field: issue.path.join(".") || "body",
-        message: issue.message,
-      }));
-      const details = zodErrorToMessage(validationResult.error);
+      const issues = zodIssues(validationResult.error);
+      const details = issues.map((issue) => `${issue.path}: ${issue.message}`).join("; ");
       console.warn("[/api/user/demographics] validation failed:", details, {
         keys: Object.keys(body ?? {}),
       });
       return NextResponse.json(
-        { ok: false, error: "Validation failed", errors, details },
+        { ok: false, error: "Validation failed", issues, details },
         { status: 400 }
       );
     }
@@ -131,6 +128,7 @@ export async function POST(request: Request) {
         : undefined;
 
     const updateData: Prisma.UserUpdateInput = {};
+    if (typeof data.name !== "undefined") updateData.name = data.name;
     if (typeof data.firstName !== "undefined") updateData.firstName = data.firstName;
     if (typeof data.lastName !== "undefined") updateData.lastName = data.lastName;
     if (typeof data.preferredName !== "undefined") updateData.preferredName = data.preferredName;

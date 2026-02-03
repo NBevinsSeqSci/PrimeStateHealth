@@ -264,8 +264,22 @@ export default function DemographicsPage() {
       });
 
       if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || "Failed to save demographics");
+        let data: { error?: string } | null = null;
+        try {
+          data = await response.json();
+        } catch {
+          data = null;
+        }
+        console.warn("Demographics save failed", {
+          status: response.status,
+          data,
+        });
+        posthog.capture("demographics_save_failed", {
+          status: response.status,
+          error: data?.error ?? null,
+        });
+        router.push("/try");
+        return;
       }
 
       // Track demographics submitted
