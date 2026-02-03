@@ -15,7 +15,7 @@ const REQUIRED_REGION_COUNTRIES = new Set([
 ]);
 const US_ZIP_REGEX = /^\d{5}(-\d{4})?$/;
 
-const hasText = (value: string | null | undefined) =>
+const hasText = (value: string | null | undefined): value is string =>
   typeof value === "string" && value.trim().length > 0;
 
 const hasValidDate = (value: Date | string | null | undefined) => {
