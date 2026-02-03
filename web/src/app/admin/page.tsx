@@ -161,7 +161,14 @@ export default function AdminPage() {
 
                   return (
                     <tr key={user.id} className="hover:bg-slate-50 transition-colors">
-                      <td className="px-4 py-3 font-medium text-slate-900">{displayName}</td>
+                      <td className="px-4 py-3 font-medium">
+                        <Link
+                          href={`/admin/users/${user.id}`}
+                          className="text-slate-900 transition hover:text-slate-700"
+                        >
+                          {displayName}
+                        </Link>
+                      </td>
                       <td className="px-4 py-3 text-slate-600">{user.email ?? "—"}</td>
                       <td className="px-4 py-3 text-center">
                         <span className="inline-flex items-center justify-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-700">
