@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/auth";
+import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { ratelimit } from "@/lib/ratelimit";
 import { verifyTurnstile } from "@/lib/turnstile";
@@ -52,7 +51,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const session = await getServerSession(authOptions);
+  const session = await auth();
 
   // Require authentication to save results
   if (!session?.user?.id) {

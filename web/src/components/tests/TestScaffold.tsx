@@ -37,6 +37,7 @@ type Props = {
   kind: TestKind;
   backHref?: string;
   backLabel?: string;
+  showBack?: boolean;
   children: (args: { onComplete: (raw: unknown) => void; isComplete: boolean }) => ReactNode;
   scoreFromRaw: (raw: unknown) => number;
   resultCallout?: ReactNode;
@@ -55,6 +56,7 @@ export default function TestScaffold({
   kind,
   backHref,
   backLabel,
+  showBack,
   children,
   scoreFromRaw,
   resultCallout,
@@ -160,6 +162,7 @@ export default function TestScaffold({
   const isAuthenticated = status === "authenticated";
   const backTarget = backHref ?? (isAuthenticated ? "/dashboard" : "/cognitive-test");
   const backText = backLabel ?? (isAuthenticated ? "Back to dashboard" : "Back to check-in");
+  const shouldShowBack = showBack ?? true;
 
   // Format reference string for display
   const referenceString = useMemo(() => {
@@ -182,15 +185,17 @@ export default function TestScaffold({
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <div className="mx-auto w-full max-w-4xl px-4 pb-24 pt-12 sm:px-6 sm:pt-16">
-        <Link
-          href={backTarget}
-          className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition hover:text-slate-900"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          {backText}
-        </Link>
+        {shouldShowBack && (
+          <Link
+            href={backTarget}
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition hover:text-slate-900"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            {backText}
+          </Link>
+        )}
 
         <div className="mt-6">
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">{title}</h1>

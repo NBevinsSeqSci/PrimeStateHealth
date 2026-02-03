@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/auth";
+import { auth } from "@/auth";
 
 export default async function CommunityPage() {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
   const isLoggedIn = !!session?.user;
 
   return (

@@ -22,8 +22,7 @@ export default function ReactionTimePage() {
       title="Reaction Time"
       description="A quick baseline of speed and consistency. Free to take—create an account to save results."
       kind="reaction-time"
-      backHref="/try"
-      backLabel="Back"
+      showBack={false}
       scoreFromRaw={(raw) => {
         if (!raw || typeof raw !== "object") return 0;
         const result = raw as ReactionResult;

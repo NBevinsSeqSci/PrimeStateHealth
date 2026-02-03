@@ -1,14 +1,16 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/auth";
+import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { z } from "zod";
+
+const emptyToUndefined = (value: unknown) =>
+  typeof value === "string" && value.trim() === "" ? undefined : value;
 
 const demographicsSchema = z.object({
   // Identity (required)
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
-  preferredName: z.string().optional(),
+  preferredName: z.preprocess(emptyToUndefined, z.string().optional()),
 
   // Demographics (required)
   dateOfBirth: z.string().min(1, "Date of birth is required"),
@@ -24,19 +26,25 @@ const demographicsSchema = z.object({
 
   // Location
   country: z.string().min(1, "Country is required"),
-  region: z.string().optional(),
+  region: z.preprocess(emptyToUndefined, z.string().optional()),
   city: z.string().min(1, "City is required"),
-  postalCode: z.string().optional(),
-  timeZone: z.string().optional(),
+  postalCode: z.preprocess(emptyToUndefined, z.string().optional()),
+  timeZone: z.preprocess(emptyToUndefined, z.string().optional()),
 
   // Background (optional)
-  primaryLanguage: z.string().optional(),
-  englishProficiency: z.enum(["native", "fluent", "conversational", "limited"]).optional(),
+  primaryLanguage: z.preprocess(emptyToUndefined, z.string().optional()),
+  englishProficiency: z.preprocess(
+    emptyToUndefined,
+    z.enum(["native", "fluent", "conversational", "limited"]).optional()
+  ),
   isMultilingual: z.boolean().optional(),
   additionalLanguages: z.array(z.string()).optional(),
-  handedness: z.enum(["right", "left", "ambidextrous"]).optional(),
+  handedness: z.preprocess(
+    emptyToUndefined,
+    z.enum(["right", "left", "ambidextrous"]).optional()
+  ),
   raceEthnicity: z.array(z.string()).optional(),
-  deviceType: z.string().optional(),
+  deviceType: z.preprocess(emptyToUndefined, z.string().optional()),
 }).refine(
   (data) => {
     // Require region for US, Canada, Australia
@@ -64,7 +72,7 @@ const demographicsSchema = z.object({
 );
 
 export async function POST(request: Request) {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
 
   if (!session?.user?.id) {
     return NextResponse.json(
@@ -138,7 +146,7 @@ export async function POST(request: Request) {
 }
 
 export async function GET() {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
 
   if (!session?.user?.id) {
     return NextResponse.json(
