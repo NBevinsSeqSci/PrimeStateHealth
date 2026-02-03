@@ -337,6 +337,10 @@ export default function DemographicsPage() {
     });
   };
 
+  const toggleRace = (value: string) => {
+    handleMultiSelect("raceEthnicity", value);
+  };
+
   const isFormValid =
     formData.firstName.trim() &&
     formData.lastName.trim() &&
@@ -736,21 +740,43 @@ export default function DemographicsPage() {
                 <p className="mt-1 text-xs text-slate-500 mb-3">
                   Select all that apply
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {RACE_ETHNICITY_OPTIONS.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      onClick={() => handleMultiSelect("raceEthnicity", option)}
-                      className={`px-3 py-1.5 text-xs font-medium rounded-full border transition ${
-                        formData.raceEthnicity.includes(option)
-                          ? "bg-slate-900 text-white border-slate-900"
-                          : "bg-white text-slate-700 border-slate-300 hover:border-slate-400"
-                      }`}
-                    >
-                      {option}
-                    </button>
-                  ))}
+                <div className="grid grid-cols-2 gap-2">
+                  {RACE_ETHNICITY_OPTIONS.map((option) => {
+                    const selected = formData.raceEthnicity.includes(option);
+                    return (
+                      <button
+                        key={option}
+                        type="button"
+                        onClick={() => toggleRace(option)}
+                        aria-pressed={selected}
+                        className={[
+                          "rounded-lg border px-3 py-2 text-left text-sm transition",
+                          selected
+                            ? "border-slate-900 bg-slate-900 text-white"
+                            : "border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
+                        ].join(" ")}
+                      >
+                        <div className="flex items-center justify-between gap-3">
+                          <span>{option}</span>
+                          {selected ? (
+                            <span
+                              className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/15 text-white"
+                              aria-hidden="true"
+                            >
+                              ✓
+                            </span>
+                          ) : (
+                            <span
+                              className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-slate-300 text-xs text-slate-400"
+                              aria-hidden="true"
+                            >
+                              +
+                            </span>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 

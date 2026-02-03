@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import posthog from "posthog-js";
@@ -8,6 +9,7 @@ import posthog from "posthog-js";
 const TERMS_VERSION = "2026-01-28";
 
 export default function SignUpForm() {
+  const router = useRouter();
   const [mode, setMode] = useState<"magic" | "password">("magic");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -101,7 +103,7 @@ export default function SignUpForm() {
     const result = await signIn("email", {
       email,
       redirect: false,
-      callbackUrl: "/onboarding/demographics",
+      callbackUrl: "/dashboard",
     });
 
     if (result?.error) {
@@ -197,7 +199,7 @@ export default function SignUpForm() {
         identifier: email,
         password,
         redirect: false,
-        callbackUrl: "/onboarding/demographics",
+        callbackUrl: "/dashboard",
       });
 
       if (result?.error) {
@@ -219,8 +221,9 @@ export default function SignUpForm() {
           method: "password",
         });
 
-        // Redirect to demographics
-        window.location.href = "/onboarding/demographics";
+        // Redirect to dashboard
+        router.replace("/dashboard");
+        router.refresh();
       }
     } catch (err) {
       setStatus("error");

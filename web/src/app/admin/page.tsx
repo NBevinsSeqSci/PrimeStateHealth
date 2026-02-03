@@ -22,6 +22,40 @@ export default function AdminPage() {
   const [users, setUsers] = useState<UserRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<string | null>(null);
+
+  const handleDelete = async (user: UserRow) => {
+    const displayName =
+      user.preferredName ||
+      [user.firstName, user.lastName].filter(Boolean).join(" ") ||
+      user.name ||
+      user.email ||
+      user.id;
+
+    const confirmed = window.confirm(
+      `Delete account "${displayName}" (${user.email})?\n\nThis will permanently remove the user and all their data (tests, check-ins, demographics). This cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    setDeleting(user.id);
+    try {
+      const res = await fetch(`/api/admin/users?id=${encodeURIComponent(user.id)}`, {
+        method: "DELETE",
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `Delete failed (${res.status})`);
+      }
+
+      setUsers((prev) => prev.filter((u) => u.id !== user.id));
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to delete user");
+    } finally {
+      setDeleting(null);
+    }
+  };
 
   useEffect(() => {
     if (status !== "authenticated") return;
@@ -114,6 +148,7 @@ export default function AdminPage() {
                   <th className="px-4 py-3 font-semibold text-slate-700 text-center">Demographics</th>
                   <th className="px-4 py-3 font-semibold text-slate-700 text-center">Terms</th>
                   <th className="px-4 py-3 font-semibold text-slate-700">Joined</th>
+                  <th className="px-4 py-3 font-semibold text-slate-700 text-center">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -170,12 +205,25 @@ export default function AdminPage() {
                           year: "numeric",
                         })}
                       </td>
+                      <td className="px-4 py-3 text-center">
+                        {user.email === session?.user?.email ? (
+                          <span className="text-xs text-slate-400">You</span>
+                        ) : (
+                          <button
+                            onClick={() => handleDelete(user)}
+                            disabled={deleting === user.id}
+                            className="rounded-lg border border-red-200 bg-red-50 px-3 py-1 text-xs font-medium text-red-700 transition hover:bg-red-100 disabled:opacity-50"
+                          >
+                            {deleting === user.id ? "Deleting..." : "Delete"}
+                          </button>
+                        )}
+                      </td>
                     </tr>
                   );
                 })}
                 {users.length === 0 && (
                   <tr>
-                    <td colSpan={6} className="px-4 py-12 text-center text-slate-500">
+                    <td colSpan={7} className="px-4 py-12 text-center text-slate-500">
                       No accounts yet.
                     </td>
                   </tr>
