@@ -34,7 +34,7 @@ export const DemographicsSchema = z
     raceEthnicity: z.array(nonEmpty(64)).optional().nullable(),
     deviceType: nonEmpty(64).optional().nullable(),
   })
-  .strict(false);
+  .passthrough();
 
 const toCleanString = (value: unknown) => {
   if (value === undefined || value === "") return undefined;

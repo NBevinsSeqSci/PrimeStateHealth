@@ -48,7 +48,7 @@ const isDemographicsComplete = (data: {
   }
 
   if (data.country === "United States" && hasText(data.postalCode)) {
-    if (!US_ZIP_REGEX.test(data.postalCode)) return false;
+    if (!US_ZIP_REGEX.test(data.postalCode!)) return false;
   }
 
   return true;

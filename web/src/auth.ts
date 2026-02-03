@@ -43,6 +43,8 @@ export const authConfig = {
   adapter: PrismaAdapter(prisma),
   providers: [
     EmailProvider({
+      server: { host: "unused", port: 0, auth: { user: "", pass: "" } },
+      from: "noreply@primestatehealth.com",
       async sendVerificationRequest({ identifier, url }) {
         const host = new URL(url).host;
         await sendMagicLinkEmail({
@@ -59,8 +61,8 @@ export const authConfig = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const identifier = credentials?.identifier?.trim();
-        const password = credentials?.password;
+        const identifier = (credentials?.identifier as string | undefined)?.trim();
+        const password = credentials?.password as string | undefined;
 
         if (!identifier || !password) return null;
 
