@@ -5,10 +5,10 @@ import { ClinicalTrialAlignment } from "@/components/sections/ClinicalTrialAlign
 
 export const metadata: Metadata = {
   title: "Prime State Health — Fix brain fog by starting with measurement",
-  description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching and short courses -- built around repeat testing and targeted stacks.",
+  description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching, short courses, and blood testing -- built around repeat testing and targeted stacks.",
   openGraph: {
     title: "Prime State Health — Fix brain fog by starting with measurement",
-    description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching and short courses -- built around repeat testing and targeted stacks.",
+    description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching, short courses, and blood testing -- built around repeat testing and targeted stacks.",
     url: "https://primestatehealth.com",
     siteName: "Prime State Health",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Prime State Health — Fix brain fog by starting with measurement",
-    description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching and short courses -- built around repeat testing and targeted stacks.",
+    description: "Take a 3-6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching, short courses, and blood testing -- built around repeat testing and targeted stacks.",
     images: ["/og-image.png"],
   },
 };
@@ -166,8 +166,8 @@ export default function Page() {
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-700 sm:text-lg">
-              Take a 3&ndash;6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching
-              and short courses&mdash;built around repeat testing and targeted stacks.
+              Take a 3&ndash;6 minute brain check-in, get an instant snapshot, then follow a clear plan with coaching,
+              short courses, and blood testing&mdash;built around repeat testing and targeted stacks.
             </p>
 
             <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
@@ -176,6 +176,9 @@ export default function Page() {
               </span>
               <span className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
                 Courses &middot; Coming soon
+              </span>
+              <span className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                Blood testing &middot; Coming soon
               </span>
             </div>
 
@@ -192,7 +195,7 @@ export default function Page() {
                 className="inline-flex flex-wrap items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-900 shadow-sm hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60 focus-visible:ring-offset-2"
                 data-psh-event="cta_see_plan"
               >
-                <span>See the plan (coaching + courses)</span>
+                <span>See the plan (coaching + courses + blood testing)</span>
                 <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
                   Coming soon
                 </span>
@@ -248,6 +251,9 @@ export default function Page() {
                   <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
                     Courses &middot; Coming soon
                   </span>
+                  <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                    Blood testing &middot; Coming soon
+                  </span>
                 </div>
               </div>
               <p className="mt-3 text-sm text-slate-600">
@@ -282,7 +288,7 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="mt-8 grid gap-6 md:grid-cols-4">
               <div>
                 <div className="flex items-center gap-2">
                   <h3 className="text-sm font-semibold text-slate-900">Coaching</h3>
@@ -303,6 +309,17 @@ export default function Page() {
                 </div>
                 <p className="mt-2 text-sm text-slate-600">
                   Short, practical lessons you can finish fast&mdash;designed to help you run cleaner experiments.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-sm font-semibold text-slate-900">Blood testing</h3>
+                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+                    Coming soon
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-slate-600">
+                  Optional lab panels to help identify common drivers so your next steps match your data.
                 </p>
               </div>
               <div>
@@ -351,7 +368,7 @@ export default function Page() {
               title="Get a real plan"
               desc={
                 <span className="flex flex-wrap items-center gap-2">
-                  <span>Coaching guidance and short courses</span>
+                  <span>Coaching guidance, short courses, and blood testing</span>
                   <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
                     Coming soon
                   </span>
@@ -394,7 +411,12 @@ export default function Page() {
                       Community &middot; Coming soon
                     </span>
                   </li>
-                  <li>&bull; Recommended lab testing paths when you&rsquo;re ready to go deeper</li>
+                  <li>
+                    &bull; Recommended lab testing paths when you&rsquo;re ready to go deeper
+                    <span className="ml-2 inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
+                      Blood testing &middot; Coming soon
+                    </span>
+                  </li>
                   <li>&bull; Curated supplement stacks aligned to common brain-fog patterns</li>
                 </ul>
                 <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -419,6 +441,9 @@ export default function Page() {
                   </span>
                   <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
                     Courses &middot; Coming soon
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
+                    Blood testing &middot; Coming soon
                   </span>
                   <span className="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
                     Community &middot; Coming soon
